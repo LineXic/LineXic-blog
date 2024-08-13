@@ -1,0 +1,20 @@
+---
+layout: page
+title: "🐥归档"
+description: "「归档也是一种RSS」"
+header-img: "img/SKY.jpg"
+multilingual: true
+--- 
+
+<html>
+<body>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

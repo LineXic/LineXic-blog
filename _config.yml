@@ -1,0 +1,131 @@
+# Site settings
+title: LineXic书屋
+SEOTitle: LineXic书屋
+header-img: "img/tag-bg.jpg"
+email: linexic@yeah.net
+description: "LineXic博客,书屋,前端分享,笔记本,学习进步"
+keyword: "LineXic,linexic,blog,web,博客,前端,学习进步,书屋"
+url: "http://linexic.top"              
+# your host, for absolute URL
+baseurl: ""                            
+# for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username:     u/7463181651
+github_username:    LineXic
+twitter_username: LineXic
+zhihu_username: bei-hai-95-34-83
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+textColor: #FF0000
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+timezone: CN  
+
+# Back to top 回到顶部by ray-eldath
+b2t: true
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `gem install jekyll-paginate`
+
+plugins: 
+  - jekyll-paginate
+# plugins: [jekyll-sitemap]
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+ 
+paginate_path: "page:num"   #分页页面路径格式
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Comment
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: 9ecfed90ae982b01f0b7cb1770447760
+
+# Google Analytics
+# ga_track_id: G-5Z26G18PTZ
+# Format: linexic.top
+# ga_domain: auto
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: “难离难舍，想抱紧些"
+sidebar-avatar: /img/logo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: false
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends:   [
+    { title: "承挨博客", href: "https://blog.chengai77a6b.top/" },
+    { title: "承挨汉化组", href: "https://chengai77a6b.top/" },
+    { title: "ADSKN-砖叶焦点", href: "https://tbl.adskn.com/" },
+    { title: "LineXic图床", href: "https://img.linexic.top/" },
+    { title: "LineXic-GH", href: "https://gh.linexic.top/" },
+    { title: "何曦辞的个人小站", href: "http://www.hexichi.love/" },
+    { title: "Otstar Lin", href: "https://blog.ixk.me/" },
+    { title: "LiteCat - 博客", href: "https://www.litecat.xyz/" },
+    { title: "Mugzx's Blog", href: "https://blog.mugzx.top/" },
+    { title: "廖雪峰的官方网站", href: "https://liaoxuefeng.com/" },
+    { title: "阮一峰的网络日志", href: "https://www.ruanyifeng.com/blog/" },
+    { title: "梦泽不是梦", href: "https://www.mengze2.cn/" },
+    { title: "KEVIN'S BLOG", href: "https://blog.kevinchu.top" },
+    { title: "故事的程序员", href: "https://blog.lichenghao.cn" },
+    { title: "Tony’s Blog", href: "https://blog.iamsjy.com/" },
+    { title: "愧作", href: "https://kuizuo.cn/" },
+    { title: "上冬十二", href: "https://oragekk.me/" },
+    { title: "PeterJXL", href: "https://www.peterjxl.com"},
+    { title: "海若博客", href: "https://hyruo.com/"},
+   { title: "涛叔", href: "https://taoshu.in/"},
+   { title: "寒夏摸鱼站", href: "https://blog.rainiar.top/"},
+    
+    ]

@@ -1,0 +1,19 @@
+{
+  "name": "LineXic书屋",
+  "short_name": "LineXic博客",
+  "description": "LineXic博客,书屋,前端分享,笔记本,学习进步",
+  "icons": [{
+    "src": "icons/128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "icons/512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
