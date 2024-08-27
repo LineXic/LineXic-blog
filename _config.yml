@@ -105,8 +105,7 @@ page-mathjax: false
 
 
 # Friends
-friends:   
-[
+friends: [
     { title: "承挨博客", href: "https://blog.chengai77a6b.top/" },
     { title: "承挨汉化组", href: "https://chengai77a6b.top/" },
     { title: "ADSKN-砖叶焦点", href: "https://tbl.adskn.com/" },
