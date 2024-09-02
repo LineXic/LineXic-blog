@@ -41,7 +41,9 @@ b2t: true
 
 plugins: 
   - jekyll-paginate
+  -jekyll-toc
 # plugins: [jekyll-sitemap]
+
 gems:
   - jekyll-sitemap
   - jekyll-paginate
