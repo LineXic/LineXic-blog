@@ -6,8 +6,6 @@ layout: default
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-{% include toc.html html=content %}
-
 <!-- Post Header -->
 <!-- canvas-nest.min.js -->
 <!--<script type="text/javascript" src="../../../../js/canvas-nest.min.js"></script>-->
@@ -76,6 +74,8 @@ iframe {
 </header>
 
 <!-- post.html -->
+
+% include toc.html html=content %
 
 {% if site.toc %}
   <div class="container">  
