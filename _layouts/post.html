@@ -8,6 +8,24 @@ layout: default
 
 {% include toc.html html=content %}
 
+{% if site.toc %}
+  <div class="container">  
+    <div class="contents">
+      <article class="markdown-body">
+        {{ page.content }}
+      </article>
+    </div>   
+    <div class="table-of-contents">
+      <h2>Contents</h2>
+      {% include toc.html html=content %}
+    </div>
+  </div>
+{% else %}
+  <article class="markdown-body">
+    {{ page.content }}
+  </article>
+{% endif %}
+
 <!-- Post Header -->
 <!-- canvas-nest.min.js -->
 <!--<script type="text/javascript" src="../../../../js/canvas-nest.min.js"></script>-->
