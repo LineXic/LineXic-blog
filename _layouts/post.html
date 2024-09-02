@@ -75,6 +75,8 @@ iframe {
 
 <!-- post.html -->
 
+{% include toc.html html=content %}
+
 {% if site.toc %}
   <div class="container">  
     <div class="contents">
@@ -84,7 +86,7 @@ iframe {
     </div>   
     <div class="table-of-contents">
       <h2>Contents</h2>
-      {% include toc.html html=content %}
+            
     </div>
   </div>
 {% else %}
