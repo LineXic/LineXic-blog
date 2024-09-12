@@ -1,0 +1,12 @@
+---
+layout: default
+title: 友情链接
+---
+<h1>友情链接</h1>
+<ul>
+  {% for link in site.data.links %}
+    <li>
+      <a href="{{ link.url }}">{{ link.name }}</a> - {{ link.description }}
+    </li>
+  {% endfor %}
+</ul>
