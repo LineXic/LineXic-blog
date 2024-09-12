@@ -1,0 +1,59 @@
+---
+layout: page
+title: "友链"
+description: ""
+header-img: ""
+multilingual: true
+---
+
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign locales = site.data.locales[lang] %}
+{% assign panel = locales.panel %}
+{% if site.data.links %}
+<div class="friends">
+    <h2>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-links"></use>
+        </svg> {{panel.links}}
+    </h2>
+    {% for f in site.data.links.links %}
+    <a target="_blank" href="{{ f.url }}" title="{{ f.name }}" class="friendurl">
+        <div class="frienddiv">
+            <div class="frienddivleft">
+                <img class="myfriend" src="{{ f.img }}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2091/2091464.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
+                onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+            </div>
+            <div class="frienddivright">
+                <div class="friendname">{{ f.name }}</div>
+                <div class="friendinfo">{{ f.info }}</div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+<div class="friends">
+    <h2>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-friends"></use>
+        </svg> {{panel.friends}}
+    </h2>
+    {% for f in site.data.links.friends %}
+    <a target="_blank" href="{{ f.url }}" title="{{ f.name }}" class="friendurl">
+        <div class="frienddiv">
+            <div class="frienddivleft">
+                <img class="myfriend" src="{{ f.img }}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'; this.removeAttribute('onerror'); this.removeAttribute('onload');"
+  onload="this.removeAttribute('onerror'); this.removeAttribute('onload');">
+            </div>
+            <div class="frienddivright">
+                <div class="friendname">{{ f.name }}</div>
+                <div class="friendinfo">{{ f.info }}</div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% else %}
+{{panel.nolink}}
+{% endif %}
+
+{{ content }}
