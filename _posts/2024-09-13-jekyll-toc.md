@@ -4,7 +4,7 @@ title:      "使用toc插件为jekyll博客创建目录"
 subtitle:   "使用toc插件为jekyll博客创建目录"
 date:       2024-09-13 00:00:00
 author:     "LineXic"
-header-img: "img/R-C.jpg"
+header-img: "img/jekyll.jpg"
 catalog:    true
 tags:
     - jekyll插件
