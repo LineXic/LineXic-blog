@@ -20,25 +20,24 @@ tags:
 ```liquid
 <!-- post.html -->
 
+<!-- post.html -->
+
+{% include toc.html html=content %}
+
 {% if site.toc %}
   <div class="container">  
     <div class="contents">
-      <article class="markdown-body">
-        {{ page.content }}
-      </article>
+
     </div>   
     <div class="table-of-contents">
       <h2>Contents</h2>
-      {% include toc.html html=content %}
+
     </div>
   </div>
-{% else %}
-  <article class="markdown-body">
-    {{ page.content }}
-  </article>
+
 {% endif %}
 ```
-注意这里有一个坑我在直接添加这段代码时出现了这样的情况
+这里做了些改动，原版在我自己应用的时候会出现这样的bug
 ![bug](https://linexic.top/img/blog/Image_1726219871237.jpg)
 
 # 结束
