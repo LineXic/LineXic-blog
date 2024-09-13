@@ -42,7 +42,7 @@ tags:
 
 ![bug](https://linexic.top/img/blog/Image_1726219871237.jpg)
 也就是说这里的文章重复了两段，其中一段是自己写的另一段就是这段代码中某一个在作祟「私自"抄写"了」
-![解决方法](img/blog/Image_1726208869320.png)
+![解决方法](https://img/blog/Image_1726208869320.png)
 这样的解决方法就是把两段<br>
 `<article class="markdown-body">{{ page.content }}`<br>
 都给删掉，如果你觉得删掉不保险也可以使用`<!--  -->`
