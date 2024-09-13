@@ -12,7 +12,7 @@ tags:
 ---
 
 有天在[这篇文章](https://www.u.tsukuba.ac.jp/~s2036012/tech/webmaster/jekyll-toc.html#%E7%AC%AC%E4%B8%89%E7%A7%8D%E6%96%B9%E6%A1%88)看到了toc的折腾过程，转念一想自己的博客还没有toc就索性也跟着文章一起折腾
-![demo)(https://linexic.top/img/blog/Screenshot_2024_0913_172333.png)
+![demo](https://linexic.top/img/blog/Screenshot_2024_0913_172333.png)
 部署好之后大概就是这个样子了
 
 # 正文
