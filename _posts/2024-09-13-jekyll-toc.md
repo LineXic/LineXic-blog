@@ -22,19 +22,6 @@ tags:
 <!-- post.html -->
 
 {% include toc.html html=content %}
-
-{% if site.toc %}
-  <div class="container">  
-    <div class="contents">
-
-    </div>   
-    <div class="table-of-contents">
-      <h2>Contents</h2>
-
-    </div>
-  </div>
-
-{% endif %}
 ```
 
 这里做了些改动，原版在我自己应用的时候会出现这样的bug
