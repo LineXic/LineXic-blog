@@ -17,9 +17,8 @@ tags:
 
 # 正文
 把这个仓库的[toc.html](https://github.com/allejo/jekyll-toc/releases/download/v1.2.0/toc.html)文件下载到`_layouts`目录中，然后在`_laypots/post.html`文件中添加如下代码
-```liquid
-<!-- post.html -->
 
+```liquid
 <!-- post.html -->
 
 {% include toc.html html=content %}
