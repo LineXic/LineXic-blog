@@ -155,7 +155,7 @@ iframe {
 
 <!-- vercel托管waline评论url -->
 
- <div id="waline"></div>
+ <div id="waline">
   <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
@@ -164,7 +164,15 @@ iframe {
       serverURL: 'https://talk.linexic.top',
     });
   </script>
+</div>
 
+<style>
+
+.waline{
+   width: 100%;
+}
+
+</style>
    <!-- 上一篇或者下一篇post按钮 -->
                 <ul class="pager">
                     {% if page.previous.url %}
