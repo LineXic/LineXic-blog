@@ -11,7 +11,7 @@ tags:
     - 宝塔
 ---
 
-> 本文章部分字段和全部图片来源于[文档](https://discuzq.icu/docs/)
+> 本文章部分字段和全部图片来源于[文档](https://doc.q.discuz.vip/)
 
 # 前言
 
