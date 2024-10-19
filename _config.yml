@@ -7,7 +7,7 @@ description: "LineXic博客,书屋,前端分享,笔记本,学习进步"
 keyword: "LineXic,linexic,blog,web,博客,前端,学习进步,书屋"
 url: "https://linexic.top"              
 # your host, for absolute URL
-baseurl: ""                            
+baseurl: "/"                            
 # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
