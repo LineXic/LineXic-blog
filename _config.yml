@@ -108,7 +108,6 @@ page-mathjax: false
 # Friends
 friends: [
     { title: "ADSKN-砖叶焦点", href: "https://tbl.adskn.com/" },
-    { title: "LineXic-GH", href: "https://gh.linexic.top/" },
     { title: "Otstar Lin", href: "https://blog.ixk.me/" },
     { title: "LiteCat - 博客", href: "https://www.litecat.xyz/" },
     { title: "廖雪峰的官方网站", href: "https://liaoxuefeng.com/" },
