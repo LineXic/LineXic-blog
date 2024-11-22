@@ -1,5 +1,5 @@
 
-.img-wrapper {
+.img {
     view-timeline-name: --revealing-image;
     view-timeline-axis: block;
     animation: linear img-reveal both;
