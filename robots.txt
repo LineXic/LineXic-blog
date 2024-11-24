@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /img/
+Disallow: /fonts/
 sitemap: https://linexic.top/sitemap.xml
