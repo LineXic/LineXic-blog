@@ -81,6 +81,24 @@
 
 </nav>
 <style>
+img {
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear img-reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 20% cover 50%;
+}
+@keyframes img-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 a {
   text-decoration: none;
 }
