@@ -159,9 +159,27 @@ header.intro-header{
     });
   </script>
 </div>
---> 
+-->
+ 
+<!-- CSS 
+<link href="http://artalk.example.com:8080/dist/Artalk.css" rel="stylesheet" />
 
-<script src="https://giscus.app/client.js"
+<!-- JS -->
+<script src="http://artalk.example.com:8080/dist/Artalk.js"></script>
+
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+Artalk.init({
+  el:        '#Comments',                       // 绑定元素的 Selector
+  pageKey:   '/post/1',                         // 固定链接
+  pageTitle: '关于引入 Artalk 的这档子事',         // 页面标题 (留空自动获取)
+  server:    'http://artalk.linexic.top',  // 后端地址
+  site:      'Artalk 的博客',                    // 你的站点名
+})
+</script>
+
+<!-- <script src="https://giscus.app/client.js"
         data-repo="LineXic/LineXic-blog"
         data-repo-id="R_kgDOMpAQZw"
         data-category="General"
@@ -177,7 +195,7 @@ header.intro-header{
         crossorigin="anonymous"
         async>
 </script>
-
+ -->
 <style>
 
 .waline{
