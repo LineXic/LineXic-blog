@@ -3,6 +3,16 @@ layout: page
 description: "「一珊一珊亮晶晶」"
 ---
 
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.auto.min.js"></script>
+<script>
+        // 自定义
+    var sf = new Snowflakes({
+        color: "#ffffff",
+        speed: 0.8,
+        maxSize: 20
+    });
+</script>
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
