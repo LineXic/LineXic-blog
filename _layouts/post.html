@@ -142,7 +142,7 @@ header.intro-header{
 <div id="article-info">
 </div>
 
-<!-- vercel托管waline评论url
+<!-- vercel托管waline评论url -->
 
  <div id="waline">
   <script type="module">
@@ -154,24 +154,7 @@ header.intro-header{
     });
   </script>
 </div>
--->
- 
-<!-- artalk 
-<link href="https://cdn.bootcdn.net/ajax/libs/artalk/2.8.7/Artalk.css" rel="stylesheet">
 
-<script src="https://cdn.bootcdn.net/ajax/libs/artalk/2.8.7/Artalk.js"></script>
-
-<div id="Comments"></div>
-<script>
-Artalk.init({
-  el:        '#Comments',                       // 绑定元素的 Selector
-  pageKey:   '/post/1',                         // 固定链接
-  pageTitle: '关于引入 Artalk 的这档子事',         // 页面标题 (留空自动获取)
-  server:    'http://artalk.linexic.top',  // 后端地址
-  site:      'Artalk 的博客',                    // 你的站点名
-})
-</script>
--->
 <!-- giscus -->
 
 </style>
@@ -212,7 +195,7 @@ Artalk.init({
         async>
  </script>
 		     -->
-
+<!-- valine 
 <div id="vcomments"></div>
     <script>
         new Valine({
@@ -221,7 +204,7 @@ Artalk.init({
             appKey: 'Your appKey'
         })
     </script>
-
+ -->
 
                 {% if site.netease_comment %}
                 {% endif %}
