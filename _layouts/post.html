@@ -143,12 +143,17 @@ header.intro-header{
 </div>
 
 <!-- valine  -->
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
 <script>
     var valine = new Valine();
     valine.init({
         el:'#vcomment',
         appId: '4FtQkDql2bg5hS4PGIFzpXIY-MdYXbMMI',
         appKey: '5saU6Q8dmYugMnVi8Hs69pWh'
+       	placeholder: "快来聊天吧",
+        visitor: true 
     })
 </script>
 ​
