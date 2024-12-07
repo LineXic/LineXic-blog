@@ -142,6 +142,16 @@ header.intro-header{
 <div id="article-info">
 </div>
 
+<!-- valine  -->
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '4FtQkDql2bg5hS4PGIFzpXIY-MdYXbMMI',
+            appKey: '5saU6Q8dmYugMnVi8Hs69pWh'
+        })
+    </script>
+
 <!-- vercel托管waline评论url 
 
  <div id="waline">
@@ -195,15 +205,6 @@ header.intro-header{
         async>
  </script>
 		     -->
-<!-- valine  -->
-<div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: '4FtQkDql2bg5hS4PGIFzpXIY-MdYXbMMI',
-            appKey: '5saU6Q8dmYugMnVi8Hs69pWh'
-        })
-    </script>
  
 
                 {% if site.netease_comment %}
