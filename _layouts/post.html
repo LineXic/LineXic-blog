@@ -127,6 +127,17 @@ header.intro-header{
 </div>
 
 </style>
+
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://talk.linexic.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  lang: 'zh-CN',
+})
+</script>
+
    <!-- 上一篇或者下一篇-->
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -146,17 +157,6 @@ header.intro-header{
                     </li>
                     {% endif %}
                 </ul>
-
-<div id="tcomment"></div>
-<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
-<script>
-twikoo.init({
-  envId: 'https://talk.linexic.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-  el: '#tcomment', // 容器元素
-  lang: 'zh-CN',
-})
-</script>
-
 
                 {% if site.netease_comment %}
                 {% endif %}
