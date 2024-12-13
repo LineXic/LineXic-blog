@@ -42,10 +42,7 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-                <hr style="visibility: hidden;">
-
-                {% if site.disqus_username %}
-                <hr style="visibility: hidden;">
+<hr style="visibility: hidden;">
  本文阅读量:<span id="twikoo_visitors">0</span>
 <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
@@ -56,6 +53,11 @@ twikoo.init({
   lang: 'zh-CN',
 })
 </script>
+
+                <hr style="visibility: hidden;">
+
+                {% if site.disqus_username %}
+                
                 <!-- disqus 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
