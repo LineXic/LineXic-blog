@@ -63,23 +63,8 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-
-# Comment
-
 # Netease settings
 netease_comment: false
-
-
-
-# Analytics settings
-# Baidu Analytics 
-# ba_track_id: 9ecfed90ae982b01f0b7cb1770447760
-
-# Google Analytics
-# ga_track_id: G-5Z26G18PTZ
-# Format: linexic.top
-# ga_domain: auto
-
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
