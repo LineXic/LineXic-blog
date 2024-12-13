@@ -4,27 +4,13 @@ layout: default
 
 <head>
 
-<link
-    rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-  />
-
-<link href="https://cdn.bootcdn.net/ajax/libs/waline/3.3.0/waline.min.css" rel="stylesheet">
-
-<script src="https://cdn.bootcdn.net/ajax/libs/waline/3.3.0/comment.min.js"></script>
-
     <link href="../../../../css/rouge.css" rel="stylesheet">
 </head>
 <script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
-<!--//添加评论系统-->
-<link rel="stylesheet" href="../../../../css/gitalk.css">
-    <script src="../../../../js/gitalk.min.js"></script>
 
 <!-- 打赏-->
 <link href="/css/reward.css?v=6.2.0" rel="stylesheet" type="text/css" />
 
-
-<!-- 大图浏览 -->
-<link href="../../../../css/imageContent.css" rel="stylesheet">
 <!-- 文章头部CSS -->
 <style type="text/css">
 
@@ -110,66 +96,6 @@ header.intro-header{
 				{{ content }}
                 <hr style="visibility: hidden;">
  本文阅读量:<span id="twikoo_visitors">0</span>
-		   
-            <!-- 打赏功能 -->
-             <div>
-                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                <div>☛兄dei，请我喝杯茶☚</div>
-                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                    <span>打赏</span>
-                </button>
-                <div id="QR" style="display: none;">
-                        
-                        
-                <div id="wechat" style="display: inline-block">
-                <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="yizibi 微信支付"/>
-                            <p>微信支付</p>
-                </div>
-                        
-                        
-                        
-                <div id="alipay" style="display: inline-block">
-                <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="yizibi 支付宝"/>
-                <p>支付宝</p>
-                </div>
-                        
-                        
-                        
-                        
-                </div>
-                </div>
-                
-            </div>
-<div id="article-info">
-</div>
-
-<!-- valine  
-
-<div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'mnbb3sPk5nyaQtq9GUvFO3Sd-MdYXbMMI',
-            appKey: 'e1RlpMujrITr7mkDifCExGJX'
-        })
-    </script>
-​ -->
-​
-          ​             
-
-<!-- vercel托管waline评论url 
-
- <div id="waline">
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-    init({
-      el: '#waline',
-      serverURL: 'https://talk.linexic.top',
-    });
-  </script>
-</div>
- -->
 
 </style>
    <!-- 上一篇或者下一篇-->
@@ -191,24 +117,6 @@ header.intro-header{
                     </li>
                     {% endif %}
                 </ul>
-		  <!-- giscus  
- <script src="https://giscus.app/client.js"
-        data-repo="LineXic/LineXic-blog"
-        data-repo-id="R_kgDOMpAQZw"
-        data-category="General"
-        data-category-id="DIC_kwDOMpAQZ84CiEkG"
-        data-mapping="title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="light_protanopia"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
- </script>	    
-  -->
 
 <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
@@ -223,14 +131,6 @@ twikoo.init({
 
                 {% if site.netease_comment %}
                 {% endif %}
-                
-                <!--   gitalk       -->
-                {% if site.gitalk %}
-                <div class="comment">
-                    {% include comments.html %}
-                </div>
-                {% endif %}
-            </div>  
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
@@ -298,38 +198,6 @@ twikoo.init({
 {% endif %}
 
 {% if site.netease_comment %}
-<!-- 网易云跟帖JS代码 start -->
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-<script>
-  var cloudTieConfig = {
-    url: document.location.href, 
-    sourceId: "",
-    productKey: "de25fc98a6fe48b3bc8a7ae765da99a0",
-    target: "cloud-tie-wrapper"
-  };
-  var yunManualLoad = true;
-  Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-</script>
-<!-- 网易云跟帖JS代码 end -->
-{% endif %}
-
-{% if site.disqus_username %}
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{page.id}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '/LineXic/LineXic.github.io/edit/main/_layouts/post.html' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
-
 
 {% if site.anchorjs %}
 <!-- async load function -->
