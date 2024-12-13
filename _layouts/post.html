@@ -2,77 +2,10 @@
 layout: default
 ---
 
-<head>
-	<!-- 打赏-
-<link href="/css/reward.css?v=6.2.0" rel="stylesheet" type="text/css" />
- -->
-
-    <link href="../../../../css/rouge.css" rel="stylesheet">
-</head>
-<script type="text/javascript" color="238,205,205" opacity='0.7' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
-
-<!-- 文章头部CSS -->
-<style type="text/css">
-
-header.intro-header{
-        position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-    }
-
-    {% if page.header-mask %}
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, {{ page.header-mask }});
-    }
-    {% endif %}
-</style>
-<header class="intro-header" >
-    <div class="header-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                    <h1>{{ page.title }}</h1>
-                    {% comment %}
-                        always create a h2 for keeping the margin , Yizibi
-                    {% endcomment %}
-                    {% comment %} if page.subtitle {% endcomment %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- post.html -->
-
-{% include toc.html html=content %}
-
-{% if site.toc %}
-  <div class="container">  
-    <div class="contents">
-      
-    </div>   
-    <div class="table-of-contents">
-      <h2>Contents</h2>
-            
-    </div>
-  </div>
-
-{% endif %}
-
+<!-- Post Header -->
+{% include intro-header.html type='post' %}
 
 <!-- Post Content -->
-
 <article>
     <div class="container">
         <div class="row">
@@ -85,64 +18,12 @@ header.intro-header{
 
                 <!-- Multi-Lingual -->
                 {% if page.multilingual %}
-                <!-- Language Selector -->
-                <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-                    <option value="0" selected> 中文 Chinese </option>
-                    <option value="1"> 英文 English </option>
-                </select>
+                    {% include multilingual-sel.html %}
                 {% endif %}
 
+                                {{ content }}
 
-				{{ content }}
                 <hr style="visibility: hidden;">
- 本文阅读量:<span id="twikoo_visitors">0</span>
-		   
-            <!-- 打赏功能  
-             <div>
-                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                <div>☛兄dei，请我喝杯茶☚</div>
-                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                    <span>打赏</span>
-                </button>
-                <div id="QR" style="display: none;">
-                        
-                        
-                <div id="wechat" style="display: inline-block">
-                <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="yizibi 微信支付"/>
-                            <p>微信支付</p>
-                </div>
-                        
-                        
-                        
-                <div id="alipay" style="display: inline-block">
-                <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="yizibi 支付宝"/>
-                <p>支付宝</p>
-                </div>
-   -->               
-                  
-                        
-                        
-                </div>
-                </div>
-                
-            </div>
-<div id="article-info">
-</div>
-
-</style>
-
-<div id="tcomment"></div>
-<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
-<script>
-twikoo.init({
-  envId: 'https://talk.linexic.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-  el: '#tcomment', // 容器元素
-  lang: 'zh-CN',
-})
-</script>
-
-   <!-- 上一篇或者下一篇-->
-                                <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -161,17 +42,36 @@ twikoo.init({
                     </li>
                     {% endif %}
                 </ul>
-                
-                <!--   gitalk       -->
-                {% if site.gitalk %}
+                <hr style="visibility: hidden;">
+
+                {% if site.disqus_username %}
+                <hr style="visibility: hidden;">
+ 本文阅读量:<span id="twikoo_visitors">0</span>
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://talk.linexic.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  lang: 'zh-CN',
+})
+</script>
+                <!-- disqus 评论框 start -->
                 <div class="comment">
-                    {% include comments.html %}
+                    <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
+                <!-- disqus 评论框 end -->
+                {% endif %}
+
+                {% if site.netease_comment %}
+                <!-- 网易云跟帖 评论框 start -->
+                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->
-        {% if page.catalog %}
+        {% unless page.no-catalog %}
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -185,7 +85,7 @@ twikoo.init({
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        {% endif %}
+        {% endunless %}
 
     <!-- Sidebar Container -->
             <div class="
@@ -194,41 +94,16 @@ twikoo.init({
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">标签云</a></h5>
-                    <div class="tags">
-        				{% for tag in site.tags %}
-                            {% if tag[1].size > site.featured-condition-size %}
-                				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-        				{% endfor %}
-        			</div>
-                </section>
-                {% endif %}
+                {% include featured-tags.html bottom=true %}
 
                 <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>朋友们</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                {% include friends.html %}
             </div>
         </div>
     </div>
-    
-
-    
 </article>
 
-<!-- Add support for Mathjax by Voleking-->
+<!-- add support for mathjax by voleking-->
 {% if page.mathjax %}
   {% include mathjax_support.html %}
 {% endif %}
@@ -249,6 +124,7 @@ twikoo.init({
 <!-- 网易云跟帖JS代码 end -->
 {% endif %}
 
+
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -259,7 +135,7 @@ twikoo.init({
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '/LineXic/LineXic.github.io/edit/main/_layouts/post.html' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
@@ -283,9 +159,9 @@ twikoo.init({
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
         anchors.options = {
-          visible: 'always',
+          visible: 'hover',
           placement: 'right',
-          icon: '#'
+          // icon: '#'
         };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
