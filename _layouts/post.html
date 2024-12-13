@@ -97,7 +97,7 @@ header.intro-header{
                 <hr style="visibility: hidden;">
  本文阅读量:<span id="twikoo_visitors">0</span>
 		   
-            <!-- 打赏功能  -->
+            <!-- 打赏功能  
              <div>
                 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
                 <div>☛兄dei，请我喝杯茶☚</div>
@@ -118,7 +118,7 @@ header.intro-header{
                 <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="yizibi 支付宝"/>
                 <p>支付宝</p>
                 </div>
-                 
+   -->               
                   
                         
                         
@@ -142,6 +142,7 @@ twikoo.init({
 </script>
 
    <!-- 上一篇或者下一篇-->
+                                <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -160,9 +161,6 @@ twikoo.init({
                     </li>
                     {% endif %}
                 </ul>
-
-                {% if site.netease_comment %}
-                {% endif %}
                 
                 <!--   gitalk       -->
                 {% if site.gitalk %}
