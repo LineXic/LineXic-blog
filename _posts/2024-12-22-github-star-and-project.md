@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "你曾经star学习的项目现在能看懂了吗？"
-subtitle:   "GitHub上有趣/实用的项目"
+subtitle:   "探讨了曾经的项目"
 date:       2024-12-22 21:28:00
 author:     "LineXic"
 header-img: "img/github.jpg"
