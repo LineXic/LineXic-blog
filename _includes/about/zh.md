@@ -6,18 +6,8 @@
 
 GitHub是一个储存代码的地方我可以把我写到的放在里面，通过注释的方法来帮我了解这串代码到底怎么用，怎么讲，只是后来我接触到了GitHub pages了解到了jekyll等静态网站搭建的博客，从此就开始了折腾之旅
 
-# 社区论坛
-
-我最早接触到的社区是[klpbbs](https://klpbbs.com/?fromuid=1114580)一个我的世界游戏论坛，也开始了好奇他是怎么建造的于是又认识到了一系列建站资源，我的域名也就是那时候的产物，网名也是那时候的网名
-
 # GitHub统计
 ![GitHub统计](https://streak-stats.demolab.com/?user=linexic)
-
-# 博客
-
-博客不止只有GitHub Page的静态博客还有一个特殊的基于cloudflare搭建的博客，现在是火蝾螈服务器的[官网](https://hry.linexic.top/)
-
-动态博客是服务器的博客，有typecho等简单操作缺点就是没有静态博客自由性高上段说cloudflare[搭建](https://youtu.be/fU9TQ06aGhw)也是一种静态博客，不要服务器的那种，但自由性也不高还没有搜索，所以我就放弃了
 
 # 我对博客的看法 
 
