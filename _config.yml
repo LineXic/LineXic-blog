@@ -119,8 +119,7 @@ page-mathjax: true
 "https://blog.zhilu.cyou/"},
     { title: "宇阳", href:
 "https://liuyuyang.net/"},
-    { title: "Thun888", href:
-"https://blog.hzchu.top/"},
-    ]
+    { title: "Thun888", href: "https://blog.hzchu.top/"},
+   ]
 
   
