@@ -14,7 +14,7 @@ baseurl: ""
 future: false
 
 # SNS settings
-RSS: true
+RSS: false
 weibo_username:     u/7463181651
 github_username:    LineXic
 twitter_username: LineXic
