@@ -53,13 +53,10 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>广告</h5>
-
+                <h5>友链</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
-                         <a href="https://idc.natriumgroup.com/aff/FCKCZNPT" target="_blank">
-    <img width="100%" src="https://cloud.natriumgroup.com/upload/common/default/676815654aab4ea6ce25e8d19c4e58921732873076%5E%E9%92%A0%E4%BA%91%E8%AE%A1%E7%AE%971.png" alt="纳云计算">
- </a>
+                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
