@@ -4,7 +4,7 @@ description: '折腾termux的一篇'
 pubDate: '2023-10-03'
 ---
 
-![封面图](https://linexic.top/img/kali.jpg)
+![封面图](https://linexic.top/img/kali.webp)
 
 ## 你需要准备的
 
@@ -91,7 +91,7 @@ wget -O install-nethunter-termux https://offs.ec/2MceZWr
 chmod +x install-nethunter-termux
 ```
 
-![Changing file permissions for execution](https://img.linexic.top/file/3cb3772.png)
+![Changing file permissions for execution](https://linexic.top/img/blog/3cb3772ea606cb8178dbf.webp)
 
 键入以下命令以执行下载的安装文件
 
@@ -107,5 +107,3 @@ chmod +x install-nethunter-termux
 
 > 最后查看[kali官网](https://www.kali.org/ "kali官网")或者上网查询了解更多kali用法
 以上所有图源来自[油管视频文档](https://m.youtube.com/watch?v=KxOGyuGq0Ts&t=186s "油管视频文档")
-哔哩哔哩内的视频（搬运）[【你的下一台Kali，何必是电脑（无Root）（小白教程）-哔哩哔哩】 ]
-[【你的下一台Kali，何必是电脑（无Root）（小白教程）-哔哩哔哩】](https://b23.tv/FQSWvCI)
