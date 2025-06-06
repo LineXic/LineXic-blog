@@ -9,6 +9,6 @@
 ```yaml
 标题:LineXic书屋
 链接:https://linexic.top
-头像:https://linexic.top/avatar.webp
+头像:https://github.com/LineXic.png
 描述:难离难舍，想抱紧些
 ```
