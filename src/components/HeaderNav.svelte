@@ -120,13 +120,13 @@
                 {/each}
             </ul>
             <div class="flex flex-none">
-                <a aria-label="订阅本站"
+                <a aria-label="开往下一个站点"
                    class="w-12 h-12 flex items-center justify-center rounded-full -ms-3 text-black dark:text-white transition-colors bg-white/0 active:bg-white/10"
-                   href="./rss.xml"
+                   href="https://www.travellings.cn/go.html"
                    target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1408" height="1408" viewBox="0 0 1408 1408" class="w-[1.25rem] h-[1.25rem]">
-                        <path fill="currentColor" d="M384 1216q0 80-56 136t-136 56t-136-56t-56-136t56-136t136-56t136 56t56 136m512 123q2 28-17 48q-18 21-47 21H697q-25 0-43-16.5t-20-41.5q-22-229-184.5-391.5T58 774q-25-2-41.5-20T0 711V576q0-29 21-47q17-17 43-17h5q160 13 306 80.5T634 774q114 113 181.5 259t80.5 306m512 2q2 27-18 47q-18 20-46 20h-143q-26 0-44.5-17.5T1137 1348q-12-215-101-408.5t-231.5-336t-336-231.5T60 270q-25-1-42.5-19.5T0 207V64q0-28 20-46Q38 0 64 0h3q262 13 501.5 120T994 414q187 186 294 425.5t120 501.5"/>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1408" height="1408" viewBox="0 0 24 24">
+                    <path fill="#cccccc" d="M12 2c-4 0-8 .5-8 4v9.5A3.5 3.5 0 0 0 7.5 19L6 20.5v.5h2.23l2-2H14l2 2h2v-.5L16.5 19a3.5 3.5 0 0 0 3.5-3.5V6c0-3.5-3.58-4-8-4M7.5 17A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 14A1.5 1.5 0 0 1 9 15.5A1.5 1.5 0 0 1 7.5 17m3.5-7H6V6h5zm2 0V6h5v4zm3.5 7a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5"/>
+                </svg>
                 </a>
                 <button onclick={() => handleMobileMenuToggle()}
                         aria-label="打开菜单"

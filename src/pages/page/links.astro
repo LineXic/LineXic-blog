@@ -4,24 +4,100 @@ import Friend from "../../components/friend/Friend.astro";
 import FriendList from "../../components/friend/FriendList.astro";
 import FriendCategoryTitle from "../../components/friend/FriendCategoryTitle.astro";
 import MarkdownBody from "../../components/MarkdownBody.astro";
-
+import Comment from "../../components/Comment.astro";
 import * as markdownData from "./_links.md";
+import FormattedDate from "@/components/FormattedDate.astro";
 ---
 
-<BlogPage title="链接" description="来看看我的小伙伴们吧！">
-    <FriendCategoryTitle>链接分类</FriendCategoryTitle>
+<BlogPage title="友链 - LineXic书屋" description="LineXic的小伙伴们">
+    <FriendCategoryTitle>交谈甚欢</FriendCategoryTitle>
     <FriendList>
-        <Friend url="https://www.tcdw.net" name="吐槽大王部落格" description="本 Astro 博客主题的作者" avatarUrl="https://secure.gravatar.com/avatar/70ae2023afad30dae905344325cece8f?s=140" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-    </FriendList>
-    <FriendCategoryTitle>链接分类之二</FriendCategoryTitle>
+        <Friend url="https://www.chengai77a6b.top/" name="承挨博客" description="一个为Minecraft尽职尽责的汉化组" avatarUrl="https://chengai77a6b.top/img/avatar.webp" />
+        <Friend url="https://mengze.vip/" name="梦泽" description="用心对待技术，用代码丰富生活 " avatarUrl="https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/1f94e9c693374150b1f8dfd8de0fcce1.jpeg?format=webp&width=150"/>
+        <Friend url="https://blog.mugzx.top/" name="木姜丝_Mugzx" description="向上革命，向下实践。" avatarUrl="https://q1.qlogo.cn/g?b=qq&nk=2111829348&src_uin=www.jlwz.cn&s=0" />
+        <Friend url="https://blog.liushen.fun/" name="清羽飞扬" description="柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜" avatarUrl="https://blog.liushen.fun/info/avatar.ico" />
+      </FriendList>
+    <FriendCategoryTitle>友链电台 - 哔啵哔啵</FriendCategoryTitle>
     <FriendList>
-        <Friend url="https://www.tcdw.net" name="吐槽大王部落格" description="本 Astro 博客主题的作者" avatarUrl="https://secure.gravatar.com/avatar/70ae2023afad30dae905344325cece8f?s=140" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-    </FriendList>
+        <Friend url="https://tbl.adskn.com/" name="砖叶焦点" description="高端知识分享社区" avatarUrl="https://tbl.adskn.com/favicon.png" />
+        <Friend url="https://blog.kevinchu.top" name="KEVIN'S BLOG" description=" Kevin的博客" avatarUrl="https://static.kevinchu.top/blog/assets/img/avatar_03.jpg"/>
+        <Friend url="https://blog.lichenghao.cn/" name="故事的程序猿" description="好好学习，天天向上" avatarUrl="https://blog.lichenghao.cn/avatar.svg" />
+        <Friend url="https://blog.iamsjy.com/" name="Tony's Blog" description="探索智慧，共享知识；开启心灵，传递真理。" avatarUrl="https://blog.iamsjy.com/assets/favicon.jpg" />
+        <Friend url="https://kuizuo.cn/" name="愧作" description="道阻且长，行则将至" avatarUrl="https://kuizuo.cn/img/logo.png" />
+        <Friend url="https://oragekk.me/" name="上冬十二" description="到最后，竟庆幸于夕阳仍留在身上" avatarUrl="https://oragekk.me/logo.svg" />
+        <Friend url="https://www.peterjxl.com" name="PeterJXL" description="从 01 开始" avatarUrl="https://linexic.top/re0.jpg" />
+        <Friend url="https://lawtee.com/ " name="法律小茶馆" description="法学法律工作者" avatarUrl="https://lawtee.com/links/avatar.jpg" />
+        <Friend url="https://taoshu.in/" name="涛叔" description="涛叔的博客" avatarUrl="https://taoshu.in/favicon.ico" />
+        <Friend url="https://blog.rainiar.top/" name="寒夏摸鱼站" description="稀奇古怪技术集散地" avatarUrl="https://gravatar.webp.se/avatar/1beae7b1b3ca799888552bfcf9930a4e" />
+        <Friend url="https://blog.pinpe.top/" name="Pinpe云端" description="一个属于自己的云朵。" avatarUrl=https://pinpe.top/head.jpg />
+        <Friend url="https://thirdshire.com/" name="第三夏尔" description="认真生活，积极摸鱼" avatarUrl="https://thirdshire.com/img/blackcat_hu_332175c44ebde9be.jpg" />
+        <Friend url="https://blog.zhilu.cyou/" name="纸鹿摸鱼处" description="纸鹿至麓不知路，支炉制露不止漉" avatarUrl="https://www.zhilu.cyou/api/avatar.png" />
+        <Friend url="https://liuyuyang.net/" name="宇阳" description="记录所学知识，缩短和大神的差距！" avatarUrl="https://q1.qlogo.cn/g?b=qq&nk=3311118881&s=640" />
+        <Friend url="https://blog.hzchu.top/" name="Thun888" description="夏日当空，心如深渊" avatarUrl="https://blog.hzchu.top/img/avatar.webp" />
+        <Friend url="https://www.xmdblog.com/" name="小明的部落格" description="探索科技，启迪技能" avatarUrl="https://imgbed.xmdblog.com/file/OfXwydFU.jpg" />
+        <Friend url="https://i.bbb-lsy07.sbs/" name="bbb-lsy07" description="科技激荡人文，洞见智慧本真。" avatarUrl="https://i.bbb-lsy07.sbs/upload/quality_restoration_20250211145207618.JPG" />
+        <Friend url="https://www.tcdw.net/" name="吐槽大王部落格" description="正在学习接受不完美的世界" avatarUrl="https://avatars.githubusercontent.com/u/8687182?v=4&s=200" />
+        <Friend url="https://blog.ciraos.top/" name="葱苓语畔" description="Don't worry, be happy." avatarUrl="https://blog.ciraos.top/assets/avatar.avif" />
+        <Friend url="https://www.allenyou.wang/" name="秋实-Allenyou 的小窝" description="稻花香里说丰年，听取 WA 声一片" avatarUrl="https://blog-oss.allenyou.top/avatar/59b2fbdd507a84fe181b0af3e4ad7be3" />
+        <Friend url="https://bianliangrensheng.cn" name="变量人生" description="无论前路如何，探索与学习是我不断进化的动力" avatarUrl="https://bianliangrensheng.cn/img/logo.png" />
+        <Friend url="https://www.vvhan.com/" name="韩小韩博客" description="运气是计划之外的东西." avatarUrl="https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640" />
+        <Friend url="https://blog.zhheo.com/" name="张洪Heo" description="分享设计与科技生活" avatarUrl="https://img.zhheo.com/i/67d8fa75943e4.webp" />
+        <Friend url="https://note.weizwz.com" name="唯知笔记" description="探索知识的无限可能" avatarUrl="https://p.weizwz.com/logo_a4353391cbf0889b.webp" />
+        <Friend url="https://www.blueke.top/" name="Lanke's blog" description="请为一切不真实之物骄傲，因为我们高于这个世界！" avatarUrl="https://gcore.jsdelivr.net/gh/Keduoli03/My_img@img/img/头像.jpg" />
+        <Friend url="https://tnxg.top/" name="天翔TNXGの空间站" description="明日尚未到来，希望凝于心上" avatarUrl="https://api-space.tnxg.top/avatar?s=qq" />
+        <Friend url="https://www.biibii.cn/" name="BIIBII" description="记录生活中的技术脉搏。" avatarUrl="https://bu.dusays.com/2024/12/13/675bbe7fbc833.png" />
+        <Friend url="https://blog.lusyoe.com/" name="青萍叙事" description="一个懂技术的产品汪🐶" avatarUrl="https://blog.lusyoe.com/avatar.svg" />
+        <Friend url="https://wcowin.work/" name="Wcowin's Blog" description="循此苦旅，以达星辰" avatarUrl="https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp" />
+        <Friend url="https://www.iczrx.cn" name="晚夜的个人博客" description="做好量变的准备，促进事物的质变。" avatarUrl="https://q2.qlogo.cn/headimg_dl?dst_uin=1463656527&spec=640" />
+        <Friend url="https://zhuxu.asia/" name="朱某的生活印记" description="没有销声匿迹，我在热爱生活" avatarUrl="https://img1.zhuxu.asia/img/logo500.png" />
+        <Friend url="https://www.kzhik.cn" name="kzhik's website" description="在这里，我分享我的所见所闻、学习笔记和生活感悟，一起发现更多可能性" avatarUrl="https://www.kzhik.cn/cover.webp" />
+      </FriendList>
+        <FriendCategoryTitle>订阅 - 与君分享</FriendCategoryTitle> 
+        <FriendList>
+        <Friend url="https://hongtaoh.com/" name="郝鸿涛" description="河北老乡" avatarUrl="https://hongtaoh.com/media/ht10.png" />
+        <Friend url="https://whbbit.cn/" name="月空人" description="偶尔写些博客，发发牢骚" avatarUrl="https://7.isyangs.cn/78/6795a3b5015e1-78.webp" />
+        <Friend url="https://www.xalaok.top/" name="Naive Koala 🐨" description="像考拉一样无忧😉" avatarUrl="https://cravatar.cn/avatar/44e7a197aa88dcad4764a1c0ea508d8c" />
+        <Friend url="https://atpx.com/" name="atpX" description="atpX" avatarUrl="https://atpx.com/favicon-32x32.png" />
+      </FriendList>
+        <FriendCategoryTitle>探索 - 驶入下一个站点</FriendCategoryTitle>
+        <FriendList>
+        <Friend url="https://www.travellings.cn/go.html" name="开往 - 友链接力" description="让传统友链“活跃”，让网页相互接力，让流量相互流动，让网络开放起来" avatarUrl="https://www.travellings.cn/assets/travelling.png" />
+        <Friend url="https://foreverblog.cn/go.html" name="十年之约" description="一个人的寂寞，一群人的狂欢" avatarUrl="https://foreverblog.cn/favicon.ico" />
+        <Friend url="https://www.boyouquan.com/planet-shuttle" name="博友圈" description="博友人的圈子" avatarUrl="https://www.boyouquan.com/assets/favicon.ico" />
+        <Friend url="https://travel.moe/go?travel=on" name="异次元之旅" description="萌国ICP备案,号称萌ICP备,简称萌备" avatarUrl="https://icp.gov.moe/favicon.ico" />
+      </FriendList>
+    
     <MarkdownBody class="mt-6">
         <markdownData.Content />
     </MarkdownBody>
+<Comment />
+  <script>
+		import twikoo from "twikoo";
+		twikoo({
+		  envId: "https://talk.linexic.top/", // your environment ID or url
+		  el: "#tcomment", // the container ID which will show the comment
+		  lang: "zh-cn", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+		}).then(() => {
+		  console.log("comment loading success");
+		});
+	</script>
+
+<!--
+    <script src="https://giscus.app/client.js"
+        data-repo="LineXic/LineXic-blog"
+        data-repo-id="R_kgDOOQmiLw"
+        data-category="Ideas"
+        data-category-id="DIC_kwDOOQmiL84CokoA"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+-->
 </BlogPage>

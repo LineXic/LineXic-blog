@@ -30,6 +30,38 @@
     --color-accent-950: var(--color-amber-950);
 }
 
+
+:root {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+
+:root {
+    font-synthesis: style;
+}
+
+.tk-avatar .tk-avatar-img {
+    margin: 0;
+}
+
+#tcomment {
+  position: static !important;
+  margin: 0 auto; /* 居中显示 */
+}
+/* 移除所有虚线 */
+.twikoo a,
+.twikoo .username,
+.twikoo .reply-btn {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* 移除特定元素的虚线（可选） */
+.twikoo .comment-item .author-name {
+  border-bottom: none !important;
+}
+
 /* Hack: 改善 kbd 间距不够的问题 */
 .prose kbd:has(kbd) {
     padding: 0.5rem;
@@ -49,3 +81,4 @@
         background-color: var(--color-accent-950);
     }
 }
+

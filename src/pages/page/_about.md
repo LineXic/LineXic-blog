@@ -1,19 +1,34 @@
-Koi (こい, 恋) 是由 [tcdw](https://www.tcdw.net) 为他不存在的女儿制作的 [Astro](https://astro.build/) 静态博客模板。
+# 介绍我
 
-## 特性
+这里是LineXic书屋，欢迎查看书屋，我是站长LineXic😀👆
 
-- 全站响应式，支持各种设备的浏览需求
-- 明亮/暗黑双主题，跟随用户操作系统设置应用
-- SEO 友好
-- 性能好：前端部分仅需少量 JavaScript
-- 可访问性好：样式设计基本符合 WCAG 规范[^1]，键盘/读屏软件友好
-- 好康！！！
+我是LineXic，是一名高中的学生平时喜欢打羽毛球🏸和跑步🏃放假的时候喜欢在网络上瞎折腾
 
-[^1]: 需要搭配恰当的横幅图片，才能使得头部的标题和副标题文字对比度符合 WCAG 颜色标准。
+机遇巧合之下我喜欢上了编码并且投入的时间越来越长以至于了解的更多了，学到的多了也就想找个地方把它记录下来，后来我就了解到了GitHub
+
+GitHub是一个储存代码的地方我可以把我写到的放在里面，通过注释的方法来帮我了解这串代码到底怎么用，怎么讲，只是后来我接触到了GitHub pages了解到了jekyll等静态网站搭建的博客，从此就开始了折腾之旅
+
+## 多重身份
+
+在学校我是一名高中的学习一般学生，在家里我是弟弟妹妹的「老大」，在网络我是Minecraft游戏爱好者也是[承挨汉化组](https://blog.chengai77a6b.top/)的一员同时也是这个「书屋」的一员小站长
+后来因为设备的更新现在主要使用电脑VScode编写博客等
+
+## 联系
+
+- 邮箱 <linexic@qq.com>
+- GitHub <https://github.com/linexic>
+
+## 写博客
+
+写博客时可以写你看过一个对你有启示的文章或视频的笔记，但切记不要原话写上，应该写上你自己的理解这和上学时做笔记不一样
+
+如果你照抄原话不是你理解的回过头来你可能就不认识了,关于设备我最开始使用Termux后来随着设备更新我换上了电脑，使用Vscode写作
+
+## 头图
+
+博客主页头图来源于梦泽的博客，原图片是这样的
+![博客背景图](https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/Image_200594103449956.jpg "背景图")
 
 ## 技术栈
 
-- [Astro](https://astro.build/) - 通用的内容性网站框架
-- [Tailwind CSS](https://tailwindcss.com/) - 原子化的 CSS 框架
-- [Svelte](https://svelte.dev/) - 为网站增加互动元素的轻量级 UI 库
-- [TypeScript](https://www.typescriptlang.org/) - <abbr title="从佐玩官网看到的一句话描述。我觉得这个很妙，抄过来了（">八块腹肌</abbr>的 JavaScript
+<img src="https://skillicons.dev/icons?i=vue,html,css,js,nodejs,npm,pnpm,cloudflare,vercel,astro,tailwind,git,github,powershell,vscode&perline=5">

@@ -14,3 +14,10 @@ export function filterPosts(posts: Post[], options: FilterPostsOption = {}) {
         .filter(e => options.filterDraft ? (!e.data.draft) : true)
         .filter(e => options.filterUnlisted ? (!e.data.unlisted) : true)
 }
+
+
+export const sortByDate = (posts: CollectionEntry<'blog'>[]) => {
+	return [...posts].sort((a, b) => 
+        new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime()
+	);
+};

@@ -9,12 +9,14 @@ export async function GET(context) {
 		filterUnlisted: true,
 	});
 	return rss({
+  stylesheet: "/rss.xsl",
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `/blog/${post.slug}/`,
+			link: `/post/${post.slug}/`,
+		categories: post.data.tags ?? [],
 		})),
 	});
 }
