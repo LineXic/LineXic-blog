@@ -22,6 +22,7 @@ pubDate: '2025-06-14'
 error: failed to push some refs to ''
 
 查找答案之后先是采用 `git pull` 拉取下最新代码后面通过 `git push -f origin main` 强制提交
+值得注意的是 `-f` 属性有一定的风险，不适合在团队合作中使用，可以先通过 `git status` 查看冲突文件（一般会有 `<<<<<<<` 或 `=======` 标记）或者查看[这篇文章](https://blog.devstream.io/posts/open-a-pr-in-github/#63pr-%E4%BA%A7%E7%94%9F%E4%BA%86%E5%86%B2%E7%AA%81%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3)寻找解决办法
 
 ## SSH 登录
 
