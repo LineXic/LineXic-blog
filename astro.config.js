@@ -5,8 +5,6 @@ import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import vercel from '@astrojs/vercel';
 
-import icon from 'astro-icon';
-
 // https://astro.build/config
 export default defineConfig({
   // 请修改为你自己的线上地址，谢谢茄子
