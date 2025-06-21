@@ -5,7 +5,6 @@ on:
     branches:
       - 'main'
     paths:
-      - 'docs/**'
       - '.github/workflows/deploy.yml'
       - '.github/workflows/deploy-to-server.yml'
       - 'package.json'
@@ -37,8 +36,8 @@ jobs:
         uses: easingthemes/ssh-deploy@v5.1.0
         with:
           ARGS: "-avz --delete --progress"
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER}}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SOURCE: "/dist/"
           TARGET: "/www/wwwroot/linexic.top"
