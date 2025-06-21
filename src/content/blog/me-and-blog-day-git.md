@@ -29,6 +29,8 @@ error: failed to push some refs to ''
 在创建并修改好工作流之后便开始设置 GitHub Secrets 来同步推送了，设置好后却没提交完成，工作流显示
 > ⚠️ [INPUTS] Inputs not valid, aborting ...
 
+![ssh](https://www.linexic.top/img/blog/github-action-ssh.webp)
+
 大概就是 SSH 没连接上？后面我在服务器创建了 key
 
 ```shell
