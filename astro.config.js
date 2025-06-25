@@ -4,6 +4,8 @@ import sitemap from '@astrojs/sitemap';
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import vercel from '@astrojs/vercel';
+import remarkGfm from 'remark-gfm'
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,13 +15,21 @@ export default defineConfig({
   // 在根路径下（例如 `https://example.com/`）则填写 `/`
   base: process.env.NODE_ENV === "production" ? "/" : "",
 
-  integrations: [mdx(), sitemap(), svelte(), vercel()],
+  integrations: [mdx(), sitemap(), svelte(), vercel() ],
 
   markdown: {
     remarkRehype: {
       footnoteLabel: "脚注",
-      footnoteBackLabel: '文档内容的脚注',
-    }
+      footnoteBackLabel: '返回内容',
+    },
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          content: { type: 'text', value: '🔗' }
+        }
+      ],
+    ]
   },
  
 vite: {
