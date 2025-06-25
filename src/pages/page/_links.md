@@ -12,6 +12,7 @@
 头像:https://github.com/LineXic.png
 或者:https:/www.linexic.top/avatar.webp
 描述:难离难舍，想抱紧些
+RSS:https://www.linexic.top/rss.xml
 ```
 
 描述摘自陈奕迅的《单车》，在这里无特殊含义请勿过分解读
