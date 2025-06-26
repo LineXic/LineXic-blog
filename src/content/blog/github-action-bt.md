@@ -1,6 +1,6 @@
 ---
-title: '如何利用 Github Action 实现博客静态文件自动上传到宝塔'
-description: '经过一些折腾成功用上了那台年久不用的服务器'
+title: '如何利用 Github Action 实现 Astro  博客静态文件自动上传到宝塔'
+description: '经过一些折腾成功将 Astro 用上了那台年久不用的服务器，其他站点也陆续迁移进去'
 pubDate: '2025-06-25'
 ---
 
