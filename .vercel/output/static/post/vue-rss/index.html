@@ -31,7 +31,7 @@
 <span class="line"><span style="color:#E1E4E8">})</span></span>
 <span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">></span></span></code></pre>
 <blockquote>
-<p><a href="http://linexic.top/code/ArchivesView.txt">查看完整源码</a></p>
+<p><a href="http://linexic.top/code/ArchivesView.txt" rel="nofollow">查看完整源码<span>🔗</span></a></p>
 </blockquote>
 <p>这里用<code>axios</code>解决了跨域问题，<code>parseRSS</code>函数解析了RSS的XML数据，<code>formatDate</code>函数用于格式化日期。如果没有安装<code>axios</code>可以通过以下命令安装</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#9ECBFF"> install</span><span style="color:#9ECBFF"> axios</span></span>
@@ -39,13 +39,13 @@
 <span class="line"><span style="color:#B392F0">pnpm</span><span style="color:#9ECBFF"> add</span><span style="color:#9ECBFF"> axios</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#B392F0">yearn</span><span style="color:#9ECBFF"> add</span><span style="color:#9ECBFF"> axios</span></span></code></pre>
-<p>我们使用vue的路由（<a href="https://router.vuejs.org/zh/">router</a>）实现页面的跳转将它以</p>
+<p>我们使用vue的路由（<a href="https://router.vuejs.org/zh/" rel="nofollow">router<span>🔗</span></a>）实现页面的跳转将它以</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="vue"><code><span class="line"><span style="color:#E1E4E8"> &#x3C;</span><span style="color:#85E89D">el-breadcrumb-item</span><span style="color:#E1E4E8"> :</span><span style="color:#B392F0">to</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">{ path: </span><span style="color:#9ECBFF">'/archives'</span><span style="color:#E1E4E8"> }</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">>归档&#x3C;/</span><span style="color:#85E89D">el-breadcrumb-item</span><span style="color:#E1E4E8">></span></span></code></pre>
 <p>的形式添加到面包屑导航中。</p>
 <h2 id="问题">问题</h2>
 <p>本来以为所有工作已经完成却不想遇到了一个离谱的东西，如此GIF图
 <img src="https://s2.loli.net/2025/04/06/3DZSgVOazhwLlPr.gif" alt="离谱"></p>
-<p>后来询问ai也没有结果无奈询问群友原来还需要设置<a href="https://vercel.com/docs/project-configuration">vercel.json</a>果然在文件中加入</p>
+<p>后来询问ai也没有结果无奈询问群友原来还需要设置<a href="https://vercel.com/docs/project-configuration" rel="nofollow">vercel.json<span>🔗</span></a>果然在文件中加入</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
 <span class="line"><span style="color:#79B8FF">  "rewrites"</span><span style="color:#E1E4E8">: [{ </span><span style="color:#79B8FF">"source"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"/(.*)"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">"destination"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"/"</span><span style="color:#E1E4E8"> }]</span></span>
 <span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
