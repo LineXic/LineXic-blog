@@ -57,4 +57,4 @@ ssh-copy-id -i ~/.ssh/id_ed16618.pub 用户名@服务器IP
 好的就先这样吧，又是进步的一天
 
 [^1]: [deploy-to-server.yml](https://github.com/Leetfs/blog/blob/main/.github%2Fworkflows%2Fdeploy-to-server.yml)
-[^2]: <https://github.com/LineXic/LineXic-blog/blob/main/.github/workflows/deploy-to-server.yml>
+[^2]: <https://www.linexic.top/code/deploy-to-server.txt>
