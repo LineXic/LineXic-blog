@@ -17,35 +17,35 @@
 <p>输入一下命令：</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">apt</span><span style="color:#9ECBFF"> update</span></span></code></pre>
 <p>这是一个主要在新系统安装之后或安装新软件包之前调用的命令，更新</p>
-<p><img src="https://img.linexic.top/file/fcec169b4c4bdc28e6692.png" alt="Updating package list in Termux"></p>
+<p><img src="https://www.linexic.top/img/blog/fcec169b4c4bdc28e6692.webp" alt="Updating package list in Termux"></p>
 <p>将软件包升级到最新版本：</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">apt</span><span style="color:#9ECBFF"> upgrade</span></span></code></pre>
-<p><img src="https://img.linexic.top/file/997a7e8810ccbb902d011.png" alt="Package upgrade process in Termux"></p>
+<p><img src="https://www.linexic.top/img/blog/997a7e8810ccbb902d011.webp" alt="Package upgrade process in Termux"></p>
 <p>之后会选择yes或no，我们选择“Y“然后回车</p>
-<p><img src="https://img.linexic.top/file/5c703eff23100a60ae00e.png" alt="Prompt to choose yes or no during package upgrade"></p>
+<p><img src="https://www.linexic.top/img/blog/5c703eff23100a60ae00e.webp" alt="Prompt to choose yes or no during package upgrade"></p>
 <p>等待一会</p>
-<p><img src="https://img.linexic.top/file/0353798d81cbb65577657.png" alt="Waiting for package upgrade to complete">
+<p><img src="https://www.linexic.top/img/blog/0353798d81cbb65577657.webp" alt="Waiting for package upgrade to complete">
 获得wget包信息。</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">apt</span><span style="color:#9ECBFF"> update</span></span></code></pre>
 <p>要拥有共享存储，您需要授予Termux存储访问权限。不允许访问外部连接的存储设备。</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">termux-setup-storage</span></span></code></pre>
-<p><img src="https://img.linexic.top/file/ac06eeb33eb0cb1765721.png" alt="Granting Termux storage access">
+<p><img src="https://www.linexic.top/img/blog/ac06eeb33eb0cb1765721.webp" alt="Granting Termux storage access">
 安装wget，当系统询问您是否要继续时，请按Y并回车。</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">apt</span><span style="color:#9ECBFF"> install</span><span style="color:#9ECBFF"> wget</span></span></code></pre>
-<p><img src="https://img.linexic.top/file/90ac854bb0bc1172ab3ce.png" alt="Installing wget package in Termux"></p>
+<p><img src="https://www.linexic.top/img/blog/90ac854bb0bc1172ab3ce.webp" alt="Installing wget package in Termux"></p>
 <p>当询问您“是否要继续”时，按Y并回车。</p>
-<p><img src="https://img.linexic.top/file/174877f0922981ab33a38.png" alt="Prompt to continue installation"></p>
+<p><img src="https://www.linexic.top/img/blog/174877f0922981ab33a38.webp" alt="Prompt to continue installation"></p>
 <p>下载NetHunter安装文件。确保输入正确的地址。</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">wget</span><span style="color:#79B8FF"> -O</span><span style="color:#9ECBFF"> install-nethunter-termux</span><span style="color:#9ECBFF"> https://offs.ec/2MceZWr</span></span></code></pre>
-<p><img src="https://img.linexic.top/file/de3e7875b950eb41bf838.png" alt="Downloading NetHunter installation file"></p>
+<p><img src="https://www.linexic.top/img/blog/de3e7875b950eb41bf838.webp" alt="Downloading NetHunter installation file"></p>
 <p>更改权限以便可以执行文件：</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">chmod</span><span style="color:#9ECBFF"> +x</span><span style="color:#9ECBFF"> install-nethunter-termux</span></span></code></pre>
 <p><img src="https://linexic.top/img/blog/3cb3772ea606cb8178dbf.webp" alt="Changing file permissions for execution"></p>
 <p>键入以下命令以执行下载的安装文件</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">./install-nethunter-termux</span></span></code></pre>
-<p><img src="https://img.linexic.top/file/c0eca379366d830ef94d1.png" alt="Executing the downloaded installation file"></p>
+<p><img src="https://www.linexic.top/img/blog/c0eca379366d830ef94d1.webp" alt="Executing the downloaded installation file"></p>
 <p>安装将需要一段时间，当要求删除rootfs时，输入N。</p>
-<p><img src="https://img.linexic.top/file/698982ac5796d86bf37cf.png" alt="Prompt to delete rootfs during installation"></p>
+<p><img src="https://www.linexic.top/img/blog/698982ac5796d86bf37cf.webp" alt="Prompt to delete rootfs during installation"></p>
 <blockquote>
 <p>最后查看<a href="https://www.kali.org/" title="kali官网" rel="nofollow">kali官网<span>🔗</span></a>或者上网查询了解更多kali用法
 以上所有图源来自<a href="https://m.youtube.com/watch?v=KxOGyuGq0Ts&#x26;t=186s" title="油管视频文档" rel="nofollow">油管视频文档<span>🔗</span></a></p>

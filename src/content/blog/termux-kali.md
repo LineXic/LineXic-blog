@@ -35,7 +35,7 @@ apt update
 
 这是一个主要在新系统安装之后或安装新软件包之前调用的命令，更新
 
-![Updating package list in Termux](https://img.linexic.top/file/fcec169b4c4bdc28e6692.png)
+![Updating package list in Termux](https://www.linexic.top/img/blog/fcec169b4c4bdc28e6692.webp)
 
 将软件包升级到最新版本：
 
@@ -43,15 +43,15 @@ apt update
 apt upgrade
 ```
 
-![Package upgrade process in Termux](https://img.linexic.top/file/997a7e8810ccbb902d011.png)
+![Package upgrade process in Termux](https://www.linexic.top/img/blog/997a7e8810ccbb902d011.webp)
 
 之后会选择yes或no，我们选择“Y“然后回车
 
-![Prompt to choose yes or no during package upgrade](https://img.linexic.top/file/5c703eff23100a60ae00e.png)
+![Prompt to choose yes or no during package upgrade](https://www.linexic.top/img/blog/5c703eff23100a60ae00e.webp)
 
 等待一会
 
-![Waiting for package upgrade to complete](https://img.linexic.top/file/0353798d81cbb65577657.png)
+![Waiting for package upgrade to complete](https://www.linexic.top/img/blog/0353798d81cbb65577657.webp)
 获得wget包信息。
 
 ```bash
@@ -64,18 +64,18 @@ apt update
 termux-setup-storage
 ```
 
-![Granting Termux storage access](https://img.linexic.top/file/ac06eeb33eb0cb1765721.png)
+![Granting Termux storage access](https://www.linexic.top/img/blog/ac06eeb33eb0cb1765721.webp)
 安装wget，当系统询问您是否要继续时，请按Y并回车。
 
 ```bash
 apt install wget
 ```
 
-![Installing wget package in Termux](https://img.linexic.top/file/90ac854bb0bc1172ab3ce.png)
+![Installing wget package in Termux](https://www.linexic.top/img/blog/90ac854bb0bc1172ab3ce.webp)
 
 当询问您“是否要继续”时，按Y并回车。
 
-![Prompt to continue installation](https://img.linexic.top/file/174877f0922981ab33a38.png)
+![Prompt to continue installation](https://www.linexic.top/img/blog/174877f0922981ab33a38.webp)
 
 下载NetHunter安装文件。确保输入正确的地址。
 
@@ -83,7 +83,7 @@ apt install wget
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
 ```
 
-![Downloading NetHunter installation file](https://img.linexic.top/file/de3e7875b950eb41bf838.png)
+![Downloading NetHunter installation file](https://www.linexic.top/img/blog/de3e7875b950eb41bf838.webp)
 
 更改权限以便可以执行文件：
 
@@ -99,11 +99,11 @@ chmod +x install-nethunter-termux
 ./install-nethunter-termux
 ```
 
-![Executing the downloaded installation file](https://img.linexic.top/file/c0eca379366d830ef94d1.png)
+![Executing the downloaded installation file](https://www.linexic.top/img/blog/c0eca379366d830ef94d1.webp)
 
 安装将需要一段时间，当要求删除rootfs时，输入N。
 
-![Prompt to delete rootfs during installation](https://img.linexic.top/file/698982ac5796d86bf37cf.png)
+![Prompt to delete rootfs during installation](https://www.linexic.top/img/blog/698982ac5796d86bf37cf.webp)
 
 > 最后查看[kali官网](https://www.kali.org/ "kali官网")或者上网查询了解更多kali用法
 以上所有图源来自[油管视频文档](https://m.youtube.com/watch?v=KxOGyuGq0Ts&t=186s "油管视频文档")
