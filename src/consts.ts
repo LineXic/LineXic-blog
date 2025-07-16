@@ -1,8 +1,8 @@
 // 引入的图片对象，用于 Astro 的 <Image> 组件
 // 详见 https://docs.astro.build/en/guides/images/#image--astroassets
 import authorAvatarImage from "./assets/avatar.webp";
-import headerImageDay from "./assets/header_day.webp";
-import headerImageNight from "./assets/header_day.webp";
+import headerImageDay from "./assets/header.webp";
+import headerImageNight from "./assets/header.webp";
 
 // 网站的 <html> 语言标签
 export const SITE_LANGUAGE = "en";
