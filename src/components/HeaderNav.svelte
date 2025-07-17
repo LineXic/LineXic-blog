@@ -107,15 +107,15 @@
 <nav class="fixed w-full top-0 z-40">
     <div id="navBar" class={navBarClassNameBase + " " + navBarClassName} style={`--navBar-height: ${mobileNavHeight}rem`}>
         <div class="flex justify-between md:justify-center items-center gap-8 ps-3 pe-3 py-3">
-            <a href="./" class="block flex-none" title="首页">
-                <!-- <img src={SITE_AUTHOR_AVATAR} alt="Avatar" class="block w-12 h-12 rounded-full"> -->
+            <a href=" " class="block flex-none" title="首页">
+                <!-- < img src={SITE_AUTHOR_AVATAR} alt="Avatar" class="block w-12 h-12 rounded-full"> -->
                 <slot name="avatar"></slot>
-            </a>
+            </a >
             <ul class="hidden md:contents">
                 {#each SITE_MENU as e}
                     <li class="contents">
                         <a class="text-base leading-6 h-6 block text-black dark:text-white hover:text-accent-600 dark:hover:text-accent-500 transition-colors duration-200 flex-none"
-                           href={e.href} target={e.target}>{e.title}</a>
+                           href={e.href} target={e.target}>{e.title}</a >
                     </li>
                 {/each}
             </ul>
@@ -148,7 +148,7 @@
                     <li class="contents">
                         <a onclick={() => handleMobileMenuToggle(false)}
                            class="text-xl leading-6 h-14 flex items-center justify-center text-black dark:text-white hover:text-accent-600 dark:hover:text-accent-500 transition-colors duration-200 flex-none"
-                           href={e.href} target={e.target}>{e.title}</a>
+                           href={e.href} target={e.target}>{e.title}</a >
                     </li>
                 {/each}
             </ul>
