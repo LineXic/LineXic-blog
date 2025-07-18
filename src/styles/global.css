@@ -30,6 +30,10 @@
     --color-accent-950: var(--color-amber-950);
 }
 
+img:not([src]) {
+    background: #f0f0f0;
+    min-height: 200px;
+}
 
 :root {
     word-wrap: break-word;

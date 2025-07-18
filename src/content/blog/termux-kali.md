@@ -3,7 +3,6 @@ title: '【termux】安装kali'
 description: '折腾termux的一篇'
 pubDate: '2023-10-03'
 ---
-
 ![封面图](https://linexic.top/img/kali.webp)
 
 ## 你需要准备的
