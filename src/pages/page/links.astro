@@ -93,9 +93,10 @@ import FormattedDate from "@/components/FormattedDate.astro";
   <script>
 		import twikoo from "twikoo";
 		twikoo({
-		  envId: "https://talk.linexic.top", // your environment ID or url
+		  envId: "https://talk.linexic.top/.netlify/functions/twikoo", // your environment ID or url
+
 		  el: "#tcomment", // the container ID which will show the comment
-		  lang: "zh-cn", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+		  lang: "zh-CN", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
 		}).then(() => {
 		  console.log("comment loading success");
 		});
