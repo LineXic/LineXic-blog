@@ -4,7 +4,7 @@ description: '暑假工已经结束，作者回到学校'
 pubDate: '2024-09-01'
 ---
 
-![封面](https://linexic.top/img/yue-2.webp)
+![封面](https://cdn.linexic.top/gh/LineXic/img/img/yue-2.webp)
 
 「体验生活期」可算结束了，今天是9.1日，一些初中学校和小学已经开学了在这一天我历经41天的「历练」结束了😄算下来也已经很久有更新「前端」部分的博客了（因为要干活嘛）
 

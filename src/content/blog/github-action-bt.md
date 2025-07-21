@@ -50,7 +50,7 @@ ssh-copy-id -i ~/.ssh/id_ed16618.pub 用户名@服务器IP
 - SERVER_IP：服务器 IP 地址
 - SERVER_USER：SSH 用户名（如 root 或 deployer）
 
-![github-action-secrets](https://www.linexic.top/img/blog/github-action-secrets.webp)
+![github-action-secrets](https://cdn.linexic.top/gh/LineXic/img/img/blog/github-action-secrets.webp)
 
 我更改了一下工作流的内容使它更符合我的博客的特点，可以对比一下 [^2]
 

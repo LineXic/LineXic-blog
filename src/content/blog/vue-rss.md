@@ -68,7 +68,7 @@ yearn add axios
 本来以为所有工作已经完成却不想遇到了一个离谱的东西，如此GIF图
 ![离谱](https://s2.loli.net/2025/04/06/3DZSgVOazhwLlPr.gif)
 
-后来询问ai也没有结果无奈询问群友原来还需要设置[vercel.json](https://vercel.com/docs/project-configuration)果然在文件中加入
+后来询问ai也没有结果无奈询问群友原来还需要设置 [vercel.json](https://vercel.com/docs/project-configuration) 果然在文件中加入
 
 ```json
 {

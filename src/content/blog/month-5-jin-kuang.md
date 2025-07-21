@@ -9,17 +9,17 @@ pubDate: '2025-04-12'
 ## 新年
 
 按照我们那里的习俗过年是需要「走亲戚的」小辈也会给长辈磕头百年，图为我拜年的时候
-![轮番拜年](https://www.linexic.top/img/blog/bainian.webp "拜年")
+![轮番拜年](https://cdn.linexic.top/gh/LineXic/img/img/blog/bainian.webp "拜年")
 
 ## 球拍
 
 今年我也那么大了受到的红包有点少，但架不住我有弟弟妹妹啊，他们的红包都是我的哈哈哈，最终我用我们的压岁钱买了一把球拍子。
-![我的球拍子](https://www.linexic.top/img/blog/1-qiupai.webp)
+![我的球拍子](https://cdn.linexic.top/gh/LineXic/img/img/blog/1-qiupai.webp)
 拍子不是很好，但它是我人生中第一把球拍~~为我打败林丹奠定了基础~~
 
 又过了几个月也就是前几个星期我又入手了一把川崎拍
 
-![川崎拍子](https://www.linexic.top/img/blog/2-qiupai.webp)
+![川崎拍子](https://cdn.linexic.top/gh/LineXic/img/img/blog/2-qiupai.webp)
 
 ## 2025
 

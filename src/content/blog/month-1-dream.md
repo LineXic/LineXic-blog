@@ -4,7 +4,7 @@ description: '记录了作者家人以为作者中考失利，并且开始给作
 pubDate: '2024-08-07'
 ---
 
-![封面](https://linexic.top/img/yue.webp)
+![封面](https://cdn.linexic.top/gh/LineXic/img/img/yue.webp)
 
 距离我上次更新博客已经过去了一个月左右，本来这次月记是想着到整一月的时候更新，可又想想那个时候可能不一定有时间就现在趁着还有点「海绵水」努力的挤点
 
@@ -52,6 +52,6 @@ pubDate: '2024-08-07'
 
 可能有人说我悲观主义，甚至认为我认为梦想与现实是不可能交汇的，然而不然，因为有了北斗星的指引你说不定能找到自己的理想从而驶出这片大海，或者因为有可北斗星的指引，你更加努力追求，从而说不定能造出「火箭」虽然这说的都是玩笑话，但是追求梦想与理想的劲头还是要有的
 
-![图片](https://www.linexic.top/img/blog/ebde230ff420b219d1d16.webp)
+![图片](https://cdn.linexic.top/gh/LineXic/img/img/blog/ebde230ff420b219d1d16.webp)
 
 晚安，祝好梦

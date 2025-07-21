@@ -3,7 +3,7 @@ title: '读余华《第七天》'
 description: '初次读余华老师的书选了一本'
 pubDate: '2025-03-01'
 ---
-![第七天](https://www.linexic.top/img/blog/801CA150057601C7BD03AD282B3A191CEA4B446A_size180_w1080_h1410.webp "第七天")
+![第七天](https://cdn.linexic.top/gh/LineXic/img/img/blog/801CA150057601C7BD03AD282B3A191CEA4B446A_size180_w1080_h1410.webp "第七天")
 
 ## 震撼
 
@@ -15,7 +15,7 @@ pubDate: '2025-03-01'
 
 去世之后就开始讲主角小时候的遭遇——在火车的厕所上滑下来后被杨金彪捡起，因为杨金彪结婚的事情主角差点又被丢在幼儿园门口这一段的画面感很强分享一下
 
-![第三天](https://www.linexic.top/img/blog/diqitian.webp)
+![第三天](https://cdn.linexic.top/gh/LineXic/img/img/blog/diqitian.webp)
 
 小殷，李青，面馆老板，李月珍，二十七个婴儿被医院当作“医疗垃圾”鼠妹和伍超的悲剧无不让人心头一颤，市长浓妆艳抹来火化且进入VIP套房等待有让人感觉钱对于权还是略逊一色同时又会抱怨社会和政府的不作为，乱作为。余华是很会写悲剧的就像史铁生很会写散文。好在余华最后还是平静的谢幕：杨飞找到杨金彪，伍超来找刘梅……
 

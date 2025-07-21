@@ -5,31 +5,31 @@
 </blockquote>
 <h2 id="准备">准备</h2>
 <p>打开<a href="https://www.oracle.com/java/technologies/downloads/" rel="nofollow">Oracle官网<span>🔗</span></a>找到适合自己系统的java</p>
-<p><img src="https://www.linexic.top/img/blog/pEa0FVP.webp" alt="下载oracle">
+<p><img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa0FVP.webp" alt="下载oracle">
 下载完成后双击安装，一直下一步即可，值得注意的是一般软件不要安装到C盘，因为C盘是系统盘，安装到C盘可能会导致启动电脑慢等问题</p>
 <h2 id="配置java">配置java</h2>
 <p>键入<code>win + x</code>打开搜索控制面板</p>
-<p><img src="https://www.linexic.top/img/blog/pEa0arR.webp" alt="配置java"></p>
+<p><img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa0arR.webp" alt="配置java"></p>
 <p>点击环境变量并且新建</p>
-<p><img src="https://www.linexic.top/img/blog/pEa0dq1.webp" alt="新建环境变量"></p>
+<p><img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa0dq1.webp" alt="新建环境变量"></p>
 <ul>
 <li>变量名：JAVA_HOME</li>
 <li>变量值：为安装的java路径</li>
 </ul>
 <p>双击系统变量中的Path，点击新建<code>%JAVA_HOME%\bin</code>
-<img src="https://www.linexic.top/img/blog/pEa06Re.webp" alt="新建"></p>
+<img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa06Re.webp" alt="新建"></p>
 <p>完成后保存，打开cmd输入<code>java -version</code>查看是否安装成功</p>
 <h2 id="下载服务端">下载服务端</h2>
 <blockquote>
 <p><a href="https://files.minecraftforge.net/net/minecraftforge/forge/" rel="nofollow">下载Forge<span>🔗</span></a></p>
 </blockquote>
 <p>下载好后把它拖拽到一个新建的文件夹中</p>
-<p><img src="https://www.linexic.top/img/blog/pEaBkLR.webp" alt="pEaBkLR.png"></p>
+<p><img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEaBkLR.webp" alt="pEaBkLR.png"></p>
 <h2 id="启动服务器">启动服务器</h2>
-<p>在那个文件夹内在右上角找到<code>文件</code>然后右边使用管理员身份打开后键入</p>
+<p>在那个文件夹内在右上角找到 <code>文件</code> 然后右边使用管理员身份打开后键入</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#B392F0">java</span><span style="color:#79B8FF"> -Xmx最大值g</span><span style="color:#79B8FF"> -Xms最小值g</span><span style="color:#79B8FF"> -jar</span><span style="color:#9ECBFF"> 下载的文件名字.jar</span></span></code></pre>
 <p>出现这个页面就可以安装了，安装路径最好是forge所在的路径下
-<img src="https://www.linexic.top/img/blog/pEaDih8.webp" alt="pEaDih8.png"></p>
+<img src="https://cdn.linexic.top/gh/LineXic/img/img/blog/pEaDih8.webp" alt="pEaDih8.png"></p>
 <p>等待安装基本文件后就可以在cmd中输入</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#B392F0">java</span><span style="color:#79B8FF"> -jar</span><span style="color:#9ECBFF"> minecraft_server.服务端端口号.jar</span><span style="color:#79B8FF"> --nogui</span></span></code></pre>
 <p>来启动服务器了，如果做出修改需要键入<code>stop</code>来停止服务器，再键入上一步来启动服务器</p>

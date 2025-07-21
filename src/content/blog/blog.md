@@ -4,7 +4,7 @@ description: '四个月建设博客颇有心得'
 pubDate: '2023-12-17'
 ---
 
-![封面](https://linexic.top/img/blog.webp)
+![封面](https://cdn.linexic.top/gh/LineXic/img/img/blog.webp)
 
 ## 起因
 
