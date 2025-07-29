@@ -13,15 +13,6 @@ const q = "astro-pagefind"; // 默认搜索关键词
 >
     <MarkdownBody class="mt-6">
         <markdownData.Content />
-        <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
-        <script>
-            document.addEventListener("astro:page-load", () => {
-                const searchInput = document.querySelector("#search input");
-                if (searchInput) {
-                    searchInput.value = "{q}";
-                    searchInput.dispatchEvent(new Event("input"));
-                }
-            });
-        </script>
+        <Search id="search" class="pagefind-ui" uiOptions={{ showImages: false }} />
     </MarkdownBody>
 </Layout>
