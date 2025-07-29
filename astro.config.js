@@ -6,9 +6,14 @@ import tailwindcss from "@tailwindcss/vite";
 import vercel from '@astrojs/vercel';
 import remarkGfm from 'remark-gfm'
 import rehypeExternalLinks from 'rehype-external-links';
+import pagefind from "astro-pagefind";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+   build: {
+    format: "file",
+  },
   // 请修改为你自己的线上地址，谢谢茄子
   site: 'https://www.linexic.top',
   // 如果你的网站在子路径下（例如 `https://example.com/koi/`），则填写 `/koi/`

@@ -29,6 +29,7 @@ export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "友链", href: "./page/links/", target: "" },
     { title: "归档", href: "./page/archive/", target: "" },
     { title: "留言", href: "./page/guestbook", target: "" },
+    { title: "搜索", href: "./page/search", target: "" },
 ]
 
 // 网站横幅背景图片（明亮主题）

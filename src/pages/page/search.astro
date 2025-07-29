@@ -1,0 +1,27 @@
+---
+import Search from "astro-pagefind/components/Search";
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_search.md";
+const q = "astro-pagefind"; // 默认搜索关键词
+
+---
+
+<Layout
+    title="搜索 - LineXic书屋"
+    description="LineXic书屋的搜索功能,可以搜索文章内容"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+        <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+        <script>
+            document.addEventListener("astro:page-load", () => {
+                const searchInput = document.querySelector("#search input");
+                if (searchInput) {
+                    searchInput.value = "{q}";
+                    searchInput.dispatchEvent(new Event("input"));
+                }
+            });
+        </script>
+    </MarkdownBody>
+</Layout>
