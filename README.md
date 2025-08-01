@@ -2,7 +2,7 @@
 
 Koi (こい, 恋) 是由 [tcdw](https://www.tcdw.net) 为他不存在的女儿制作的 [Astro](https://astro.build/) 静态博客模板。
 
-![博客截图](https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.linexic.top/)
+![博客截图](https://image.thum.io/get/allowwebp/wait/20/width/600/crop/950/https://www.linexic.top/)
 
 ## 特性
 
