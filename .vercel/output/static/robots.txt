@@ -1,7 +1,7 @@
 
 User-agent: *
 Allow: /
-Disallow：/img/
-Disallow：/font/
+Disallow: /img/
+Disallow: /font/
 
 Sitemap: https://www.linexic.top/sitemap-0.xml
