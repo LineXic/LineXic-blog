@@ -6,11 +6,11 @@ pubDate: '2025-07-30'
 
 ## 前言
 
-在之前在[回答【博客作者呀，我想采访你这 9 个问题！】](https://www.linexic.top/post/2025-blog-9-wennti)中我就表示要添加一个新功能（搜索或模式切换）如今搜索模式也是安排上啦，这里使用了 [Astro-Pagefind](https://github.com/shishkin/astro-pagefind) 上手也是非常简单。这次构建成功也得益于我思维的转变，一开始我是想将搜索以组件的形式镶嵌在导航栏的，直到近几天我才猛然想到不止可以以组件的形式镶嵌在页面，也可以单开一个页面啊，于是我开始折腾，下面是一些过程
+在之前在[《回答【博客作者呀，我想采访你这 9 个问题！】》](https://www.linexic.top/post/2025-blog-9-wennti)中我就表示要添加一个新功能（搜索或模式切换）如今搜索模式也是安排上啦，这里使用了 [Astro-Pagefind](https://github.com/shishkin/astro-pagefind) 上手也是非常简单。这次构建成功也得益于我思维的转变，一开始我是想将搜索以组件的形式镶嵌在导航栏的，直到近几天我才猛然想到不止可以以组件的形式镶嵌在页面，也可以单开一个页面啊，于是我开始折腾，下面是一些过程
 
 ## 如何做
 
-> 最开始我参考了这个[如何使用 Pagefind 为 Astro 网站添加全文搜索](https://coderfee.com/blog/2024/astro-with-pagefind/)和 [Astro-Pagefind](https://scottwillsey.com/astro-pagefind/) 教程对我有一定的帮助
+> 最开始我参考了这个[《如何使用 Pagefind 为 Astro 网站添加全文搜索》](https://coderfee.com/blog/2024/astro-with-pagefind/)和 [《Astro-Pagefind》](https://scottwillsey.com/astro-pagefind/) 教程对我有一定的帮助
 
 首先通过以下命令安装
 

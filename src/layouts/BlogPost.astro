@@ -8,7 +8,6 @@ import BaseLayout from "./BaseLayout.astro";
 import Container from "../components/Container.astro";
 import MarkdownBody from "../components/MarkdownBody.astro";
 
-
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
@@ -26,6 +25,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					{updatedDate && <span class="opacity-60">(Last updated on <FormattedDate date={pubDate}/>)</span>}
 				</div>
 				<MarkdownBody class="mt-6">
+					<Content components={{ pre: Code }} />
 					<slot />
 				</MarkdownBody>
 			</article>
