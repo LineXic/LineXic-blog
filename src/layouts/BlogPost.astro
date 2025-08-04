@@ -25,7 +25,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					{updatedDate && <span class="opacity-60">(Last updated on <FormattedDate date={pubDate}/>)</span>}
 				</div>
 				<MarkdownBody class="mt-6">
-					<Content components={{ pre: Code }} />
 					<slot />
 				</MarkdownBody>
 			</article>
