@@ -54,13 +54,25 @@ java -Xmx最大值g -Xms最小值g -jar 下载的文件名字.jar
 出现这个页面就可以安装了，安装路径最好是forge所在的路径下
 ![pEaDih8.png](https://cdn.linexic.top/gh/LineXic/img/img/blog/pEaDih8.webp)
 
-等待安装基本文件后就可以在cmd中输入
+你可以新建 `文本文档` 后将一下命令粘贴进文本文件中
 
 ```shell
-java -jar minecraft_server.服务端端口号.jar --nogui
+@echo off
+
+set JAVA_PATH="java jdk路径\bin\java.exe"
+
+echo 正在使用 Java jdk 启动 Forge 服务器...
+echo Java 路径: %JAVA_PATH%
+
+REM 启动 Forge 服务器
+%JAVA_PATH% -Xmx4G -Xms2G -jar Forge 服务端文件名.jar --nogui
+
+echo.
+echo 服务器已关闭。
+pause
 ```
 
-来启动服务器了，如果做出修改需要键入`stop`来停止服务器，再键入上一步来启动服务器
+保存为.bat文件后双击即可启动服务器了，如果做出修改需要键入`stop`来停止服务器，再键入上一步来启动服务器
 
 如果你的服务器在第一次启动过程中无故嘛没启动成功可以先在文件夹中找到`eula.txt`文件，将`eula=false`改为`eula=true`然后保存证明你同意他们的协议
 关于server.properties文件内的配置请查看百科
