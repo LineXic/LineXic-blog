@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  command = "pnpm run build:pagefind"
+  command = "pnpm run build"
   publish = "dist"
   base = "/"
 
