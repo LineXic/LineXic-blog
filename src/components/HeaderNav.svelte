@@ -2,34 +2,26 @@
     import {SITE_MENU} from "@/consts";
     import {onDestroy, onMount} from 'svelte';
     import type {OptionalValue} from "@/utils/types";
-
     /*interface Props {
         avatar?: import('svelte').Snippet;
     }
-
     let { avatar }: Props = $props();*/
-
     const navBarClassNameBase = "absolute -translate-x-2/4 left-2/4 h-[var(--navBar-height)] md:h-[inherit] backdrop-blur-2xl bg-white/80 dark:bg-primary-950 dark:bg-primary-950/80 shadow-2xl [transition:top_150ms,height_400ms_cubic-bezier(.47,1.64,.41,.8)] overflow-clip";
     const navBarClassNameTop = "rounded-[2.25rem] top-4 w-[calc(100dvw-2rem)] md:w-max";
     const navBarClassNameNormal = "w-full top-0 shadow-[rgba(0,0,0,0.15)]";
-
     // 移动端菜单 a11y ID
     const mobileMenuId = "koi-mobile-menu-list";
-
     // 高度基准数值 (rem)
     const mobileNavBaseHeight = 4.5;
     const mobileMenuBaseHeight = 1.5;
     const mobileMenuItemHeight = 3.5;
-
     // 外部参考元素
     let navBackground: OptionalValue<HTMLElement> = $state();
     let navScrollNotice: OptionalValue<HTMLElement> = $state();
-
     // 状态机
     let navBarClassName = $state(navBarClassNameTop);
     let mobileMenuOpen = $state(false);
     let mobileNavHeight = $state(mobileNavBaseHeight);
-
     // 为什么要这么麻烦的计算导航栏的高度呢？
     // 因为如果不手动指定高度，浏览器不知道你要过渡到什么高度，就会导致 transition 失效
     // 参考 https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css
@@ -40,7 +32,6 @@
             mobileNavHeight = mobileNavBaseHeight;
         }
     })
-
     function handleScroll() {
         if (navBackground && window.scrollY > navBackground.getBoundingClientRect().height * (1 / 1.618)) {
             navBarClassName = navBarClassNameNormal;
@@ -55,21 +46,17 @@
             }
         }
     }
-
     // 移动端菜单按钮及动画
     let menuTimer: any;
     let menuItemTimer: any;
-
     let menuStep = $state(1);
     let menuStepMiddle = $state(1);
     let menuItemHidden = $state(true);
-
     function handleMobileMenuToggle(to = !mobileMenuOpen) {
         mobileMenuOpen = to;
         clearTimeout(menuTimer);
         clearTimeout(menuItemTimer);
         menuStep = 2;
-
         // 如果菜单已经打开，执行开启动画，反之执行关闭动画
         if (mobileMenuOpen) {
             menuStepMiddle = 1;
@@ -89,14 +76,12 @@
             }, 400);
         }
     }
-
     onMount(() => {
         navBackground = document.getElementById("navBackground");
         navScrollNotice = document.getElementById("navScrollNotice");
         globalThis?.addEventListener?.("scroll", handleScroll);
         handleScroll();
     });
-
     onDestroy(() => {
         clearTimeout(menuTimer);
         clearTimeout(menuItemTimer);
