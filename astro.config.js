@@ -6,19 +6,23 @@ import tailwindcss from "@tailwindcss/vite";
 import remarkGfm from 'remark-gfm'
 import rehypeExternalLinks from 'rehype-external-links';
 import pagefind from "astro-pagefind";
-
+import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
-   build: {
+  build: {
     format: "file",
   },
+    output: 'server',
+    adapter: netlify({
+      edgeMiddleware: true,
+    }),
   // 请修改为你自己的线上地址，谢谢茄子
   site: 'https://www.linexic.top',
   // 如果你的网站在子路径下（例如 `https://example.com/koi/`），则填写 `/koi/`
   // 在根路径下（例如 `https://example.com/`）则填写 `/`
   base: process.env.NODE_ENV === "production" ? "/" : "",
 
-  integrations: [mdx(), sitemap(), svelte(), pagefind()],
+  integrations: [mdx(), sitemap(), svelte(), pagefind(),netlify()],
 
   markdown: {
     remarkRehype: {
@@ -35,7 +39,7 @@ export default defineConfig({
     ]
   },
  
-vite: {
-  plugins: [tailwindcss()]
-}
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
