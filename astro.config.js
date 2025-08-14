@@ -12,7 +12,6 @@ export default defineConfig({
   build: {
     format: "file",
   },
-    output: 'server',
     adapter: netlify({
       edgeMiddleware: true,
     }),
