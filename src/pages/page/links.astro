@@ -4,7 +4,6 @@ import Friend from "../../components/friend/Friend.astro";
 import FriendList from "../../components/friend/FriendList.astro";
 import FriendCategoryTitle from "../../components/friend/FriendCategoryTitle.astro";
 import MarkdownBody from "../../components/MarkdownBody.astro";
-import Comment from "../../components/Comment.astro";
 import * as markdownData from "./_links.md";
 import FormattedDate from "@/components/FormattedDate.astro";
 ---
@@ -77,7 +76,9 @@ import FormattedDate from "@/components/FormattedDate.astro";
         <Friend url="https://whbbit.cn/" name="月空人" description="偶尔写些博客，发发牢骚" avatarUrl="https://7.isyangs.cn/78/6795a3b5015e1-78.webp" />
         <Friend url="https://atpx.com/" name="atpX" description="atpX" avatarUrl="https://atpx.com/favicon-32x32.png" />
         <Friend url="https://coderfee.com/" name="Coderfee’s Blog" description="一个关于编程、AI 应用、读书笔记和个人随笔的博客" avatarUrl="https://coderfee.com/favicon.svg" />
-      </FriendList>
+        <Friend url="https://zeapi.ink/" name="梦泽公共API-ZeAPI" description="只为提供专业的公共API服务集成平台" avatarUrl="https://zeapi.ink/favicon.svg" />
+        <Friend url="https://www.langhai.net" name="浪海导航" description="浪海导航 ~ 收录各种类型的博客以及论坛网站" avatarUrl="https://www.langhai.net/assets/images/langhai-logo.png" />
+    </FriendList>
         <FriendCategoryTitle>探索 - 驶入下一个站点</FriendCategoryTitle>
       <FriendList>
         <Friend url="https://www.travellings.cn/go.html" name="开往 - 友链接力" description="让传统友链“活跃”，让网页相互接力，让流量相互流动，让网络开放起来" avatarUrl="https://www.travellings.cn/assets/travelling.png" />
@@ -85,27 +86,10 @@ import FormattedDate from "@/components/FormattedDate.astro";
         <Friend url="https://www.boyouquan.com/planet-shuttle" name="博友圈" description="博友人的圈子" avatarUrl="https://www.boyouquan.com/assets/favicon.ico" />
         <Friend url="https://travel.moe/go?travel=on" name="异次元之旅" description="萌国ICP备案,号称萌ICP备,简称萌备" avatarUrl="https://icp.gov.moe/favicon.ico" />
       </FriendList>
-      <FriendCategoryTitle>其他 - 工具站</FriendCategoryTitle> 
-      <FriendList>
-        <Friend url="https://zeapi.ink/" name="梦泽公共API-ZeAPI" description="只为提供专业的公共API服务集成平台" avatarUrl="https://zeapi.ink/favicon.svg" />
-        <Friend url="https://www.langhai.net" name="浪海导航" description="浪海导航 ~ 收录各种类型的博客以及论坛网站" avatarUrl="https://www.langhai.net/assets/images/langhai-logo.png" />
-      </FriendList>
       
     <MarkdownBody class="mt-6">
         <markdownData.Content />
     </MarkdownBody>
-<Comment />
-  <script>
-		import twikoo from "twikoo";
-		twikoo({
-		  envId: "https://talk.linexic.top/.netlify/functions/twikoo", // your environment ID or url
-
-		  el: "#tcomment", // the container ID which will show the comment
-		  lang: "zh-CN", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
-		}).then(() => {
-		  console.log("comment loading success");
-		});
-	</script>
 
 <!--
     <script src="https://giscus.app/client.js"
