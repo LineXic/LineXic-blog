@@ -169,3 +169,12 @@ img:not([src]) {
     #search .pagefind-ui__result-thumb {
      display: none;
     }
+/* 鱼塘 */
+    .random-button-container a {
+        text-decoration: none !important;
+        border-bottom: none !important
+}
+    #stats-container a {
+        text-decoration: none !important;
+        border-bottom: none !important;
+}

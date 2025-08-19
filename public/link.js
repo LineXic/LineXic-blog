@@ -1,7 +1,7 @@
 import YML from 'yamljs';
 import fs from 'fs';
 
-const blacklist = ["承挨的小屋", "bbb-lsy07", "友站名称3"]; // 由于某种原因，不想订阅的列表
+const blacklist = ["承挨的小屋", "bbb-lsy07"]; // 由于某种原因，不想订阅的列表
 
 let friends = [],
     data_f = YML.parse(fs.readFileSync('public/link.yml').toString().replace(/(?<=rss:)\s*\n/g, ' ""\n'));

@@ -11,5 +11,5 @@
         }
     }
 </script>
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/willow-god/Friend-Circle-Lite/main/fclite.min.css">
-<script src="https://fastly.jsdelivr.net/gh/willow-god/Friend-Circle-Lite/main/fclite.min.js"></script>
+<link rel="stylesheet" href="https://cdn.linexic.top/gh/willow-god/Friend-Circle-Lite/main/fclite.min.css">
+<script src="https://cdn.linexic.top/gh/willow-god/Friend-Circle-Lite/main/fclite.min.js"></script>
