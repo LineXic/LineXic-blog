@@ -11,13 +11,12 @@
     "build": "astro build",
     "preview": "astro preview --host",
     "astro": "astro",
-    "build:pagefind": "astro build && pagefind --site dist --output-subdir _pagefind"
+    "build:pagefind": "astro build && pagefind --site dist --output-subdir _pagefind",
+    "friend": "node public/link.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.3.1",
-    "@astrojs/netlify": "^6.5.6",
-    "@astrojs/react": "^4.3.0",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
     "@astrojs/svelte": "^7.1.0",
@@ -25,7 +24,6 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.3",
-    "astro-icon": "^1.1.5",
     "markdown-to-text": "^0.1.1",
     "prettier": "^3.6.2",
     "rehype-external-links": "^3.0.0",
