@@ -12,7 +12,7 @@
     "preview": "astro preview --host",
     "astro": "astro",
     "build:pagefind": "astro build && pagefind --site dist --output-subdir _pagefind",
-    "friend": "node public/link.js"
+    "build:friend": "node public/link.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
