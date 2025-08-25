@@ -1,0 +1,11 @@
+{
+    "buildCommand": "pnpm run build",
+    "outputDirectory": "./dist",
+    "redirects": [
+      {
+        "source": "$host",
+        "destination": "$wwwhost",
+        "statusCode": 301
+      }
+    ]
+}
