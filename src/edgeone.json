@@ -1,12 +1,5 @@
 {
     "buildCommand": "pnpm run build",
     "outputDirectory": "./dist",
-    "installCommand": "pnpm install",
-    "redirects": [
-      {
-        "source": "$host",
-        "destination": "$wwwhost",
-        "statusCode": 301
-      }
-    ]
+    "installCommand": "pnpm install"
 }
