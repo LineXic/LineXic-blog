@@ -3,7 +3,6 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
-import remarkGfm from 'remark-gfm'
 import rehypeExternalLinks from 'rehype-external-links';
 import pagefind from "astro-pagefind";
 // https://astro.build/config
@@ -20,10 +19,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), svelte(), pagefind()],
 
   markdown: {
-    remarkRehype: {
-      footnoteLabel: "脚注",
-      footnoteBackLabel: '返回内容',
-    },
     rehypePlugins: [
       [
         rehypeExternalLinks,

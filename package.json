@@ -27,7 +27,6 @@
     "markdown-to-text": "^0.1.1",
     "prettier": "^3.6.2",
     "rehype-external-links": "^3.0.0",
-    "remark-gfm": "^4.0.1",
     "sharp": "^0.33.5",
     "svelte": "^5.37.0",
     "tailwind-merge": "^3.3.1",

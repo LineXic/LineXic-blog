@@ -3,7 +3,6 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import {filterPosts, sortByDate} from "../../utils/misc"; // 新增 sortByDate 导入
 import Comment from "../../components/Comment.astro";
-
 export async function getStaticPaths() {
 	const posts = filterPosts(await getCollection('blog'), {
 		filterDraft: true,
@@ -102,25 +101,3 @@ const config = {
 		  console.log("comment loading success");
 		});
 	  </script>
- 
-	<!-- 
-<div>
-	<script src="https://giscus.app/client.js"
-        data-repo="LineXic/LineXic-blog"
-        data-repo-id="R_kgDOO7l1xw"
-        data-category="General"
-        data-category-id="DIC_kwDOO7l1x84CtxHu"
-        data-mapping="title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-</div>
--->
-</BlogPost>
