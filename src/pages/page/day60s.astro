@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_day60s.md";
+---
+
+<Layout
+    title="60秒看世界 - LineXic书屋"
+    description="60秒看世界, 一个60秒内看完的世界"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />

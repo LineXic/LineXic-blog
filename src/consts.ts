@@ -27,10 +27,11 @@ export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "首页", href: "./", target: "" },
     { title: "关于", href: "./page/about/", target: "" },
     { title: "友链", href: "./page/links/", target: "" },
+    { title: "鱼塘", href: "./page/friends", target: "" },
     { title: "归档", href: "./page/archive/", target: "" },
     { title: "留言", href: "./page/guestbook", target: "" },
-    { title: "鱼塘", href: "./page/friends", target: "" },
     { title: "搜索", href: "./page/search", target: "" },
+    { title: "60秒", href: "./page/day60s", target: "" },
 ]
 
 // 网站横幅背景图片（明亮主题）
