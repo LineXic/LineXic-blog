@@ -88,51 +88,6 @@ img:not([src]) {
   }
 }
 
-/* Pagefind search UI global default styles */
-:root {
-  --pagefind-ui-scale: 0.8;
-  --pagefind-ui-primary: var(--menu-surface);
-  --pagefind-ui-text: hsl(240, 2%, 36%);
-  --pagefind-ui-message-text: var(--color-accent-300);
-  --pagefind-ui-result-title-text: var(--brand);
-  --pagefind-ui-result-text: #a9a9a9;
-  --pagefind-ui-background: var(--surface1);
-  --pagefind-input-background: var(--brand);
-  --pagefind-ui-border: #413f3f;
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 8px;
-  --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: sans-serif;
-  --pagefind-button-background: var(--pagefind-input-background);
-  --pagefind-button-color: var(--pagefind-ui-message-text);
-}
-
-/* Light theme overrides */
-[data-theme="light"] {
-  --pagefind-ui-primary: var(--menu-surface);
-  --pagefind-ui-text: hsl(252, 26%, 96%);
-  --pagefind-ui-message-text: var(--color-accent-300);
-  --pagefind-ui-result-title-text: var(--brand);
-  --pagefind-ui-result-text: #a9a9a9;
-  --pagefind-ui-background: var(--surface1);
-  --pagefind-input-background: var(--brand);
-  --pagefind-ui-border: #413f3f;
-  --pagefind-button-color: var(--pagefind-ui-text);
-}
-
-/* Dark theme overrides */
-[data-theme="dark"] {
-  --pagefind-ui-primary: var(--menu-surface);
-  --pagefind-ui-text: hsl(252, 26%, 96%);
-  --pagefind-ui-message-text: var(--pagefind-ui-text);
-  --pagefind-ui-result-title-text: var(--accent1);
-  --pagefind-ui-result-text: #a9a9a9;
-  --pagefind-ui-background: var(--surface1);
-  --pagefind-input-background: var(--brand);
-  --pagefind-ui-border: var(--brand);
-}
-
 /* Fish pond styles */
 .random-button-container a {
   text-decoration: none !important;

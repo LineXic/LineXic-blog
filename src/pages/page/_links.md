@@ -9,7 +9,7 @@
 ## 我的个人信息
 
 ```yaml
-标题:LineXic书屋
+标题:LineXic\'s website
 链接:https://www.linexic.top
 头像:https://github.com/LineXic.png
 或者:https:/www.linexic.top/avatar.webp
