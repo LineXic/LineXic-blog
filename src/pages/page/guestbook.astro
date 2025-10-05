@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_guestbook.md";
+// 添加 Twikoo 评论组件
+import Comment from "../../components/Comment.astro";
+---
+
+<Layout
+    title="留言 - LineXic书屋"
+    description="LineXic书屋的留言板,一些不适合在文章中发的评论可以发送到这里来"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+        <Comment />
+ <script>
+		import twikoo from "twikoo";
+		twikoo({
+		  envId: "https://talk.linexic.top/.netlify/functions/twikoo", // your environment ID or url
+		  el: "#tcomment", // the container ID which will show the comment
+		  lang: "zh-CN", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+		}).then(() => {
+		  console.log("comment loading success");
+		});
+	</script>
+
+    </MarkdownBody>
+</Layout>

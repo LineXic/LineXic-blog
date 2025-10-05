@@ -1,0 +1,63 @@
+---
+import { SITE_COPYRIGHT_YEAR_START, SITE_TITLE } from "../consts";
+---
+
+<footer class="text-black dark:text-white flex justify-center my-8">
+	<div class="w-full max-w-4xl px-5 md:px-6">
+		<p class="text-center">&copy; {SITE_COPYRIGHT_YEAR_START}-{new Date().getFullYear()} <a href="./">{SITE_TITLE}</a></p>
+		<p class="text-center mt-2 opacity-60">Powered by <a href="https://astro.build/">Astro</a>・Based on <a href="https://github.com/tcdw/koi">Koi</a></p>
+        <br/>
+	<div style="text-align:center">
+    <p>我们会像繁星一样灿烂的活下去</p>
+    <p>你是自己永远生机勃勃的战友，而不是别人投射在你身上的幽灵</p>
+    <span id="sitetime"></span>
+    <script type="text/javascript">
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2023,9,2,0,0,0); //北京时间2016-12-1 00:00:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML="匍匐爬行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+    </script>
+	</div>
+    
+    <div class="opacity-70 flex flex-row flex-nowrap gap-8 justify-center">
+        <a class="block" href="/rss.xml">
+            RSS
+        </a>
+        <a class="block" href="sitemap-0.xml">
+            Sitemap
+        </a>
+        <a class="block" href="https://u.linexic.top/share/UNkYSjFccgqy2pQR/www.linexic.top">
+            Umami
+        </a>
+    </div>
+    
+</footer>

@@ -1,0 +1,45 @@
+# netlify.toml
+
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+  base = "/"
+
+# 设置构建环境
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "10.13.1"
+  NPM_CONFIG_PRODUCTION = "false"
+
+# 启用静态页面回退（支持前端路由）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# 可选：确保 sitemap 和 rss.xml 正确暴露（Netlify 默认允许，无需重定向）
+# 但你可以通过 headers 增强 SEO 和缓存策略
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    Cache-Control = "public, max-age=3600"  # 每小时更新一次
+
+[[headers]]
+  for = "/sitemap-*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    Cache-Control = "public, max-age=14400"  # 4小时缓存
+
+[[headers]]
+  for = "/_pagefind/**"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"  # Pagefind 搜索索引缓存1小时
+
+ 
+# 静态资源缓存（JS/CSS/图片）
+[[headers]]
+  for = "/assets/**"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"   
