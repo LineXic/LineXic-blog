@@ -14,7 +14,7 @@ pubDate: '2025-10-05'
 
 在这个国庆，就是前几天发生的事我想要转 ArchLinux 体验一把折腾的快乐，按照这部[指南](https://arch.icekylin.online/)刻录 U 盘，下载镜像，修改 BIOS 做好了准备工作，奈何命令行还磨人以及对磁盘空间分配和网络的问题
 
-> 我的所有问题，从 BIOS 到换 Windows 10 的撩逗都在[Qwen](https://chat.qwen.ai/s/6020dbf4-48da-4bcd-b7bd-cb3e78c8af5f?fev=0.0.222) 了，接受批评
+> 我的所有问题，从 BIOS 到换 Windows 10 的过程都在[Qwen](https://chat.qwen.ai/s/6020dbf4-48da-4bcd-b7bd-cb3e78c8af5f?fev=0.0.222) 了，接受批评
 
 我在昨天安装好了 Windows 10 系统用于安装系统的 U 盘也在昨天被我退款除了邮费 5 元我还收到了 20 元还不错，这次之后应该就用不到了（我可真是小机灵鬼，又给妈妈省钱啦）
 

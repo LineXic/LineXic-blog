@@ -12,7 +12,6 @@
 标题:LineXic\'s website
 链接:https://www.linexic.top
 头像:https://github.com/LineXic.png
-或者:https:/www.linexic.top/avatar.webp
 描述:难离难舍，想抱紧些
 RSS:https://www.linexic.top/rss.xml
 ```
