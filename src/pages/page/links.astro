@@ -5,10 +5,10 @@ import FriendList from "../../components/friend/FriendList.astro";
 import FriendCategoryTitle from "../../components/friend/FriendCategoryTitle.astro";
 import MarkdownBody from "../../components/MarkdownBody.astro";
 import * as markdownData from "./_links.md";
-import FormattedDate from "@/components/FormattedDate.astro";
+import Comment from "../../components/Comment.astro";
 ---
 
-<BlogPage title="友链 - LineXic\'s website" description="LineXic的小伙伴们">
+<BlogPage title="友链" description="LineXic的小伙伴们">
   <div 
   class="border-l-4 border-indigo-500 
         dark:border-indigo-400 
@@ -92,6 +92,18 @@ import FormattedDate from "@/components/FormattedDate.astro";
       </FriendList>
     <MarkdownBody class="mt-6">
         <markdownData.Content />
+
+          <Comment />
+ <script>
+		import twikoo from "twikoo";
+		twikoo({
+		  envId: "https://talk.linexic.top/.netlify/functions/twikoo", // your environment ID or url
+		  el: "#tcomment", // the container ID which will show the comment
+		  lang: "zh-CN", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+		}).then(() => {
+		  console.log("comment loading success");
+		});
+	</script>
     </MarkdownBody>
 
 <!--
