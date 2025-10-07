@@ -10,7 +10,7 @@ pubDate: '2025-06-25'
 
 ## 正文
 
-后来在开往群中求助最终得到了这样一份模板 [^1] 但模板出现了SSH 连接失败的问题，并不是工作流的原因，后来才知道需要配置一些私钥放在 Secrets 中（之前放的是服务器远程密码（逃））那么如何生成私钥并保证服务器安全呢
+后来在开往群中求助最终得到了这样一份模板 [[^1](https://github.com/Leetfs/blog/blob/main/.github%2Fworkflows%2Fdeploy-to-server.yml)] 但模板出现了SSH 连接失败的问题，并不是工作流的原因，后来才知道需要配置一些私钥放在 Secrets 中（之前放的是服务器远程密码（逃））那么如何生成私钥并保证服务器安全呢
 
 ## 生成私钥
 
@@ -52,9 +52,6 @@ ssh-copy-id -i ~/.ssh/id_ed16618.pub 用户名@服务器IP
 
 ![github-action-secrets](https://cdn.linexic.top/gh/LineXic/img/img/blog/github-action-secrets.webp)
 
-我更改了一下工作流的内容使它更符合我的博客的特点，可以对比一下 [^2]
+我更改了一下工作流的内容使它更符合我的博客的特点，可以对比一下 [^2](https://www.linexic.top/code/deploy-to-server.txt)
 
 好的就先这样吧，又是进步的一天
-
-[^1]: [deploy-to-server.yml](https://github.com/Leetfs/blog/blob/main/.github%2Fworkflows%2Fdeploy-to-server.yml)
-[^2]: <https://www.linexic.top/code/deploy-to-server.txt>

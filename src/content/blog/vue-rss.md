@@ -1,5 +1,5 @@
 ---
-title: '利用VUE实现RSS“归档”'
+title: '利用 VUE 实现 RSS “归档”'
 description: '因为主题没有内置归档所以只能依靠外部作用了，正好也为自己的个人站装修一下'
 pubDate: '2025-04-06'
 ---
@@ -45,17 +45,15 @@ onMounted(async () => {
 
 > [查看完整源码](http://linexic.top/code/ArchivesView.txt)
 
-这里用`axios`解决了跨域问题，`parseRSS`函数解析了RSS的XML数据，`formatDate`函数用于格式化日期。如果没有安装`axios`可以通过以下命令安装
+这里用 `axios` 解决了跨域问题，`parseRSS` 函数解析了RSS的XML数据，`formatDate`  `axios` 可以通过以下命令安装
 
 ```bash
 npm install axios
-
 pnpm add axios
-
 yearn add axios
 ```
 
-我们使用vue的路由（[router](https://router.vuejs.org/zh/)）实现页面的跳转将它以
+我们使用vue的路由 （[router](https://router.vuejs.org/zh/)） 实现页面的跳转将它以
 
 ```vue
  <el-breadcrumb-item :to="{ path: '/archives' }">归档</el-breadcrumb-item>

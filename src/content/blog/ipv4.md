@@ -15,7 +15,7 @@ Forbidden
 Rejected request from RFC1918 IP to public server address
 ```
 
-我们加上了微信他开始帮我 Trace ，结果返回如下
+邮箱聊了一会后我们加上了微信他开始帮我 Trace ，结果返回如下
 
 ![Trace结果.webp](https://img.linexic.top/file/1756617228061_Trace结果.webp)
 
@@ -36,8 +36,8 @@ Rejected request from RFC1918 IP to public server address
 
 1. 信件投递过程中出现意外导致信件丢失
 2. 收信者收到了但是没有回应
-3. 收信者回应的信件在投递过程中丢失
-抓包只抓到了发出去的包，就这三种可能出现的问题
+3. 收信者回应的信件在投递过程中丢失抓包只抓到了发出去的包，就这三种可能出现的问题
+
 不过后面我们知道了是运营商的问题，大概率是第一种情况
 
 我照着他说关掉了路由器的防火墙且重启了网关，我试着在本地Ping 返回如下结果
