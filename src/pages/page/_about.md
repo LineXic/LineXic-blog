@@ -1,4 +1,4 @@
-# 介绍我
+## 介绍我
 
 这里是LineXic书屋，欢迎查看书屋，我是站长LineXic😀👆
 
@@ -13,11 +13,6 @@ GitHub是一个储存代码的地方我可以把我写到的放在里面，通�
 在学校我是一名高中的学习一般学生，在家里我是弟弟妹妹的「老大」，在网络我是Minecraft游戏爱好者也是[承挨汉化组](https://blog.chengai77a6b.top/)的一员同时也是这个「书屋」的一员小站长
 后来因为设备的更新现在主要使用电脑VScode编写博客等
 
-## 联系
-
-- 邮箱 <linexic@qq.com>
-- GitHub <https://github.com/linexic>
-
 ## 写博客
 
 写博客时可以写你看过一个对你有启示的文章或视频的笔记，但切记不要原话写上，应该写上你自己的理解这和上学时做笔记不一样
@@ -26,11 +21,10 @@ GitHub是一个储存代码的地方我可以把我写到的放在里面，通�
 
 ## 头图
 
-博客主页头图来源于梦泽的博客，原图片是这样的
-![博客背景图](https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/Image_200594103449956.jpg "背景图")
+- 亮色头图由于[梦泽](https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/Image_200594103449956.jpg)提供
+- 暗色头图在 pivix [@Aio](https://www.pixiv.net/artworks/134336164) 的插画
 
-## 公众号
+## 联系
 
-***LineXic 微信公众号正式开通啦！！！***
-
-![微信公众号](https://www.linexic.top/WeChat.webp)
+- 邮箱 <linexic@qq.com>
+- GitHub <https://github.com/linexic>
