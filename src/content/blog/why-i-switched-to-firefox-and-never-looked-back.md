@@ -27,14 +27,14 @@ pubDate: '2025-10-17'
 除了搜索标签页的功能外 Chrome 中的标签页管理已经近二十年没有改变了（不考虑“标签页分组”，因为它们很混乱和令人困惑）。很多人打开了无数的标签，而 Chrome 给你的只是一个狭窄的栏，里面装满了隐藏文本的小按钮。祝你好运，希望你你不需要将鼠标悬停在标签页上就可以找到你需要的标签页
 
 ![chrome选项卡](https://img.linexic.top/file/o90EYzhv.png)
-
+![firefox选项卡](https://img.linexic.top/file/y4aDW6ta.png)
 Firefox 有类似的标签页栏和按钮，但它有 Chrome 没有的东西：Firefox View。[Firefox View](https://www.howtogeek.com/841156/whats-new-in-firefox-106-available-now/) 是一个窗口，您可以在其中一个地方查看所有打开的标签页
 
-![Firefox选项卡](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-211824.png?q=70&fit=contain&w=750&h=422&dpr=1)
+![Firefox view 1](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-211824.png?q=70&fit=contain&w=750&h=422&dpr=1)
 
 它就在角落里，只需单击一下即可打开
 
-![Firefox View](https://img.linexic.top/file/h82Obxji.png)
+![Firefox View 2](https://img.linexic.top/file/h82Obxji.png)
 
 您可以按最近的活动或仅按 Tab 键顺序对打开的标签页进行排序。您还可以搜索打开的标签页
 
