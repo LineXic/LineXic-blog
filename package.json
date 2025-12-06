@@ -21,6 +21,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.15.8",
+    "dayjs": "^1.11.19",
     "markdown-to-text": "^0.1.1",
     "prettier": "^3.6.2",
     "rehype-external-links": "^3.0.0",
