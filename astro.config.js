@@ -4,7 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import rehypeExternalLinks from 'rehype-external-links';
-import { remarkModifiedTime } from './src/utils/remark-modified-time.js';
 
 export default defineConfig({
   build: {
@@ -14,14 +13,9 @@ export default defineConfig({
 
   base: process.env.NODE_ENV === "production" ? "/" : "",
 
-  integrations: [
-    mdx(),
-    sitemap(),
-    svelte()
-  ],
+  integrations: [mdx(),sitemap(),svelte()],
 
   markdown: {
-    remarkPlugins: [remarkModifiedTime],
     rehypePlugins: [
       [
         rehypeExternalLinks,
