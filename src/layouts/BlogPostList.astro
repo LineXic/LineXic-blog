@@ -48,7 +48,8 @@ const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
             >
                 上一页
             </a> : <div aria-hidden="true"></div>}
-            <div class="text-black dark:text-white absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">{currentPage} / {lastPage}</div>
+            <div class="text-black dark:text-white absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4"
+            >{currentPage} / {lastPage}</div>
             {(currentPage < lastPage) ? <a
                     href={`./blog/${currentPage + 1}`}
                     class="rounded-full bg-primary-700 px-6 py-3 text-base

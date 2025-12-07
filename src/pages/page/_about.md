@@ -21,10 +21,10 @@ GitHub是一个储存代码的地方我可以把我写到的放在里面，通�
 
 ## 头图
 
-- 亮色头图由于[梦泽](https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/Image_200594103449956.jpg)提供
-- 暗色头图在 pivix [@Aio](https://www.pixiv.net/artworks/134210912) 的插画
+* 亮色头图由于[梦泽](https://cdn.mengze.vip/gh/YShenZe/Blog-Static-Resource@main/images/Image_200594103449956.jpg)提供
+* 暗色头图在 pivix [@Aio](https://www.pixiv.net/artworks/134210912) 的插画
 
 ## 联系
 
-- 邮箱 <linexic@qq.com>
-- GitHub <https://github.com/linexic>
+* 邮箱 <linexic@qq.com>
+* GitHub <https://github.com/linexic>

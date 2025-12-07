@@ -3,13 +3,14 @@ title: '【termux】安装kali'
 description: '折腾termux的一篇'
 pubDate: '2023-10-03'
 ---
+
 ![封面图](https://cdn.linexic.top/gh/LineXic/img/img/kali.webp)
 
 ## 你需要准备的
 
-- [termux](https://termux.dev/en/ "termux")（官网
-- [termux](https://github.com/termux/termux-app/)（GitHub下载
-- 一双手，一部手机，一个键盘（不是
+* [termux](https://termux.dev/en/ "termux")（官网
+* [termux](https://github.com/termux/termux-app/)（GitHub下载
+* 一双手，一部手机，一个键盘（不是
 
 先打开打开Termux，先切换pkg源
 
@@ -21,8 +22,8 @@ sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/t
 
 Kali Linux 是专门用于渗透测试的Linux操作系统，它由BackTrack发展而来。在整合了IWHAX、WHOPPIX和Auditor这三种渗透测试专用Live Linux后，BackTrack正式改名为Kali LInux。
 
-> 更详细的参考这篇文章，本文具体介绍如何安装：  
-[blog.csdn.net/article/...113239157](https://blog.csdn.net/qq_45740212/article/details/113239157 "blog.csdn.net/article/...113239157")
+> 更详细的参考这篇文章，本文具体介绍如何安装：\
+> [blog.csdn.net/article/...113239157](https://blog.csdn.net/qq_45740212/article/details/113239157 "blog.csdn.net/article/...113239157")
 
 ## 正文
 
@@ -105,4 +106,4 @@ chmod +x install-nethunter-termux
 ![Prompt to delete rootfs during installation](https://cdn.linexic.top/gh/LineXic/img/img/blog/698982ac5796d86bf37cf.webp)
 
 > 最后查看[kali官网](https://www.kali.org/ "kali官网")或者上网查询了解更多kali用法
-以上所有图源来自[油管视频文档](https://m.youtube.com/watch?v=KxOGyuGq0Ts&t=186s "油管视频文档")
+> 以上所有图源来自[油管视频文档](https://m.youtube.com/watch?v=KxOGyuGq0Ts\&t=186s "油管视频文档")

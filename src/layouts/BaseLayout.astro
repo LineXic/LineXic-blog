@@ -1,16 +1,26 @@
 ---
 import {SITE_LANGUAGE} from "../consts";
 import "@/assets/fonts/ChillRoundF/ChillRoundF.css";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+
+dayjs.extend(utc);
+
+const rawLastModified =
+  Astro?.props?.frontmatter?.lastModified ?? Astro?.props?.lastModified ?? null;
+
+const lastModified = rawLastModified
+  ? dayjs.utc(rawLastModified).format("HH:mm:ss DD MMMM YYYY UTC")
+  : "Unknown";
 
 ---
-
 <!doctype html>
 <html lang={SITE_LANGUAGE}>
 <head>
     <slot name="head"></slot>
 </head>
 <body class="dark:bg-gray-950">
-    
+     <p>最新修改时间：{lastModified}</p>
 <slot />
 </body>
 </html>

@@ -10,7 +10,7 @@ pubDate: '2025-06-25'
 
 ## 正文
 
-后来在开往群中求助最终得到了这样一份模板 [[^1](https://github.com/Leetfs/blog/blob/main/.github%2Fworkflows%2Fdeploy-to-server.yml)] 但模板出现了SSH 连接失败的问题，并不是工作流的原因，后来才知道需要配置一些私钥放在 Secrets 中（之前放的是服务器远程密码（逃））那么如何生成私钥并保证服务器安全呢
+后来在开往群中求助最终得到了这样一份模板 \[[^1](https://github.com/Leetfs/blog/blob/main/.github%2Fworkflows%2Fdeploy-to-server.yml)] 但模板出现了SSH 连接失败的问题，并不是工作流的原因，后来才知道需要配置一些私钥放在 Secrets 中（之前放的是服务器远程密码（逃））那么如何生成私钥并保证服务器安全呢
 
 ## 生成私钥
 
@@ -36,7 +36,7 @@ sudo adduser 用户名  #创建用户
 ssh-keygen -t ed16618 -C "用户名@所用系统名" #比如 Ubuntu22
 ```
 
-执行后会在服务器目录生成一个 .ssh 文件夹，里面有两个文件一个是 ***id_ed16618*** 另一个是 ***id_ed16618.pub***
+执行后会在服务器目录生成一个 .ssh 文件夹，里面有两个文件一个是 ***id\_ed16618*** 另一个是 ***id\_ed16618.pub***
 
 4. 配置公钥
 
@@ -46,9 +46,9 @@ ssh-copy-id -i ~/.ssh/id_ed16618.pub 用户名@服务器IP
 
 ## 创建 Secrets
 
-- SSH_PRIVATE_KEY：完整的 SSH 私钥内容
-- SERVER_IP：服务器 IP 地址
-- SERVER_USER：SSH 用户名（如 root 或 deployer）
+* SSH\_PRIVATE\_KEY：完整的 SSH 私钥内容
+* SERVER\_IP：服务器 IP 地址
+* SERVER\_USER：SSH 用户名（如 root 或 deployer）
 
 ![github-action-secrets](https://cdn.linexic.top/gh/LineXic/img/img/blog/github-action-secrets.webp)
 

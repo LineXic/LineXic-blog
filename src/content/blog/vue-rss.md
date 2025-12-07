@@ -41,7 +41,7 @@ onMounted(async () => {
   }
 })
 </script>
-  ```
+```
 
 > [查看完整源码](http://linexic.top/code/ArchivesView.txt)
 
@@ -74,6 +74,6 @@ yearn add axios
 }
 ```
 
-居然就可以正常访问了。好厉害(*￣▽￣)d
+居然就可以正常访问了。好厉害(\*￣▽￣)d
 
 最后在主题导航栏引入一个外部链接就大功告成了

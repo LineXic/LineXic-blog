@@ -4,7 +4,6 @@ description: '早期写的文章，推荐了一些GitHub上有趣/实用的项�
 pubDate: '2024-07-27'
 ---
 
-
 ## 前言
 
 GitHub 是个非常有用的东西，里面不仅有程序员分享的代码还有一些好玩的东西，甚至不学计算机的人也可以用到
@@ -19,9 +18,9 @@ GitHub 是个非常有用的东西，里面不仅有程序员分享的代码还�
 
 诗词通过 JSON 格式开发，更加方便数据使用
 
-- GitHub：[https://github.com/chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
+* GitHub：<https://github.com/chinese-poetry/chinese-poetry>
 
-- 在线：[http://shici.store/](http://shici.store/ "http://shici.store/")
+* 在线：[http://shici.store/](http://shici.store/ "http://shici.store/")
 
 ## 2.不止于 CSS
 
@@ -69,8 +68,8 @@ GitHub：[https://github.com/chokcoco/iCSS](https://github.com/chokcoco/iCSS "ht
 
 ![预览](https://img.linexic.top/file/b6ed221fb42c08741bfa6.png "预览")
 
-- GitHub：[https://github.com/dsrkafuu/sakana-widget/blob/main/README.zh.md](https://github.com/dsrkafuu/sakana-widget/blob/main/README.zh.md)
-- 在线 [https://github.dsrkafuu.net/sakana-widget/](https://github.dsrkafuu.net/sakana-widget/)
+* GitHub：<https://github.com/dsrkafuu/sakana-widget/blob/main/README.zh.md>
+* 在线 <https://github.dsrkafuu.net/sakana-widget/>
 
 ## 4.程序员工作中常见的英语词汇
 
@@ -80,6 +79,6 @@ GitHub：[https://github.com/chokcoco/iCSS](https://github.com/chokcoco/iCSS "ht
 
 ![截图](https://img.linexic.top/file/db4721895ba8271f04e3b.png)
 
-- GitHub：[https://github.com/Wei-Xia/most-frequent-technology-english-words](https://github.com/Wei-Xia/most-frequent-technology-english-words)
+* GitHub：<https://github.com/Wei-Xia/most-frequent-technology-english-words>
 
-- 在线：[https://learn-english.dev/](https://learn-english.dev/)
+* 在线：<https://learn-english.dev/>

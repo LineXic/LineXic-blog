@@ -4,7 +4,7 @@ description: 'Vercel 自部署 Umami 统计，使用 Neon数据库免费部署'
 pubDate: '2025-04-19'
 ---
 
-[![vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fumami-software%2Fumami&env=DATABASE_URL)
+[![vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fumami-software%2Fumami\&env=DATABASE_URL)
 
 > 如果你点击的上方按钮可以直接跳到第四步下面会讲如何获得数据库
 
@@ -24,8 +24,8 @@ pubDate: '2025-04-19'
 
 ![neon.jpg](https://cdn.linexic.top/gh/LineXic/img/img/blog/neon.webp)
 
- 注册Neon数据库并完成登录后，点击 `New Project` 按钮创建项目
- ![New Project](https://cdn.linexic.top/gh/LineXic/img/img/blog/NewProject.webp)
+注册Neon数据库并完成登录后，点击 `New Project` 按钮创建项目
+![New Project](https://cdn.linexic.top/gh/LineXic/img/img/blog/NewProject.webp)
 
 从上到下依次是项目名称，数据库名称，云服务托管商和云服务所在地区，选择距离我们近的地方反应会更快填写完成后点击 `Create` 按钮创建项目
 

@@ -1,7 +1,7 @@
 ---
-title: ' GitHub创始人资助Ladybird开源'  
-description: '在掘金看到的一篇文章，看到了人们对开源的热爱'  
-pubDate: '2024-07-11'  
+title: ' GitHub创始人资助Ladybird开源'
+description: '在掘金看到的一篇文章，看到了人们对开源的热爱'
+pubDate: '2024-07-11'
 ---
 
 ![浏览器图片](https://cdn.linexic.top/gh/LineXic/img/img/liulanqi.webp)
@@ -15,8 +15,8 @@ pubDate: '2024-07-11'
 
 它的独立性体现在两个方面：
 
-- 技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码
-- 收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营
+* 技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码
+* 收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营
 
 在这里贴一下Ladybird浏览器的[GitHub仓库](https://github.com/LadybirdBrowser/ladybird)地址。该项目目前还在开发阶段，预计2026年夏天上市
 

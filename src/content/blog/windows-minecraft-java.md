@@ -29,8 +29,8 @@ pubDate: '2025-03-14'
 
 ![新建环境变量](https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa0dq1.webp)
 
-- 变量名：JAVA_HOME
-- 变量值：为安装的java路径
+* 变量名：JAVA\_HOME
+* 变量值：为安装的java路径
 
 双击系统变量中的Path，点击新建`%JAVA_HOME%\bin`
 ![新建](https://cdn.linexic.top/gh/LineXic/img/img/blog/pEa06Re.webp)

@@ -11,6 +11,7 @@ pubDate: '2025-06-14'
 ## 拒绝连接
 
 走到这里就已经开始出问题了开始出现“拒绝推送的情况”
+
 > push declined due to repository rule violations
 
 我就开始上网找答案，有说改权限的，更改保护机制（Secret Protection）的都没有成功，但俗话说三步之内必有解药，我就在 Powershell 的链接中找到了答案，当时没有截图也就不放图片了，第一个问题迎刃而解
@@ -18,8 +19,9 @@ pubDate: '2025-06-14'
 ## 代码冲突
 
 这个是我在使用[原作者](https://github.com/tcdw/koi)给的模板库后重新上传文件遇到的大概意思是代码冲突，报错是这样的
-> ! [rejected]         main -> main (non-fast-forward)
-error: failed to push some refs to ''
+
+> ! \[rejected]         main -> main (non-fast-forward)
+> error: failed to push some refs to ''
 
 查找答案之后先是采用 `git pull` 拉取下最新代码后面通过 `git push -f origin main` 强制提交
 值得注意的是 `-f` 属性有一定的风险，不适合在团队合作中使用，可以先通过 `git status` 查看冲突文件（一般会有 `<<<<<<<` 或 `=======` 标记）或者查看[这篇文章](https://blog.devstream.io/posts/open-a-pr-in-github/#63pr-%E4%BA%A7%E7%94%9F%E4%BA%86%E5%86%B2%E7%AA%81%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3)寻找解决办法
@@ -27,7 +29,8 @@ error: failed to push some refs to ''
 ## SSH 登录
 
 在创建并修改好工作流之后便开始设置 GitHub Secrets 来同步推送了，设置好后却没提交完成，工作流显示
-> ⚠️ [INPUTS] Inputs not valid, aborting ...
+
+> ⚠️ \[INPUTS] Inputs not valid, aborting ...
 
 ![ssh](https://cdn.linexic.top/gh/LineXic/img/img/blog/github-action-ssh.webp)
 

@@ -16,12 +16,12 @@ pubDate: '2025-08-18'
 导演运用镜头非常得当，没有过多的血腥，没有过多的暴露单纯运用留白就将日本鬼子的暴行展现出来我想这也是电影获得成功的一个原因吧
 
 > 年轻导演申奥用直白的叙事撕开了那些粉饰性的表达：南京城三十万冤魂的血泪未干，施暴者至今不肯认错，受害者凭什么要无休无止地 “反思”？
-<https://www.nahou.com/posts/nanjingzhaoxiangguan/>
+> <https://www.nahou.com/posts/nanjingzhaoxiangguan/>
 
 电影结尾，苏柳昌对伊藤说的那句“我们不是朋友”像是一种对日本鬼子对抗到底的宣告同时也是对那些尚且存有侥幸的中国人一种警告，他们是不会把我们当朋友的。多说无用，电影的震撼亲自去影院看了才知道，我看完后一直到回家的时候才缓过来，路上一言不发。我们现在能做的就是电影结束时所说的 **铭记历史，吾辈自强**
 
----
+***
 
 可以查看这篇博客了解部分剧情
 
-- [【观影・剧透慎入】《南京照相馆》](https://blog.ohdragonboi.cn/blog/movie-dead-to-rights-reveiw)
+* [【观影・剧透慎入】《南京照相馆》](https://blog.ohdragonboi.cn/blog/movie-dead-to-rights-reveiw)

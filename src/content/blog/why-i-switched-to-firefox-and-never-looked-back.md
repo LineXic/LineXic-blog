@@ -6,7 +6,7 @@ pubDate: '2025-10-17'
 
 > 原文：[Why I Switched to Firefox and Never Looked Back](https://www.howtogeek.com/why-i-switched-to-firefox-and-never-looked-back/) 使用[剑桥英语词典](https://dictionary.cambridge.org/)和欧路浏览器扩展翻译，如有翻译不当请指出，本文严格遵照 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 协议，如侵犯了您的相关权益联系我删除
 
-![封面](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/firefox-logo-at-the-center-with-fire-surrounding-the-image.jpg?q=70&fit=crop&w=1568&h=1078&dpr=1)
+![封面](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/firefox-logo-at-the-center-with-fire-surrounding-the-image.jpg?q=70\&fit=crop\&w=1568\&h=1078\&dpr=1)
 
 我的电脑性能并不好，并且当我使用 Chrome 打开了大量标签页时它都会让我的电脑风扇响起噪音，我一直以为是我的旧电脑的错，直到我切换到了 Firefox 才发现一直都是 Chrome 的锅
 
@@ -16,7 +16,7 @@ pubDate: '2025-10-17'
 
 我认为终于到了[为这台机器添加更多 RAM](https://www.howtogeek.com/346541/how-to-upgrade-or-replace-your-pcs-ram/) 或者向它彻底说告别的时候了。暂时的，我切换到了 Firefox。我创建了一个 Firefox 账号用于同步我的手机和电脑的账号信息。令我感到意外的是，它在我的旧电脑运行的如此之好，即便打开了大量标签页也不会有电脑的风扇噪音
 
-![Firefox And Chrome](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/a-podium-with-the-firefox-and-chrome-icons-and-firefox-wearing-a-crown.jpg?q=49&fit=crop&w=825&dpr=2)
+![Firefox And Chrome](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/a-podium-with-the-firefox-and-chrome-icons-and-firefox-wearing-a-crown.jpg?q=49\&fit=crop\&w=825\&dpr=2)
 
 更让人惊讶的是 Firefox 可以完成 Chrome 所做的一切，同步工作完美的跨过不同设备。你可以在[浏览器扩展商店](https://www.howtogeek.com/719529/how-to-install-extensions-add-ons-in-mozilla-firefox/)获得更多的选择并且可以自定义许多页面，它甚至具有许多 Chrome 所没有的简洁特点
 
@@ -30,7 +30,7 @@ pubDate: '2025-10-17'
 ![firefox选项卡](https://img.linexic.top/file/y4aDW6ta.png)
 Firefox 有类似的标签页栏和按钮，但它有 Chrome 没有的东西：Firefox View。[Firefox View](https://www.howtogeek.com/841156/whats-new-in-firefox-106-available-now/) 是一个窗口，您可以在其中一个地方查看所有打开的标签页
 
-![Firefox view 1](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-211824.png?q=70&fit=contain&w=750&h=422&dpr=1)
+![Firefox view 1](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-211824.png?q=70\&fit=contain\&w=750\&h=422\&dpr=1)
 
 它就在角落里，只需单击一下即可打开
 
@@ -48,13 +48,13 @@ Firefox 有类似的标签页栏和按钮，但它有 Chrome 没有的东西：F
 
 更重要的是，只需单击一下即可完成。只需单击地址栏旁边的Pocket图标一次，它就会添加到您保存的收藏中。该集合直接与您的 Firefox 配置文件同步，因此您可以在任何地方访问它
 
-![pocket](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-212541.png?q=70&fit=contain&w=750&h=422&dpr=1)
+![pocket](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-212541.png?q=70\&fit=contain\&w=750\&h=422\&dpr=1)
 
 ## 确保您的真实电子邮件安全
 
 Firefox Relay 是一项内置的隐私功能，用于[保护您的真实的电子邮箱](https://www.howtogeek.com/stop-giving-companies-your-real-email/)当您注册网站时，您可以使用 Firefox 提供的五个随机生成的中继电子邮件中的任何一个，而不是提供您的真实电子邮件地址
 
-![确保您的真实电子邮箱安全](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-213051.png?q=70&fit=crop&w=825&dpr=1)
+![确保您的真实电子邮箱安全](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-213051.png?q=70\&fit=crop\&w=825\&dpr=1)
 
 发送到这些别名的任何电子邮件都将转发到您的真实电子邮件地址。这样，真实的电子邮件地址就会保持隐藏状态，并且您仍然会收到他们发送的邮件。还有一个方便的 Firefox Relay 扩展程序，当您使用电子邮件地址填写网页表格时，它会自动填充这些地址
 
@@ -82,13 +82,13 @@ Firefox 让截屏变得超级方便。您无需安装任何笨重的浏览器扩
 
 在 Firefox 上，您可以将任何视频弹出到它自己的小窗口中。这样，您可以并排观看多个视频，或者视频在角落播放时处理其他标签页或应用程序。您可以通过单击播放视频时显示的小弹出图标来使用此画中画功能。非常方便。
 
-![画中画](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-214437.png?q=70&fit=crop&w=825&dpr=1)
+![画中画](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-214437.png?q=70\&fit=crop\&w=825\&dpr=1)
 
 ## Firefox 综合地址栏 比 Chrome 的有用得多
 
 您只能使用 Chrome 地址栏上的默认引擎进行搜索。Firefox 允许您选择每次运行搜索的方式。只需单击小搜索引擎图标即可使用 Wikipedia、Bing 或 DuckDuckGo 快速搜索。
 
-![选择搜索引擎](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-214802.png?q=70&fit=crop&w=825&dpr=1)
+![选择搜索引擎](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/ksnip_20250101-214802.png?q=70\&fit=crop\&w=825\&dpr=1)
 
 ## 用于配置浏览器代理的网络设置
 
@@ -104,5 +104,6 @@ Firefox 有一个我喜欢的黄油般流畅的滚动动画。这是一种审美
 
 有些网站会自动播放视频，全音量，我相信每个人都讨厌。Firefox 会自动将此类视频的播放静音。
 
----
+***
+
 使用 Firefox 仅一周就说服了我更改手机和 PC 上的[默认浏览器](https://www.howtogeek.com/767462/how-to-change-the-default-web-browser-on-windows-11/)，而且我不打算很快更改回来。你为什么不试一试呢

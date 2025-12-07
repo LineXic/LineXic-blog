@@ -8,7 +8,7 @@ pubDate: '2024-12-22'
 
 ## 前言
 
-我有随时翻看GitHub Star的习惯，尤其是下载了GitHub App后更加方便我查看了，后来我偶然翻到了自己曾经折腾过的项目 [LiteWebChat_Frame](https://github.com/MorFansLab/LiteWebChat_Frame) 看了看文档忽然一个问题映入了我的脑海
+我有随时翻看GitHub Star的习惯，尤其是下载了GitHub App后更加方便我查看了，后来我偶然翻到了自己曾经折腾过的项目 [LiteWebChat\_Frame](https://github.com/MorFansLab/LiteWebChat_Frame) 看了看文档忽然一个问题映入了我的脑海
 
 > 自己曾经因为没看懂而star的项目现在看懂了吗
 
@@ -16,9 +16,9 @@ pubDate: '2024-12-22'
 
 我又重新看了一遍我的Star，发现可分为三个阶段
 
-- Minecraft及相关启动器
-- 命令行及后端
-- 前端及各种学习书籍
+* Minecraft及相关启动器
+* 命令行及后端
+* 前端及各种学习书籍
 
 ## Minecraft
 

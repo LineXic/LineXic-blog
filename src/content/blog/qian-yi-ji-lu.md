@@ -32,11 +32,12 @@ git remote set-url origin git@github.com:your_username/your_repository.git
 
 迁移过程中删除了一部分文章，例如《你的博客主题需要来回换吗》一文我就删了，毕竟连自己都约束不了自己还有什么资格管别人呢，评论也换成了giscus了Astro的Twikoo评论的迁移还没研究明白先用这个了，其实也不错避免了垃圾信息的流入还不用自己配置邮箱通知
 
----
+***
+
 2025年4月12日更新
 
 在[@清羽飞扬](https://blog.liushen.fun/)的邮件帮助下成功使用了Twikoo评论并解决[Twikoo评论在Astro遇到头像偏移的问题](https://github.com/twikoojs/twikoo/issues/811)在这里感谢
 
----
+***
 
 比较满意的是友联和关于页面比之前的主题更好看也更好用了真的是眼前一亮后面我也可能试着去更改样式或者添加一些新的东西，先这样吧。
