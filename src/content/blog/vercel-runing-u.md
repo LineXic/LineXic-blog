@@ -1,6 +1,6 @@
 ---
-title: '使用 Vercel Neon 搭建 umami 统计'
-description: 'Vercel 自部署 Umami 统计，使用 Neon数据库免费部署'
+title: '使用 Vercel Neon 搭建 Umami 统计'
+description: 'Vercel 自部署 Umami 统计，使用 Neon 数据库免费部署'
 pubDate: '2025-04-19'
 ---
 

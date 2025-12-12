@@ -1,5 +1,5 @@
 ---
-title: 'windows搭建Minecraft Java服务器'
+title: 'Windows 搭建 Minecraft Java 服务器'
 description: '因不满服于服务器厂商服务器的价格及各种限制所以折腾了一个Java服务器来和朋友们游玩'
 pubDate: '2025-03-14'
 ---
