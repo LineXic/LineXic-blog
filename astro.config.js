@@ -5,14 +5,15 @@ import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import rehypeExternalLinks from 'rehype-external-links';
 
+import vercel from '@astrojs/vercel';
+
 export default defineConfig({
   build: {
     format: "file",
   },
+
   site: 'https://www.linexic.top',
-
   base: process.env.NODE_ENV === "production" ? "/" : "",
-
   integrations: [mdx(),sitemap(),svelte()],
 
   markdown: {
@@ -28,5 +29,7 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  adapter: vercel()
 });

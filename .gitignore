@@ -3,6 +3,7 @@ dist/
 .astro/
 # dependencies
 node_modules/
+.vercel/
 
 # logs
 npm-debug.log*

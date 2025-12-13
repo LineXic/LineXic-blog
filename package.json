@@ -18,14 +18,13 @@
     "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "3.6.0",
     "@astrojs/svelte": "^7.2.2",
+    "@astrojs/vercel": "^9.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.15.8",
-    "dayjs": "^1.11.19",
     "markdown-to-text": "^0.1.1",
     "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.6.2",
-    "reading-time": "^1.5.0",
     "rehype-external-links": "^3.0.0",
     "sharp": "^0.33.5",
     "svelte": "^5.38.10",
@@ -34,11 +33,5 @@
     "twikoo": "^1.6.42",
     "typescript": "^5.9.2"
   },
-  "packageManager": "pnpm@10.16.1",
-  "devDependencies": {
-    "remark-cli": "^12.0.1",
-    "remark-preset-lint-consistent": "^6.0.1",
-    "remark-preset-lint-recommended": "^7.0.1",
-    "remark-toc": "^9.0.0"
-  }
+  "packageManager": "pnpm@10.16.1"
 }

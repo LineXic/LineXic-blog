@@ -6,7 +6,7 @@ Allow: /
 Disallow: /img/
 Disallow: /_astro/
 Disallow: /code/
-
+Disallow: /dist/
 
 Sitemap: ${sitemapURL.href}
 `;
