@@ -13,25 +13,25 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
-    "@astrojs/mdx": "^4.3.10",
-    "@astrojs/rss": "^4.0.13",
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "3.6.0",
-    "@astrojs/svelte": "^7.2.2",
+    "@astrojs/svelte": "^7.2.3",
     "@astrojs/vercel": "^9.0.2",
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.13",
-    "astro": "^5.15.8",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.5",
     "markdown-to-text": "^0.1.1",
     "mdast-util-to-string": "^4.0.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "rehype-external-links": "^3.0.0",
-    "sharp": "^0.33.5",
-    "svelte": "^5.38.10",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.13",
+    "sharp": "^0.34.5",
+    "svelte": "^5.46.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.18",
     "twikoo": "^1.6.42",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.16.1"
+  "packageManager": "pnpm@10.25.0"
 }
