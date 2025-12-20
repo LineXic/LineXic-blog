@@ -25,7 +25,6 @@
     "markdown-to-text": "^0.1.1",
     "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.7.4",
-    "rehype-external-links": "^3.0.0",
     "sharp": "^0.34.5",
     "svelte": "^5.46.0",
     "tailwind-merge": "^3.4.0",
