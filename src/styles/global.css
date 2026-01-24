@@ -37,6 +37,13 @@ body {
 .tk-avatar .tk-avatar-img {
   margin: 0;
 }
+
+/* 去掉友圈元素的虚线 */
+#refresh-random-article {
+   text-decoration: none !important;
+   border-bottom: none !important;
+}
+
 /* Remove all dashed lines in Twikoo */
 .twikoo a,
 .twikoo .username,
