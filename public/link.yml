@@ -1,4 +1,16 @@
 - link_list:
+   - name: 泽客来宾
+     link: https://zeinklab.com/
+     avatar: https://zeinklab.com/wp-content/uploads/2026/01/cropped-20251220_205655_533.jpg
+   - name: Mugzx's Blog
+     link: https://blog.mugzx.top
+     avatar: https://www.mugzx.top/api/avatar.png
+   - name: 清羽飞扬
+     link: https://blog.liushen.fun/
+     avatar: https://blog.liushen.fun/info/avatar.ico
+   - name: kzhik's website
+     link: https://www.kzhik.cn
+     avatar: https://www.kzhik.cn/avatar.webp
    - name: KEVIN'S BLOG
      link: https://blog.kevinchu.top
      avatar: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
