@@ -1,0 +1,133 @@
+- link_list:
+   - name: KEVIN'S BLOG
+     link: https://blog.kevinchu.top
+     avatar: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
+   - name: 故事的程序猿
+     link: https://blog.lichenghao.cn/
+     avatar: https://blog.lichenghao.cn/avatar.svg
+   - name: Tony's Blog
+     link: https://blog.iamsjy.com/
+     avatar: https://blog.iamsjy.com/assets/favicon.jpg
+   - name: 愧作
+     link: https://kuizuo.me/
+     avatar: https://kuizuo.cn/img/logo.png
+   - name: 上冬十二
+     link: https://oragekk.me/
+     avatar: https://oragekk.me/logo.svg
+   - name: PeterJXL
+     link: https://www.peterjxl.com
+     avatar: https://linexic.top/re0.webp
+   - name: 法律小茶馆
+     link: https://lawtee.com/
+     avatar: https://lawtee.com/links/avatar.jpg
+   - name: 涛叔
+     link: https://tao.zz.ac/
+     avatar: https://tao.zz.ac/favicon.ico
+   - name: 寒夏摸鱼站
+     link: https://blog.rainiar.top/
+     avatar: https://gravatar.webp.se/avatar/1beae7b1b3ca799888552bfcf9930a4e
+   - name: Pinpe云端
+     link: https://pinpe.top/
+     avatar: https://pinpe.top/head.jpg
+   - name: 第三夏尔
+     link: https://thirdshire.com/
+     avatar: https://thirdshire.com/img/blackcat_hu_332175c44ebde9be.jpg
+   - name: 纸鹿摸鱼处
+     link: https://blog.zhilu.site/
+     avatar: https://wsrv.nl/?url=github.com%2FL33Z22L11.png
+   - name: 宇阳
+     link: https://liuyuyang.net/
+     avatar: https://q1.qlogo.cn/g?b=qq&nk=3311118881&s=640
+   - name: Thun888
+     link: https://blog.hzchu.top/
+     avatar: https://blog.hzchu.top/img/avatar.webp
+   - name: bbb-lsy07
+     link: https://blog.6uu.us/
+     avatar: https://images.6uu.us/20250511114301488.JPG
+   - name: 小明的部落格
+     link: https://www.xmdblog.com/
+     avatar: https://imgbed.xmdblog.com/file/OfXwydFU.jpg
+   - name: 葱苓语畔
+     link: https://blog.ciraos.top/
+     avatar: https://blog.ciraos.top/api/f/RgeK/avatar1.avif
+   - name: 吐槽大王部落格
+     link: https://www.tcdw.net/
+     avatar: https://avatars.githubusercontent.com/u/8687182?v=4&s=200
+   - name: 秋实-Allenyou 的小窝
+     link: https://www.allenyou.wang/
+     avatar: https://blog-oss.allenyou.top/avatar/59b2fbdd507a84fe181b0af3e4ad7be3
+   - name: 变量人生
+     link: https://bianliangrensheng.cn
+     avatar: https://bianliangrensheng.cn/img/logo.png
+   - name: 韩小韩博客
+     link: https://www.vvhan.com/
+     avatar: https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640
+   - name: 张洪Heo
+     link: https://blog.zhheo.com/
+     avatar: https://img.zhheo.com/i/67d8fa75943e4.webp
+   - name: 唯知笔记
+     link: https://note.weizwz.com
+     avatar: https://p.weizwz.com/logo_a4353391cbf0889b.webp
+   - name: Lanke's blog
+     link: https://www.blueke.top/
+     avatar: https://gcore.jsdelivr.net/gh/Keduoli03/My_img@img/img/头像.jpg
+   - name: 天翔TNXGの空间站
+     link: https://tnxg.top/
+     avatar: https://api-space.tnxg.top/avatar?s=qq
+   - name: BIIBII
+     link: https://www.biibii.cn/
+     avatar: https://bu.dusays.com/2024/12/13/675bbe7fbc833.png
+   - name: 青萍叙事
+     link: https://blog.lusyoe.com/
+     avatar: https://blog.lusyoe.com/avatar.svg
+   - name: Wcowin's Blog
+     link: https://wcowin.work/
+     avatar: https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp
+   - name: 晚夜的个人博客
+     link: https://www.iczrx.cn
+     avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=1463656527&spec=640
+   - name: 朱某的生活印记
+     link: https://zhuxu.asia/
+     avatar: https://q.qlogo.cn/g?b=qq&nk=2776686748&s=640
+   - name: Axi's Blog
+     link: https://axi404.top
+     avatar: https://axi404.top/avatar/avatar.png
+   - name: 晓雨杂记
+     link: https://www.lihaoyu.cn/
+     avatar: https://blog-api.lihaoyu.cn/images/profile/avatar-128x.webp
+   - name: Restent Ou
+     link: https://blog.gxres.net/
+     avatar: https://library.gxres.net/images/avatars/gxres042.webp
+   - name: xaoxuu
+     link: https://xaoxuu.com
+     avatar: https://cn.cravatar.com/avatar/15e59a60168a6ce1bfc3eddfca8c5a54?s=512
+   - name: MuXiaoChen🍊
+     link: https://miraii.cn/
+     avatar: https://tuchuang.voooe.cn/images/2025/11/28/Mx_1761296939311296300.webp
+   - name: 懋和道人
+     link: https://www.dao.js.cn/
+     avatar: https://cn.cravatar.com/avatar/37d41e2b550633a30f5d41de61c1aa92?s=400&r=G&d=mp&ver=1754413756
+   - name: 枫落丰源
+     link: https://blog.feng1026.top/
+     avatar: https://blog.feng1026.top/avatar.jpg
+   - name: Lane's Blog
+     link: https://www.laneljc.cn/
+     avatar: https://www.laneljc.cn/assets/favicon.png
+   - name: Hikaru Lab
+     link: https://www.mengxiblog.top/
+     avatar: https://img-cn.static.isla.fan/2025/10/19/68f4824b7c228.png
+   - name: 流川Lucian
+     link: https://www.oao.cc/
+     avatar: https://weavatar.com/avatar/7c89b581198afee639a3664634bdf5935b9e08edd860741a73add12fb5fe20c2
+   - name: 郝鸿涛
+     link: https://hongtaoh.com/
+     avatar: https://hongtaoh.com/media/ht10.png
+   - name: 月空人
+     link: https://whbbit.cn/
+     avatar: https://bitmc.uno/picgo/126662463_p2.jpg
+   - name: atpX
+     link: https://atpx.com/
+     avatar: https://atpx.com/favicon-32x32.png
+   - name: Coderfee's Blog
+     link: https://coderfee.com/
+     avatar: https://coderfee.com/favicon-dark.svg

@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_fcircle.md";
+
+---
+
+<Layout
+    title="友圈"
+    description="LineXic\'s website的友链动态圈子,可以在这里看到我的友链的最新文章,随时随地视奸"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+
+    </MarkdownBody>
+</Layout>

@@ -30,7 +30,8 @@
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18",
     "twikoo": "^1.6.42",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "yamljs": "^0.3.0"
   },
   "packageManager": "pnpm@10.25.0"
 }

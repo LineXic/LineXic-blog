@@ -26,6 +26,7 @@ export const SITE_COPYRIGHT_YEAR_START = "2023";
 export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "首页", href: "./", target: "" },
     { title: "友链", href: "./page/links/", target: "" },
+    { title: "友圈", href: "./page/fcircle/", target: "" },
     { title: "归档", href: "./page/archive/", target: "" },
     { title: "留言", href: "./page/guestbook", target: "" },
 ]
