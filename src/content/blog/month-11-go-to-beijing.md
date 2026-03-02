@@ -84,7 +84,7 @@ pubDate: '2026-02-28'
 
 从地坛出来后就到了北京一环的胡同小巷里，这里人更多！人挤人的在德云社和大观楼打了卡
 ![德云社.webp](https://img.linexic.top/file/1772389495358_德云社.webp)
-![大观楼.webp](https://img.linexic.top/file/1772389532530_大观楼.webp）
+![大观楼.webp](https://img.linexic.top/file/1772389532530_大观楼.webp)
 
 ## 安和桥
 
