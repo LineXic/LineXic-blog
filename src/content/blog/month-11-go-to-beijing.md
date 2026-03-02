@@ -49,34 +49,43 @@ pubDate: '2026-02-28'
 ![鸭子们.webp](https://img.linexic.top/file/1772388556638_鸭子们.webp)
 ![十二孔桥.webp](https://img.linexic.top/file/1772388572225_十二孔桥.webp)
 ![波光粼粼.webp](https://img.linexic.top/file/1772388614781_波光粼粼.webp)
+
 ## 清北
+
 由于没预约上到那里才发现于是只能在门口拍一张照了
 ![清华和状元门.webp](https://img.linexic.top/file/1772388682810_清华和状元门.webp)
 ![北大.webp](https://img.linexic.top/file/1772388702084_北大.webp)
 
 ## 朝阳公园
+
 去爸爸的工位看了看，爸爸腾出空来带我去附近的朝阳公园转了一圈，拍到了一些萌物
 ![看起来有些不耐烦的羊驼.webp](https://img.linexic.top/file/1772389707560_看起来有些不耐烦的羊驼.webp)
 ![梅花鹿.webp](https://img.linexic.top/file/1772389709948_梅花鹿.webp)
 ![黑天鹅.webp](https://img.linexic.top/file/1772389714260_黑天鹅.webp)
 
 ## 地坛
+
 ![地坛庙会.webp](https://img.linexic.top/file/1772388990733_地坛庙会.webp)
 ![祭祀演绎.webp](https://img.linexic.top/file/1772389050644_祭祀演绎.webp)
 > 这一次我们去得很早，正好赶上九点左右的祭祀演绎活动
+
 ![地坛庙会的演出.webp](https://img.linexic.top/file/1772389002166_地坛庙会的演出.webp)
 ![好多人啊.webp](https://img.linexic.top/file/1772389122806_好多人啊.webp)
 ![地坛中国结.webp](https://img.linexic.top/file/1772389154031_地坛中国结.webp)
 > 当然到了地坛当然是少不了和自己喜欢的明星打卡啦
+
 ![薛之谦.webp](https://img.linexic.top/file/1772389205470_薛之谦.webp)
 ![张杰.webp](https://img.linexic.top/file/1772389232467_张杰.webp)
 ![余华和史铁生.webp](https://img.linexic.top/file/1772389360695_余华和史铁生.webp)
 ![史铁生和余华.webp](https://img.linexic.top/file/1772389385423_史铁生和余华.webp)
 > 在地坛呆了一上午就出去了
+
 ## 胡同小巷
+
 从地坛出来后就到了北京一环的胡同小巷里，这里人更多！人挤人的在德云社和大观楼打了卡
 ![德云社.webp](https://img.linexic.top/file/1772389495358_德云社.webp)
-![大观楼.webp](https://img.linexic.top/file/1772389532530_大观楼.webp)
+![大观楼.webp](https://img.linexic.top/file/1772389532530_大观楼.webp）
+
 ## 安和桥
 
 ![安和桥北.webp](https://img.linexic.top/file/1772390016649_安和桥北.webp)
@@ -87,6 +96,7 @@ pubDate: '2026-02-28'
 ![安和桥的桥.webp](https://img.linexic.top/file/1772390194429_安和桥的桥.webp)
 
 ## 圆明园
+
 自从上次去天坛后我朋友就没出来玩了，这次在他开学前几天我们来了圆明园和雍和宫
 ![圆明园站.webp](https://img.linexic.top/file/1772390585380_圆明园站.webp)
 ![圆明园的花.webp](https://img.linexic.top/file/1772390361964_圆明园的花.webp)
@@ -98,6 +108,7 @@ pubDate: '2026-02-28'
 > 圆明园太大了，我们转了一上午才只转了一半
 
 ## 雍和宫
+
 从圆明园出来我们就去了雍和宫
 
 ![这应该是菩萨？](https://img.linexic.top/file/%E8%BF%99%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8F%A9%E8%90%A8%EF%BC%9F.webp?from=admin)
@@ -105,7 +116,9 @@ pubDate: '2026-02-28'
 ![雍和宫](https://img.linexic.top/file/1772390817794_IMG20260223152811.jpg?from=admin)
 
 ## 碎碎念
+
 在这里除了吃什么之外想的最多的就是面基了，有一段时间特别想面基就不断在群里问面基
 ![面基.webp](https://img.linexic.top/file/1772391474665_面基.webp)
 ![面基.webp](https://img.linexic.top/file/1772391562984_面基.webp)
-这次出来玩确实让我的心情改变了一些，但还是会莫名的失落和没有兴趣
+![各种优惠.webp](https://img.linexic.top/file/1772427047572_各种优惠.webp)
+>再见了这个让我领各种优惠卷的去哪里都要我预约的城市
