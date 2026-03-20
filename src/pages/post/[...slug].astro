@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import {filterPosts, sortByDate} from "../../utils/misc"; // 新增 sortByDate 导入
 import Comment from "../../components/Comment.astro";
@@ -12,10 +12,10 @@ export async function getStaticPaths() {
 	const sortedPosts = sortByDate(posts);
 	
 	return sortedPosts.map((post, index) => ({
-		params: { slug: post.slug },
+		params: { slug: post.id },
 		props: {
 			...post,
-			prevPost: sortedPosts[index - 1] || null,  // 新增上一篇
+			prevPost: sortedPosts[index - 1] || null,  // 新增上一�?
 			nextPost: sortedPosts[index + 1] || null
 		},
 	}));
@@ -28,7 +28,7 @@ type Props = CollectionEntry<'blog'> & {
 
 const { prevPost, nextPost } = Astro.props; // 新增解构
 const post = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 const cc = "CC BY-NC-SA 4.0"; // 定义 cc 变量
 const config = {
 	blog: {
@@ -58,8 +58,8 @@ const config = {
 			class="text-primary 
 			underline 
 			dark:text-primary/80"
-			href={`https://${config.blog.hostname}/post/${post.slug}`}>
-			{`https://${config.blog.hostname}/post/${post.slug}`}</a>
+			href={`https://${config.blog.hostname}/post/${post.id}`}>
+			{`https://${config.blog.hostname}/post/${post.id}`}</a>
 		<div 
 		class="mt-1 
 		flex-row 
@@ -70,7 +70,7 @@ const config = {
 				<p 
 				class="font-bold 
 				row-span-1">
-				本文作者
+				本文作�?
 			</p>
 				<p 
 				class="row-span-1">
