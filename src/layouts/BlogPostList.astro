@@ -25,7 +25,7 @@ const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
     <Container defaultPadding={true}>
         <div class="-mt-10 md:-mt-12">
             {data.map((post) => {
-                let excerpt = post.data.description || removeMarkdown(post.body);
+                let excerpt = post.data.description || removeMarkdown(post.body || "");
                 if (excerpt.length > 200) {
                     excerpt = excerpt.slice(0, 200) + "...";
                 }

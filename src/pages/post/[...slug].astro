@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 		params: { slug: post.id },
 		props: {
 			...post,
-			prevPost: sortedPosts[index - 1] || null,  // 新增上一�?
+			prevPost: sortedPosts[index - 1] || null,  // 新增上一�?
 			nextPost: sortedPosts[index + 1] || null
 		},
 	}));
@@ -70,7 +70,7 @@ const config = {
 				<p 
 				class="font-bold 
 				row-span-1">
-				本文作�?
+				本文作者
 			</p>
 				<p 
 				class="row-span-1">
