@@ -32,6 +32,13 @@ pubDate: '2026-03-21'
 - 体验：★★★★☆
 - via：[拼多多](https://mobile.yangkeduo.com/goods1.html?ps=JabSPGVlXR)
 
+![耳机.webp](https://img.linexic.top/file/1775058991176_耳机.webp)
+
+一款耳机我把它插在机箱上了戴久了会耳朵疲劳其他都可以带上耳机后简直和世界隔绝了
+
+- 体验：★★★★☆
+- via：[淘宝](https://e.tb.cn/h.iQlAx6X8MUvm9sO?tk=0qMd527hrXP)
+
 ## 漫游
 
 折腾完电脑就该折腾手机了，手机上买了张 Sim 漫游流量卡
@@ -67,3 +74,12 @@ pubDate: '2026-03-21'
 
 - 体验：★★★★★
 - via：[Steam](https://store.steampowered.com/app/413150/Stardew_Valley/)
+
+## 书籍
+
+![活下去的理由.webp](https://img.linexic.top/file/1775059275582_活下去的理由.webp)
+
+看博友推荐的还没看但我对它的期望还是蛮高的
+
+- 体验：★★★★☆
+- via：[淘宝](https://e.tb.cn/h.ijysZHc8XNfrv8z?tk=u4E8527kxtE)
