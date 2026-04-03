@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
 		items: posts.map((post) => ({
 			...post.data,
 			link: `/post/${post.id}/`,
-			categories: post.data.tags ?? [],
+			categories: Array.isArray((post.data as any).tags) ? (post.data as any).tags : [],
 		})),
 	});
 }
