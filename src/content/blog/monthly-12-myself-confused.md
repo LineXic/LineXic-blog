@@ -24,7 +24,7 @@ pubDate: '2026-04-03'
 
 所以 linexic 开始频繁上网了...
 
-<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">这个月好像是我用梯子最多的一个月，漫游也快被我玩完了😥🤤<br><a href="https://twiter.com/LineXic/status/2038274662116053246?s=20"></a>pbs.twimg.com/media/HElnzaNbQAAuTEk?format=png</p>&mdash; 晓看天色 (@LineXic) <a href="https://twiter.com/LineXic/status/2038274662116053246?s=20">March 29, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">这个月好像是我用梯子最多的一个月，漫游也快被我玩完了😥🤤<br><a href="https://twitter.com/LineXic/status/2038274662116053246?s=20"></a>pbs.twimg.com/media/HElnzaNbQAAuTEk?format=png</p>&mdash; 晓看天色 (@LineXic) <a href="https://twitter.com/LineXic/status/2038274662116053246?s=20">March 29, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 linexic 还是个很怀旧的人，至今仍会回忆起之前和朋友玩游戏时的时光也会对着一件旧物品发呆
 
