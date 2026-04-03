@@ -3,7 +3,6 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import {filterPosts, sortByDate} from "../../utils/misc"; // 新增 sortByDate 导入
 import Comment from "../../components/Comment.astro";
-
 export async function getStaticPaths() {
 	const posts = filterPosts(await getCollection('blog'), {
 		filterDraft: true,
@@ -15,7 +14,7 @@ export async function getStaticPaths() {
 		params: { slug: post.id },
 		props: {
 			...post,
-			prevPost: sortedPosts[index - 1] || null,  // 新增上一�?
+			prevPost: sortedPosts[index - 1] || null,  
 			nextPost: sortedPosts[index + 1] || null
 		},
 	}));

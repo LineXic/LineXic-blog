@@ -10,8 +10,74 @@ import "@/assets/fonts/ChillRoundF/ChillRoundF.css";
 </head>
 <body class="dark:bg-gray-950">
 <slot />
+<script is:inline>
+  (() => {
+    const root = document.querySelector('[data-post-content]');
+    if (!root) return;
+    const links = root.querySelectorAll('a[href]');
+    for (const link of links) {
+      const href = link.getAttribute('href');
+      if (!href) continue;
+      if (href.startsWith('#')) continue;
+      const lower = href.toLowerCase();
+      if (lower.startsWith('mailto:') || lower.startsWith('tel:') || lower.startsWith('javascript:')) continue;
+      try {
+        const url = new URL(href, window.location.href);
+        if (url.protocol !== 'http:' && url.protocol !== 'https:') continue;
+        const domain = url.hostname.replace(/^www\./, '');
+        if (!domain) continue;
+        link.setAttribute('data-domain', domain);
+      } catch {
+        // Ignore invalid URLs
+      }
+    }
+  })();
+</script>
 </body>
 </html>
 
 <style is:global>
+  [data-post-content] {
+    --domain-tooltip-bg: #ffffff;
+    --domain-tooltip-color: #000000;
+  }
+  body.dark [data-post-content] {
+    --domain-tooltip-bg: #111827;
+    --domain-tooltip-color: #f9fafb;
+  }
+  @media (prefers-color-scheme: dark) {
+    [data-post-content] {
+      --domain-tooltip-bg: #111827;
+      --domain-tooltip-color: #f9fafb;
+    }
+  }
+  [data-post-content] a[data-domain] {
+    position: relative;
+  }
+  [data-post-content] a[data-domain]::after {
+    content: attr(data-domain);
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, -0.4rem);
+    background: var(--domain-tooltip-bg);
+    color: var(--domain-tooltip-color);
+    padding: 0.2rem 0.45rem;
+    border-radius: 0.35rem;
+    font-size: 0.75rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 120ms ease, transform 120ms ease;
+    z-index: 50;
+  }
+  [data-post-content] a[data-domain]:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -0.65rem);
+  }
 </style>
+
+
+
+
