@@ -2,7 +2,7 @@
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import {filterPosts} from "../../utils/misc";
-
+import Comment from "../../components/Comment.astro";
 export async function getStaticPaths() {
 	const posts = filterPosts(await getCollection('blog'), {
 		filterDraft: true,
@@ -18,14 +18,8 @@ type Props = CollectionEntry<'blog'>;
 const post = Astro.props;
 const { Content } = await render(post);
 ---
-
 <BlogPost {...post.data}>
 	<Content />
-	<div class="flex flex-col items-center justify-center h-40">
-	<p class="m-0 leading-none">留下自己的足迹吧</p>
-</div>
-
-
 	<Comment />
 	<script>
 		import twikoo from "twikoo";
