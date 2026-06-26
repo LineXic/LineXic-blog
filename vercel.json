@@ -2,5 +2,8 @@
   "installCommand": "pnpm install",
   "buildCommand": "pnpm run build",
   "devCommand": "pnpm dev",
-  "framework": "astro"
+  "framework": "astro",
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=3000"
+  }
 }
