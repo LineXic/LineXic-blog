@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import svelte from "@astrojs/svelte";
@@ -16,10 +17,12 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), svelte()],
 
   markdown: {
-    remarkRehype: {
-      footnoteLabel: "脚注",
-      footnoteBackLabel: '文档内容的脚注',
-    }
+    processor: unified({
+      remarkRehype: {
+        footnoteLabel: "脚注",
+        footnoteBackLabel: '文档内容的脚注',
+      }
+    }),
   },
 
   vite: {
