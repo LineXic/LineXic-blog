@@ -92,6 +92,7 @@
 <nav class="fixed w-full top-0 z-40">
     <div id="navBar" class={navBarClassNameBase + " " + navBarClassName} style={`--navBar-height: ${mobileNavHeight}rem`}>
         <div class="flex justify-between md:justify-center items-center gap-8 ps-3 pe-3 py-3">
+            <!-- svelte-ignore slot_element_deprecated -->
             <a href="/" class="block flex-none" title="首页">
                  <slot name="avatar"></slot>
             </a >
