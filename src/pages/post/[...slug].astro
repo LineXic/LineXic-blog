@@ -20,18 +20,8 @@ const { Content } = await render(post);
 ---
 <BlogPost {...post.data}>
 	<Content />
- <div class="flex flex-col items-center justify-center h-40">
+ <div class="flex flex-col items-center justify-center h-20">
   <p class="m-0 leading-none">留下自己的足迹吧</p>
  </div>
 	<Comment />
-	<script>
-		import twikoo from "twikoo";
-		twikoo({
-		  envId: "https://talk.linexic.top/.netlify/functions/twikoo", // your environment ID or url
-		  el: "#tcomment", // the container ID which will show the comment
-		  lang: "zh-CN", // language for the comment template. for the full list, refer to https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
-		}).then(() => {
-		  console.log("comment loading success");
-		});
-	  </script>
 </BlogPost>

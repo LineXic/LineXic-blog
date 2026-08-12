@@ -56,6 +56,13 @@ body {
 .twikoo .comment-item .author-name {
   border-bottom: none !important;
 }
+
+/* Twikoo 加载进度圈居中 */
+.twikoo .el-loading-spinner .circular {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (width >= 48rem) {
     .koi-squircle-md {
         border-radius: 1.5rem;
