@@ -38,6 +38,22 @@ body {
   margin: 0;
 }
 
+.twikoo img {
+  margin: 0;
+}
+
+.twikoo .OwO-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.twikoo .OwO-packages img {
+  display: inline-block;
+  vertical-align: middle;
+  position: static !important;
+  top: auto !important;
+}
+
 /* 去掉友圈元素的虚线 */
 #refresh-random-article {
    text-decoration: none !important;
