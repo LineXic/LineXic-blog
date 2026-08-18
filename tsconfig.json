@@ -3,9 +3,9 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "*": ["./*"]
     }
   },
 }

@@ -42,6 +42,20 @@ body {
   margin: 0;
 }
 
+/* Twikoo OWO 表情：强制行内，不独占一行（避免自动折行到 p 下一段） */
+.twikoo .tk-owo-emotion,
+.tk-owo-emotion {
+  display: inline !important;
+  vertical-align: middle;
+  width: 22.4px;
+  height: 22.4px;
+  margin: 0 1px;
+  vertical-align: text-bottom;
+}
+.twikoo .tk-content p {
+  white-space: normal;
+}
+
 .twikoo .OwO-item img {
   display: block;
   margin: 0 auto;
@@ -52,12 +66,6 @@ body {
   vertical-align: middle;
   position: static !important;
   top: auto !important;
-}
-
-/* 去掉友圈元素的虚线 */
-#refresh-random-article {
-   text-decoration: none !important;
-   border-bottom: none !important;
 }
 
 /* Remove all dashed lines in Twikoo */
