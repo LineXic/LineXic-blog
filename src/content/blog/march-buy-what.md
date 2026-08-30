@@ -11,14 +11,14 @@ pubDate: '2026-03-21'
 ## 设备
 
 这其中不乏游戏设备和电脑辅助设备，都是偏低价的
-![手柄](https://img.linexic.top/file/1774087996581_%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9F%84.webp?from=admin)
+![手柄](https://img.linexic.top/file/1774087996581_%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9F%84.webp)
 
 第一个要买的就是手柄，说起来买手柄还是因为小时候看别人打花雨庭等起床战争的时候想买的，看到别人拿手机就能打出来的优秀操作不禁让我羡慕，了解到他们用手柄的时候那个想买手柄的萌芽就在我心里种下了，到了现在有钱了自然就买了两个我和我弟弟一人一个，当时想着在电视或者 Steam 上和我弟弟一起玩，只是后来 Steam 上没有那么多游戏后来也就退了当满足小时候的自己又何尝不是赚到呢
 
 - 体验：★★★★☆
 - via：[拼多多](https://mobile.yangkeduo.com/goods1.html?ps=agEX4xSWHd)
 
-![麦克风](https://img.linexic.top/file/1774058673330_%E9%BA%A6%E5%85%8B%E9%A3%8E.webp?from=admin)
+![麦克风](https://img.linexic.top/file/1774058673330_%E9%BA%A6%E5%85%8B%E9%A3%8E.webp)
 
 后来 Steam 游戏多了就想找人联机，而联机必不可少的又是玩家间的交流就买了麦克风。这中间发生过一件「气笑」了的事情：我在上学而快递又是找我上学期间到的，导致我还没来及签收就给我又退回去了，对对对顺丰是这样的。不得已又重新换了一个地拍下一单，这期间没有麦克风就用了 [Mugzx](https://blog.mugzx.top/) 推荐的一个在手机上 Usb 或者 WiFi 就能在电脑上语音的开源项目 [MicYou](https://github.com/LanRhyme/MicYou) 实际测试下来很不错除了音量有点小吧
 

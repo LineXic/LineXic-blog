@@ -111,9 +111,9 @@ pubDate: '2026-02-28'
 
 从圆明园出来我们就去了雍和宫
 
-![这应该是菩萨？](https://img.linexic.top/file/%E8%BF%99%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8F%A9%E8%90%A8%EF%BC%9F.webp?from=admin)
-![虔诚一点](https://img.linexic.top/file/1772390819041_IMG20260223152523.jpg?from=admin)
-![雍和宫](https://img.linexic.top/file/1772390817794_IMG20260223152811.jpg?from=admin)
+![这应该是菩萨？](https://img.linexic.top/file/%E8%BF%99%E5%BA%94%E8%AF%A5%E6%98%AF%E8%8F%A9%E8%90%A8%EF%BC%9F.webp)
+![虔诚一点](https://img.linexic.top/file/1772390819041_IMG20260223152523.jpg)
+![雍和宫](https://img.linexic.top/file/1772390817794_IMG20260223152811.jpg)
 
 ## 碎碎念
 
