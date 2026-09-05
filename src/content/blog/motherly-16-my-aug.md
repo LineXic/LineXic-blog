@@ -33,6 +33,11 @@ pubDate: '2026-09-05'
 ![Cindy](https://img.linexic.top/file/Oo4cKXfY.webp)
 <blockquote class="twitter-tweet"><p lang="in" dir="ltr">Hello Cindy <a href="https://x.com/askmycindy?ref_src=twsrc%5Etfw">@askmycindy</a> <a href="https://t.co/s5JttBMYlq">https://t.co/s5JttBMYlq</a></p>&mdash; 晓看天色 (@LineXic) <a href="https://x.com/LineXic/status/2084543399181566206?ref_src=twsrc%5Etfw">August 4, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script> 
 
+顺手我的个人主页也被重构了，新增了实时抓取 RSS 查看更新
+> [https://i.linexic.top/](https://i.linexic.top/)
+
+![i.linexic.top](https://img.linexic.top/file/CVpfUTf2.webp)
+
 ## 其他
 
 一些其他内容，比如 8 月 17 日是我加入 Twitter 的四周年（好惊喜） 
