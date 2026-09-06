@@ -1,5 +1,5 @@
 ---
-title: '月记 16:我的八月'
+title: '月记之八：我的八月'
 description: '暑假过完迎接高三（哭）'
 pubDate: '2026-09-05'
 ---
@@ -26,6 +26,11 @@ pubDate: '2026-09-05'
 现在在追两部剧，一部是[《狐妖小红娘》
 ](https://www.bilibili.com/bangumi/play/ss2543?spm_id_from=333.1387.0.0)，一部就是《甄嬛传》（是的都还没看完）
 ![甄嬛传](https://img.linexic.top/file/jIIbR3YM.webp)
+
+## 书籍
+![活下去的理由](https://img.linexic.top/file/1775059275582_%E6%B4%BB%E4%B8%8B%E5%8E%BB%E7%9A%84%E7%90%86%E7%94%B1.webp)
+在[《三月份我都买了些什么》](https://www.linexic.top/post/march-buy-what/)一文中我提到了《活下去的理由》这本书在八月份读（听）完了，实际上我四月份就已经开始读这本书了但是一直没有静下心读...
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://x.com/hashtag/%E6%88%91%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88?src=hash&amp;ref_src=twsrc%5Etfw">#我在做什么</a> 我正在阅读《活下去的理由》 <a href="https://t.co/HJG8uOa6x6">pic.twitter.com/HJG8uOa6x6</a></p>&mdash; 晓看天色 (@LineXic) <a href="https://x.com/LineXic/status/2045733870428102997?ref_src=twsrc%5Etfw">April 19, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script> 
 
 ## AI Agent
 
