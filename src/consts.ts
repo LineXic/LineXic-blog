@@ -11,7 +11,7 @@ export const SITE_LANGUAGE = "en";
 export const SITE_TITLE = 'LineXic\'s website';
 
 // 网站的副标题
-export const SITE_DESCRIPTION = '难离难舍，想抱紧些。';
+export const SITE_DESCRIPTION = '具体问题，具体分析。';
 
 // 博主的昵称
 export const SITE_AUTHOR_NAME = "LineXic";

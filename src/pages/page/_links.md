@@ -12,8 +12,6 @@
 标题:LineXic\'s website
 链接:https://www.linexic.top
 头像:https://github.com/LineXic.png
-描述:难离难舍，想抱紧些
+描述:具体问题，具体分析
 RSS:https://www.linexic.top/rss.xml
 ```
-
-描述摘自陈奕迅的《单车》，在这里无特殊含义请勿过分解读
