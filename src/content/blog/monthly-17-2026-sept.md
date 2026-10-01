@@ -33,6 +33,15 @@ updatedDate: 2026-10-01
 
 使用了 Oh My Posh 的风格，参考了 [【纸鹿摸鱼处】Windows 终端体验优化指南](https://blog.zhilu.site/2024/windows-terminal)这篇博客
 
+## Grokbot 风格图片
+
+在 X（Twitter）上兴起了这样风格的图片
+![Grokbot 风格图片](https://www.linexic.top/favicon.png)
+
+我也尝试使用 ChatGPT 生成了这样的图片（效果如上图）现在已经是我站的 ico 了
+
+<blockquote class="twitter-tweet"><p lang="ko" dir="ltr">그록봇 스타일 케릭터 만들어 주는 프롬프트 공유<a href="https://t.co/iB222nH4kg">https://t.co/iB222nH4kg</a><br><br>파딱이 아니라 긴 텍스트 업로드가 안되어 아예 웹앱 형태로 배포합니다. 다음 사이트에서 복사 버튼을 누르고 사용하는 이미지 생성 Ai에 붙여넣기해서 활용해 주세요 <a href="https://t.co/BzxqUuomtg">pic.twitter.com/BzxqUuomtg</a></p>&mdash; Serio_ai (@Multi_Serio_Ai) <a href="https://x.com/Multi_Serio_Ai/status/2100800237619347535?ref_src=twsrc%5Etfw">September 18, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script> 
+
 ## 开源软件
 ### 文档编辑
 
