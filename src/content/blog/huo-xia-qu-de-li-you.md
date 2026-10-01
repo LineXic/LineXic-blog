@@ -2,7 +2,7 @@
 title: '读马特·海格《活下去的理由》'
 description: ''
 pubDate: '2026-09-19'
-updatedDate: '2026-09-25'
+updatedDate: 2026-09-25
 ---
 ![活下去的理由](https://img9.doubanio.com/view/subject/s/public/s29636724.jpg)
 
