@@ -31,6 +31,6 @@ pubDate: '2025-04-12'
 
 在[向上革命，向下实践](https://blog.mugzx.top/2025/top-down-bottom-up#%E5%90%91%E4%B8%8A%E9%9D%A9%E5%91%BD)中，有人对我发出的文章提出疑问并提供了新的思路，点赞👍受益
 
-[^1]: [tcdw/koi@`8bafa04`]\(https://github.com/tcdw/koi/commit/8bafa04db7a30ba9e9e9e1db8839b0717143f8e7\)
+[^1]: [tcdw/koi@`8bafa04`](https://github.com/tcdw/koi/commit/8bafa04db7a30ba9e9e9e1db8839b0717143f8e7)
 
-[^2]: [MusicFree]\(https://github.com/maotoumao/MusicFree\)
+[^2]: [MusicFree](https://github.com/maotoumao/MusicFree)
