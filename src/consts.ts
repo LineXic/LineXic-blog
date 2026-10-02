@@ -23,11 +23,15 @@ export const SITE_AUTHOR_AVATAR = authorAvatarImage;
 export const SITE_COPYRIGHT_YEAR_START = "2023";
 
 // 网站头部导航菜单
+// 注意：这里必须写绝对路径（不能写成 "./" 这种相对路径）。
+// 页面不再使用 <base>，相对路径会按当前目录解析，在 /blog/、/page/archive/ 等
+// 子目录页面上会跑到 /blog/page/links/ 之类的错误地址。
+const BASE_URL = import.meta.env.BASE_URL;
 export const SITE_MENU: { title: string, href: string, target: string }[] = [
-    { title: "首页", href: "./", target: "" },
-    { title: "友链", href: "./page/links/", target: "" },
-    { title: "归档", href: "./page/archive/", target: "" },
-    { title: "留言", href: "./page/guestbook", target: "" },
+    { title: "首页", href: BASE_URL, target: "" },
+    { title: "友链", href: `${BASE_URL}page/links/`, target: "" },
+    { title: "归档", href: `${BASE_URL}page/archive/`, target: "" },
+    { title: "留言", href: `${BASE_URL}page/guestbook`, target: "" },
 ]
 
 // 网站横幅背景图片（明亮主题）

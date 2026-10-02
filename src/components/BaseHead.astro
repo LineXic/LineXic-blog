@@ -17,9 +17,15 @@ const { title, description = '' , image = '/blog-placeholder-1.jpg' } = Astro.pr
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<base href={import.meta.env.BASE_URL} />
+<!--
+  注意：这里不要使用 <base href="...">。
+  一旦页面存在 <base>，`href="#某标题"` 这类纯片段链接会按 base 解析，
+  而不是按当前文档解析 —— 点击标题锚点会跳到 https://站点/#某标题（首页），
+  正文里的 `[文字](#锚点)` 也会一起失效。
+  因此所有原本依赖 base 的相对路径都改用 import.meta.env.BASE_URL 拼绝对路径。
+-->
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="./favicon.png" />
+<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.png`} />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->

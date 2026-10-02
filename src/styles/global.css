@@ -116,3 +116,74 @@ body {
         background-color: var(--color-accent-950);
     }
 }
+
+/* ==========================================================================
+   标题锚点（Heading Anchor）
+   由 astro.config.js 中的 rehype-slug + rehype-autolink-headings 生成：
+   <h2 id="astro-配置">
+     <a class="header-anchor" aria-hidden="true" tabindex="-1" href="#astro-配置"></a>
+     Astro 配置
+   </h2>
+   定位符 "＃" 由 CSS 伪元素绘制（不占 DOM、跟随标题字号、支持 dark mode）。
+   ========================================================================== */
+
+/* 标题作为锚点的定位参照，并为固定顶栏预留滚动偏移 */
+.prose :is(h1, h2, h3, h4, h5, h6) {
+    position: relative;
+    scroll-margin-top: 5.5rem;
+}
+
+.prose .header-anchor {
+    position: absolute;
+    inset-block-start: 50%;
+    /* 负偏移把锚点挪到标题左侧的留白里；em 基于锚点自身字号，不会超出容器内边距 */
+    inset-inline-start: -1.4em;
+    inline-size: 1.1em;
+    block-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 移动端用固定小字号，保证 1.1em + 1.4em 的占位不超过 main 的 p-5 内边距 */
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+
+    transform: translateY(-50%);
+    color: var(--color-accent-600);
+    opacity: 0;
+    border-bottom: none;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+/* 覆盖 prose 的链接样式（虚线底边 / 悬浮底色） */
+.prose .header-anchor:hover,
+.prose .header-anchor:focus {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.prose .header-anchor::before {
+    content: "#";
+}
+
+/* 悬浮标题、锚点获得焦点、或该标题正好是 URL 目标时显示 */
+.prose :is(h1, h2, h3, h4, h5, h6):hover > .header-anchor,
+.prose :is(h1, h2, h3, h4, h5, h6):target > .header-anchor,
+.prose .header-anchor:focus-visible {
+    opacity: 1;
+}
+
+@media (min-width: 48rem) {
+    .prose .header-anchor {
+        /* 桌面端留白更充裕，定位符随标题字号缩放，更接近 VitePress 的观感 */
+        font-size: 0.8em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .prose .header-anchor {
+        color: var(--color-accent-400);
+    }
+}

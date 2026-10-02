@@ -4,7 +4,7 @@ import { SITE_COPYRIGHT_YEAR_START, SITE_TITLE } from "../consts";
 
 <footer class="text-black dark:text-white flex justify-center my-8">
 	<div class="w-full max-w-4xl px-5 md:px-6">
-		<p class="text-center">&copy; {SITE_COPYRIGHT_YEAR_START}-{new Date().getFullYear()} <a href="./">{SITE_TITLE}</a></p>
+		<p class="text-center">&copy; {SITE_COPYRIGHT_YEAR_START}-{new Date().getFullYear()} <a href={import.meta.env.BASE_URL}>{SITE_TITLE}</a></p>
 		<p class="text-center mt-2 opacity-60">Powered by <a href="https://astro.build/">Astro</a>・Based on <a href="https://github.com/tcdw/koi">Koi</a></p>
         <br/>
 	<div style="text-align:center">
@@ -52,7 +52,7 @@ import { SITE_COPYRIGHT_YEAR_START, SITE_TITLE } from "../consts";
         <a class="block" href="/rss.xml">
             RSS
         </a>
-        <a class="block" href="sitemap-0.xml">
+        <a class="block" href={`${import.meta.env.BASE_URL}sitemap-0.xml`}>
             Sitemap
         </a>
         <a class="block" target="_blank" href="https://i.linexic.top/">

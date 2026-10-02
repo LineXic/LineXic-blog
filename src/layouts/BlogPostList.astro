@@ -17,6 +17,10 @@ interface Props {
 }
 
 const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
+
+// 文章链接与分页链接都必须使用绝对路径：
+// 页面已移除 <base>，相对路径（./post/xxx/、./blog/2）会在 /blog/ 等子目录下解析错误
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout>
@@ -32,7 +36,7 @@ const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
                 return (
                         <ArticleListItem
                                 title={post.data.title}
-                                url={`./post/${post.id}/`}
+                                url={`${BASE_URL}post/${post.id}/`}
                                 date={post.data.pubDate}>
                             {excerpt}
                         </ArticleListItem>
@@ -41,7 +45,7 @@ const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
         </div>
         <div class="flex justify-between mt-8 h-12 relative">
             {(currentPage > 1) ? <a
-                    href={`./blog/${currentPage - 1}`}
+                    href={`${BASE_URL}blog/${currentPage - 1}`}
                     class="rounded-full bg-primary-700 px-6 py-3 text-base
                     font-semibold text-white shadow-sm hover:bg-primary-500 transition-colors
                     focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
@@ -51,7 +55,7 @@ const { data, currentPage, lastPage, largeBanner = false } = Astro.props;
             <div class="text-black dark:text-white absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4"
             >{currentPage} / {lastPage}</div>
             {(currentPage < lastPage) ? <a
-                    href={`./blog/${currentPage + 1}`}
+                    href={`${BASE_URL}blog/${currentPage + 1}`}
                     class="rounded-full bg-primary-700 px-6 py-3 text-base
                     font-semibold text-white shadow-sm hover:bg-primary-500 transition-colors
                     focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"

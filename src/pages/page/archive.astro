@@ -41,6 +41,10 @@ yearMap.forEach((v, k) => {
         value: v,
     });
 });
+
+// 文章链接使用绝对路径：页面已移除 <base>，
+// 相对路径 ./post/xxx/ 会在 /page/archive/ 下被解析成 /page/archive/post/xxx/
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -53,7 +57,7 @@ yearMap.forEach((v, k) => {
             <h2>{e.label}</h2>
             <ul>
                 {e.value.map((f) => (
-                    <li><a href={`./post/${f.id}/`}>{f.data.title}</a></li>
+                    <li><a href={`${BASE_URL}post/${f.id}/`}>{f.data.title}</a></li>
                 ))}
             </ul>
         ))}

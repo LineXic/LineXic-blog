@@ -10,7 +10,7 @@ pubDate: '2023-12-17'
 
 那次我正在逛网上冲浪的时候刷到了用 CloudFlare 建设博客的帖子，对这个来了兴趣，研究了一两天诞生了我的第一个博客，从此一发不可收拾
 
-> [https://blog.linexic.top/](blog.linexic.top/)
+> [https://blog.linexic.top/](https://blog.linexic.top/)
 
 ## 后来
 
