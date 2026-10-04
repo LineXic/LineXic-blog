@@ -1,0 +1,432 @@
+---
+/**
+ * 文章图片放大预览（Image Lightbox）
+ *
+ * 只在「博客文章页」生效：
+ *  - 组件只被 layouts/BlogPost.astro 引用，其他页面（归档、友链、留言、首页）不会渲染；
+ *  - 绑定范围限定在 [data-post-content] 内（该属性也只有文章页有）；
+ *  - 会排除：被 <a> 包裹的图片（如 Vercel 部署按钮这类徽章）、
+ *    Twikoo 评论区的图片/表情、以及作者手动标记 data-no-zoom 的图片。
+ *
+ * 交互：
+ *  - 点击正文图片 → 打开放大层（适配屏幕）
+ *  - 点放大后的图片 → 在「适配屏幕」和「1:1 原始尺寸」之间切换
+ *  - 桌面端按住拖动 / 移动端单指拖动 → 平移（放大状态下）
+ *  - 移动端双指捏合 → 自由缩放（1x ~ 5x，以双指中点为锚点）
+ *  - 点击遮罩、按 Esc、点右上角 ✕ → 关闭
+ *  - 有 alt 的图片会在底部显示说明文字
+ *
+ * 放大用的是浏览器已经加载过的同一张图（currentSrc），所以点开是瞬时的，不会重新下载。
+ */
+---
+
+<dialog id="post-image-zoom" class="post-image-zoom" aria-label="图片预览">
+	<button type="button" class="post-image-zoom__close" aria-label="关闭图片预览">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+			<path d="M18 6 6 18M6 6l12 12"></path>
+		</svg>
+	</button>
+	<img class="post-image-zoom__img" alt="" decoding="async" draggable="false" />
+	<p class="post-image-zoom__caption" aria-hidden="true" hidden></p>
+</dialog>
+
+<script>
+	const MAX_SCALE = 5;
+
+	const dialog = document.getElementById('post-image-zoom') as HTMLDialogElement | null;
+	const dialogImg = dialog?.querySelector<HTMLImageElement>('.post-image-zoom__img') ?? null;
+	const captionEl = dialog?.querySelector<HTMLElement>('.post-image-zoom__caption') ?? null;
+
+	if (dialog && dialogImg) {
+		let trigger: HTMLImageElement | null = null;
+
+		// 视图状态：scale = 1 表示适配屏幕，tx/ty 为平移量（px）
+		let scale = 1;
+		let tx = 0;
+		let ty = 0;
+
+		// 手势状态
+		const pointers = new Map<number, { x: number; y: number }>();
+		let pan: { startX: number; startY: number; tx: number; ty: number } | null = null;
+		/** 双指捏合：记录起始距离、起始缩放、以及「捏合中点对应的图像局部坐标」 */
+		let pinch: { dist: number; scale: number; ux: number; uy: number; cx: number; cy: number } | null = null;
+		// 拖拽/捏合之后紧跟的那次 click 应该被忽略（否则会误触发 1:1 切换）
+		let moved = false;
+		let pinched = false;
+
+		const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+
+		/** 图片布局中心（不含 transform 带来的平移） */
+		const layoutCenter = () => {
+			const rect = dialogImg.getBoundingClientRect();
+			return { x: rect.left + rect.width / 2 - tx, y: rect.top + rect.height / 2 - ty };
+		};
+
+		/** 限制平移范围，避免把图片拖出视野 */
+		const clampPan = () => {
+			const maxX = Math.max(0, (dialogImg.clientWidth * scale - dialog.clientWidth) / 2);
+			const maxY = Math.max(0, (dialogImg.clientHeight * scale - dialog.clientHeight) / 2);
+			tx = clamp(tx, -maxX, maxX);
+			ty = clamp(ty, -maxY, maxY);
+		};
+
+		const render = (animate: boolean) => {
+			dialogImg.classList.toggle('is-settling', animate);
+			dialogImg.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${scale})`;
+			dialogImg.classList.toggle('is-zoomed', scale > 1.01);
+		};
+
+		const setView = (nextScale: number, nextX: number, nextY: number, animate = false) => {
+			scale = clamp(nextScale, 1, MAX_SCALE);
+			tx = nextX;
+			ty = nextY;
+			clampPan();
+			render(animate);
+		};
+
+		const resetView = (animate = false) => setView(1, 0, 0, animate);
+
+		/** 1:1 原始尺寸对应的缩放倍率（小图本来就小于屏幕时返回 1） */
+		const actualSizeScale = () => {
+			if (!dialogImg.naturalWidth || !dialogImg.clientWidth) return 1;
+			return dialogImg.naturalWidth / dialogImg.clientWidth;
+		};
+
+		const toggleActualSize = () => {
+			if (scale > 1.01) {
+				resetView(true);
+				return;
+			}
+			const target = actualSizeScale();
+			if (!(target > 1.01)) return; // 已经是原始尺寸，没有可放大的空间
+			setView(target, 0, 0, true);
+		};
+
+		const open = (img: HTMLImageElement) => {
+			trigger = img;
+			dialogImg.src = img.currentSrc || img.src;
+			dialogImg.alt = img.alt || '';
+			if (captionEl) {
+				captionEl.textContent = img.alt || '';
+				captionEl.hidden = !img.alt;
+			}
+			moved = false;
+			pinched = false;
+			resetView(false);
+			document.documentElement.classList.add('image-zoom-open');
+			if (typeof dialog.showModal === 'function') {
+				dialog.showModal();
+			} else {
+				dialog.setAttribute('open', '');
+			}
+		};
+
+		const close = () => {
+			if (typeof dialog.close === 'function' && dialog.open) {
+				dialog.close();
+				return;
+			}
+			dialog.removeAttribute('open');
+			onClosed();
+		};
+
+		const onClosed = () => {
+			document.documentElement.classList.remove('image-zoom-open');
+			pointers.clear();
+			pan = null;
+			pinch = null;
+			trigger?.focus({ preventScroll: true });
+			trigger = null;
+		};
+
+		dialog.addEventListener('close', onClosed);
+
+		// 右上角 ✕ 关闭（图标是子元素，用 closest 兜住点在 svg/path 上的情况）
+		dialog.addEventListener('click', (event) => {
+			const target = event.target as Element | null;
+			if (target?.closest?.('.post-image-zoom__close')) {
+				event.stopPropagation();
+				close();
+				return;
+			}
+			// 点击遮罩关闭（点图片是切换 1:1，由图片自己的 click 处理）
+			if (event.target === dialog) close();
+		});
+
+		// ------- 手势：平移 + 双指缩放 -------
+		dialog.addEventListener('pointerdown', (event) => {
+			if (event.pointerType === 'mouse' && event.button !== 0) return;
+			// 第一次按下不在图片上 → 这是「点遮罩关闭」，不参与手势
+			if (pointers.size === 0 && event.target !== dialogImg) return;
+
+			pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+			try {
+				// 捕获在图片上而不是 dialog 上：capture 会把后续事件（含 click）重定向到捕获元素，
+				// 捕获到 dialog 会导致「点图片切换 1:1」变成「点遮罩关闭」
+				dialogImg.setPointerCapture(event.pointerId);
+			} catch {
+				/* 合成事件没有真实 pointerId 时会抛错，忽略即可 */
+			}
+			dialogImg.classList.remove('is-settling');
+
+			if (pointers.size === 1) {
+				// 新手势开始：清掉上一轮的标记，这样「捏合之后的下一次点击」仍然有效
+				moved = false;
+				pinched = false;
+				pan = { startX: event.clientX, startY: event.clientY, tx, ty };
+				pinch = null;
+			} else if (pointers.size === 2) {
+				const [a, b] = [...pointers.values()];
+				const center = layoutCenter();
+				const midX = (a.x + b.x) / 2;
+				const midY = (a.y + b.y) / 2;
+				pinch = {
+					dist: Math.max(1, Math.hypot(a.x - b.x, a.y - b.y)),
+					scale,
+					// 捏合中点对应的图像局部坐标（相对图片中心）
+					ux: (midX - center.x) / scale,
+					uy: (midY - center.y) / scale,
+					cx: center.x,
+					cy: center.y,
+				};
+				pan = null;
+				pinched = true;
+			}
+		});
+
+		dialog.addEventListener('pointermove', (event) => {
+			if (!pointers.has(event.pointerId)) return;
+			pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+			if (pinch && pointers.size >= 2) {
+				const [a, b] = [...pointers.values()];
+				const dist = Math.max(1, Math.hypot(a.x - b.x, a.y - b.y));
+				const midX = (a.x + b.x) / 2;
+				const midY = (a.y + b.y) / 2;
+				const nextScale = clamp((pinch.scale * dist) / pinch.dist, 1, MAX_SCALE);
+				// 让捏合开始时手指下的那个点在缩放后仍然停在双指中点
+				setView(nextScale, midX - pinch.cx - pinch.ux * nextScale, midY - pinch.cy - pinch.uy * nextScale, false);
+				return;
+			}
+
+			if (pan) {
+				const dx = event.clientX - pan.startX;
+				const dy = event.clientY - pan.startY;
+				if (Math.abs(dx) > 6 || Math.abs(dy) > 6) moved = true;
+				if (moved && scale > 1.01) {
+					setView(scale, pan.tx + dx, pan.ty + dy, false);
+				}
+			}
+		});
+
+		const endPointer = (event: PointerEvent) => {
+			if (!pointers.has(event.pointerId)) return;
+			pointers.delete(event.pointerId);
+
+			if (pointers.size === 0) {
+				pan = null;
+				pinch = null;
+				if (scale <= 1.01) resetView(false); // 缩回适配尺寸时归位
+				return;
+			}
+			// 还剩一根手指 → 以它为起点继续平移
+			const [remaining] = [...pointers.values()];
+			pan = { startX: remaining.x, startY: remaining.y, tx, ty };
+			pinch = null;
+		};
+
+		dialog.addEventListener('pointerup', endPointer);
+		dialog.addEventListener('pointercancel', endPointer);
+
+		// 拖动/捏合之后的收尾 click 不切换 1:1
+		dialogImg.addEventListener('click', () => {
+			if (moved || pinched) {
+				moved = false;
+				pinched = false;
+				return;
+			}
+			toggleActualSize();
+		});
+
+		// 视口变化后适配尺寸会变，直接归位避免状态错乱
+		globalThis.addEventListener('resize', () => {
+			if (dialog.open) resetView(false);
+		});
+
+		// ------- 正文图片绑定 -------
+		/** 该图片是否交给放大功能接管 */
+		const isZoomable = (img: HTMLImageElement) => {
+			if (!img.getAttribute('src')) return false;
+			if (img.closest('[data-no-zoom]')) return false; // 作者手动排除
+			if (img.closest('a')) return false; // 图片本身是链接（徽章按钮等）
+			if (img.closest('.twikoo, #tcomment')) return false; // 评论区图片/表情
+			return true;
+		};
+
+		const images = document.querySelectorAll<HTMLImageElement>('[data-post-content] img');
+		for (const img of images) {
+			if (!isZoomable(img)) continue;
+
+			img.setAttribute('data-zoom-ready', '');
+			img.tabIndex = 0;
+			img.setAttribute('role', 'button');
+			img.setAttribute('aria-label', `${img.alt ? img.alt + '，' : ''}点击放大查看`);
+
+			img.addEventListener('click', () => open(img));
+			img.addEventListener('keydown', (event) => {
+				if (event.key === 'Enter' || event.key === ' ') {
+					event.preventDefault();
+					open(img);
+				}
+			});
+		}
+	}
+</script>
+
+<style is:global>
+	/* 放大后可点击的提示；只在文章里被接管的图片上出现 */
+	[data-post-content] img[data-zoom-ready] {
+		cursor: zoom-in;
+	}
+
+	[data-post-content] img[data-zoom-ready]:focus-visible {
+		outline: 2px solid var(--color-accent-500, #f59e0b);
+		outline-offset: 2px;
+	}
+
+	/* 预览层打开时锁住页面滚动 */
+	html.image-zoom-open {
+		overflow: hidden;
+	}
+
+	.post-image-zoom {
+		/* 铺满视口，作为缩放/平移的可视区域（超出部分裁掉） */
+		position: fixed;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		max-width: none;
+		max-height: none;
+		padding: 0;
+		border: none;
+		background: transparent;
+		overflow: hidden;
+		touch-action: none; /* 捏合/拖动全部自己处理 */
+	}
+
+	.post-image-zoom::backdrop {
+		background-color: rgb(0 0 0 / 0.82);
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
+	}
+
+	.post-image-zoom__img {
+		/* 绝对定位 + margin:auto 居中，便于后续用 transform 缩放平移 */
+		position: absolute;
+		inset: 0;
+		display: block;
+		width: auto;
+		height: auto;
+		margin: auto;
+		max-width: min(1600px, 92vw);
+		max-height: calc(100vh - 7rem);
+		max-height: calc(100dvh - 7rem);
+		border-radius: 0.75rem;
+		box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+		transform-origin: center center;
+		cursor: zoom-in;
+		touch-action: none; /* 手势自己处理，禁掉浏览器默认的滚动/缩放 */
+		user-select: none;
+		-webkit-user-drag: none;
+		animation: post-image-zoom-in 180ms ease-out;
+	}
+
+	.post-image-zoom__img.is-zoomed {
+		cursor: zoom-out;
+	}
+
+	.post-image-zoom__img.is-settling {
+		transition: transform 250ms ease;
+	}
+
+	@keyframes post-image-zoom-in {
+		from {
+			opacity: 0;
+			transform: scale(0.97);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	.post-image-zoom__caption {
+		position: absolute;
+		left: 50%;
+		bottom: 1.25rem;
+		transform: translateX(-50%);
+		box-sizing: border-box;
+		max-width: min(92vw, 60rem);
+		margin: 0;
+		padding: 0.375rem 0.875rem;
+		border-radius: 9999px;
+		background-color: rgb(0 0 0 / 0.6);
+		color: #ffffff;
+		font-size: 0.875rem;
+		line-height: 1.5;
+		text-align: center;
+		pointer-events: none;
+		-webkit-backdrop-filter: blur(4px);
+		backdrop-filter: blur(4px);
+	}
+
+	/* 作者样式里的 display 会盖掉浏览器默认的 [hidden]，这里显式隐藏 */
+	.post-image-zoom__caption[hidden] {
+		display: none;
+	}
+
+	.post-image-zoom__close {
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* 44px，满足移动端最小点击区域 */
+		width: 2.75rem;
+		height: 2.75rem;
+		padding: 0;
+		border: none;
+		border-radius: 9999px;
+		background-color: rgb(255 255 255 / 0.12);
+		color: #ffffff;
+		cursor: pointer;
+		touch-action: manipulation;
+		-webkit-backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
+		transition: background-color 0.2s ease;
+	}
+
+	.post-image-zoom__close:hover {
+		background-color: rgb(255 255 255 / 0.26);
+	}
+
+	.post-image-zoom__close svg {
+		width: 1.375rem;
+		height: 1.375rem;
+		/* 让点击目标始终是按钮本身，而不是内部的 svg / path */
+		pointer-events: none;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.post-image-zoom__img {
+			animation: none;
+		}
+
+		.post-image-zoom__img.is-settling {
+			transition: none;
+		}
+	}
+</style>

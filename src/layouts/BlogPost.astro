@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import BaseLayout from "./BaseLayout.astro";
 import Container from "../components/Container.astro";
 import MarkdownBody from "../components/MarkdownBody.astro";
+import PostImageZoom from "../components/PostImageZoom.astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -35,6 +36,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<slot name="Comment" />
 
 	</Container>
-	
+
+	<!-- 文章图片放大预览：不在 .prose 内部，避免被正文排版样式影响 -->
+	<PostImageZoom />
+
 	<Footer />
 </BaseLayout>
