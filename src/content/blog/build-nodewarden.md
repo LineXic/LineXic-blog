@@ -3,7 +3,7 @@ title: '如何通过 NodeWarden 来搭建自己的密码部署服务的'
 description: '介绍了一个自建密码储存的开源项目以及我是如何搭建它的并且和 Bitwarden 同步'
 pubDate: '2026-11-08'
 ---
-![nodewarden.svg](https://cdn.linexic.top/gh/LineXic/nodewarden/node.svg)
+![nodewarden.svg](https://img.linexic.top/file/u8Ehtgd9.svg)
 
 ## 介绍
 
