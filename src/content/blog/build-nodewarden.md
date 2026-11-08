@@ -17,7 +17,7 @@ NodeWarden是一个`运行在 Cloudflare Workers 上的 Bitwarden 兼容服务�
 1. [fork](https://github.com/shuaiplus/nodewarden/fork) 到自己的仓库下后进入 [Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create) 选择自己刚才 fork 的仓库
 ![Workers & Pages](https://img.linexic.top/file/0T0uY8pl.webp)
 2. 配置部署命令：构建命令填 `npm run build`，部署命令填 `npm run deploy`
-- 如果你打算用 KV 模式而不用 D1，把部署命令改成 `npm run deploy:kv`
+- 如果你打算用 KV 模式而不用 D1，把部署命令改成 `npm run deploy:kv` 这里用 R2 进行部署，不能绑卡但又想使用 R2 的朋友可以看[这篇文章](https://blog.yaria.top/posts/730cf317)来强开 R2
 ![部署命令填写](https://img.linexic.top/file/UYTZZia0.webp)
 部署完成后将会显示类似如下界面，这个时候你就可以绑定域名了
 ![部署完成](https://img.linexic.top/file/2CGVBQTr.webp)
