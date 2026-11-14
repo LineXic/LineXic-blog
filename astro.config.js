@@ -7,6 +7,44 @@ import tailwindcss from "@tailwindcss/vite";
 import vercel from '@astrojs/vercel';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import pagefind from "astro-pagefind";
+import fs from 'node:fs';
+import path from 'node:path';
+
+const MIME_TYPES = {
+  '.js': 'text/javascript',
+  '.mjs': 'text/javascript',
+  '.css': 'text/css',
+  '.json': 'application/json',
+  '.map': 'application/json',
+  '.wasm': 'application/wasm',
+  '.html': 'text/html',
+  '.txt': 'text/plain',
+  '.webmanifest': 'application/manifest+json',
+};
+
+// astro-pagefind 在 dev 模式下从 build.client（vercel 适配器下为不存在的 dist/client）找
+// pagefind 文件导致 404；此集成在 dev 时将 /pagefind/ 指向 dist/pagefind
+function servePagefindDev() {
+  return {
+    name: 'pagefind-dev-serve',
+    hooks: {
+      'astro:server:setup': ({ server }) => {
+        server.middlewares.use((req, res, next) => {
+          if (!req.url?.startsWith('/pagefind/')) return next();
+          const pathname = decodeURIComponent(req.url.split('?')[0]);
+          const distDir = path.resolve(process.cwd(), 'dist');
+          const filePath = path.resolve(distDir, '.' + pathname);
+          if (!filePath.startsWith(distDir) || !fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+            return next();
+          }
+          res.setHeader('Content-Type', MIME_TYPES[path.extname(filePath)] ?? 'application/octet-stream');
+          fs.createReadStream(filePath).pipe(res);
+        });
+      },
+    },
+  };
+};
 // https://astro.build/config
 export default defineConfig({
   // 请修改为你自己的线上地址，谢谢茄子
@@ -16,7 +54,7 @@ export default defineConfig({
   // 在根路径下（例如 `https://example.com/`）则填写 `/`
   base: process.env.NODE_ENV === "production" ? "/" : "",
 
-  integrations: [mdx(), sitemap(), svelte()],
+  integrations: [mdx(), sitemap(), svelte(), pagefind(), servePagefindDev()],
 
   markdown: {
     processor: unified({

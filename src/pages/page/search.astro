@@ -1,0 +1,151 @@
+---
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro";
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_search.md";
+
+---
+
+<Layout
+    title="搜索 - LineXic's website"
+    description="LineXic's website 的搜索功能,可以在这里搜索本站所有的文章内容"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+        <PagefindConfig lang="zh-CN" />
+        <pagefind-searchbox
+            id="search"
+            placeholder="键入开始搜索"
+            show-sub-results
+            max-sub-results="8"
+            debounce="100"
+        >
+            <script type="text/pagefind-template">
+{{#if and(options.show_sub_results, sub_results)}}<div class="s-group" role="group" aria-label="{{ meta.title | default('Untitled') }}">{{/if}}
+<a class="s-item" id="{{ aria.result_id }}" href="{{ meta.url | default(url) | safeUrl }}" role="option" aria-selected="false" aria-labelledby="{{ aria.title_id }}"{{#if excerpt}} aria-describedby="{{ aria.excerpt_id }}"{{/if}}>
+<span class="s-title" id="{{ aria.title_id }}">{{ meta.title | default("Untitled") }}<svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></span>
+{{#if excerpt}}<p class="s-content" id="{{ aria.excerpt_id }}">{{+ excerpt +}}</p>{{/if}}
+</a>
+{{#if and(options.show_sub_results, sub_results)}}
+{{#each sub_results as sub}}
+<a class="s-item" id="{{ sub.aria.result_id }}" href="{{ sub.url | safeUrl }}" role="option" aria-selected="false" aria-labelledby="{{ sub.aria.title_id }}"{{#if sub.excerpt}} aria-describedby="{{ sub.aria.excerpt_id }}"{{/if}}>
+<span class="s-title" id="{{ sub.aria.title_id }}">{{ meta.title | default("Untitled") }}<span class="s-crumb" aria-hidden="true">&gt;</span>{{ sub.title | default("Section") }}</span>
+{{#if sub.excerpt}}<p class="s-content" id="{{ sub.aria.excerpt_id }}">{{+ sub.excerpt +}}</p>{{/if}}
+</a>
+{{/each}}
+</div>{{/if}}
+            </script>
+        </pagefind-searchbox>
+    </MarkdownBody>
+</Layout>
+
+<!-- Pagefind 组件做了样式隔离（all: initial），只能通过 --pf-* 变量与自定义模板类名定制。
+     观感参照 L33Z22L11/blog-v3 的搜索弹窗：
+     面包屑标题 + 半透明分隔符、0.8em 灰色摘要、amber 高亮、选中项浅色背景、圆角卡片容器 -->
+<style is:global>
+pagefind-searchbox {
+    display: block;
+    width: 100%;
+
+    /* 跟随站点字体 */
+    --pf-font: ChillRoundF, -apple-system, "Microsoft YaHei", sans-serif;
+
+    /* 容器观感：大圆角 + 柔和阴影（对应参考站的 1em 圆角与多层阴影） */
+    --pf-border-radius: 1em;
+    --pf-shadow-md: 0 4px 12px rgb(0 0 0 / 0.1);
+    --pf-shadow-lg: 0 16px 48px rgb(0 0 0 / 0.2);
+    --pf-searchbox-dropdown-max-height: min(60dvh, 640px);
+
+    /* 亮色主题（映射到站点 Tailwind 调色板） */
+    --pf-text: var(--color-slate-800);
+    --pf-text-secondary: var(--color-slate-600);
+    --pf-text-muted: var(--color-slate-500);
+    --pf-background: white;
+    --pf-border: var(--color-slate-300);
+    --pf-border-focus: var(--color-sky-500);
+    --pf-hover: var(--color-sky-50);
+    --pf-skeleton: var(--color-slate-100);
+    --pf-skeleton-shine: var(--color-slate-50);
+    --pf-mark: var(--color-sky-600);
+}
+
+@media (prefers-color-scheme: dark) {
+    pagefind-searchbox {
+        --pf-text: var(--color-slate-200);
+        --pf-text-secondary: var(--color-slate-400);
+        --pf-text-muted: var(--color-slate-500);
+        --pf-background: var(--color-slate-900);
+        --pf-border: var(--color-slate-700);
+        --pf-border-focus: var(--color-sky-500);
+        --pf-hover: var(--color-slate-800);
+        --pf-skeleton: var(--color-slate-800);
+        --pf-skeleton-shine: var(--color-slate-700);
+        --pf-mark: var(--color-sky-300);
+        --pf-shadow-md: 0 4px 12px rgb(0 0 0 / 0.4);
+        --pf-shadow-lg: 0 16px 48px rgb(0 0 0 / 0.5);
+    }
+}
+
+/* ===== 结果条目（自定义模板，走正常级联） ===== */
+.s-item {
+    display: block;
+    margin: 0.5em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.s-item:hover,
+.s-item[aria-selected="true"] {
+    background-color: var(--pf-hover);
+}
+
+.s-title {
+    display: block;
+    font-weight: 600;
+    color: var(--pf-text);
+}
+
+/* 面包屑分隔符：半透明，选中时加亮 */
+.s-crumb {
+    opacity: 0.5;
+    padding-inline: 0.3em;
+    transition: opacity 0.2s;
+}
+
+.s-item[aria-selected="true"] .s-crumb {
+    opacity: 0.9;
+}
+
+/* 根结果（整篇文章）跟随参考站，在标题后展示文档图标 */
+.s-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-inline-start: 0.2em;
+    vertical-align: -0.12em;
+    color: var(--pf-text-muted);
+}
+
+/* 摘要：小一号灰字，命中词用站点强调色（amber）高亮 */
+.s-content {
+    margin-top: 0.2em;
+    font-size: 0.8em;
+    white-space: pre-wrap;
+    color: var(--pf-text-secondary);
+}
+
+.s-content mark {
+    background: none;
+    color: var(--color-amber-600);
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .s-content mark {
+        color: var(--color-amber-400);
+    }
+}
+</style>
