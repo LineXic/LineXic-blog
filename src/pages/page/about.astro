@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/BlogPage.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+import * as markdownData from "./_about.md";
+
+---
+
+<Layout
+    title="关于我 - LineXic's website"
+    description="LineXic's website 的关于页面,你可以在这里更了解我！"
+>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+
+    </MarkdownBody>
+</Layout>

@@ -31,8 +31,8 @@ export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "首页", href: BASE_URL, target: "" },
     { title: "友链", href: `${BASE_URL}page/links/`, target: "" },
     { title: "归档", href: `${BASE_URL}page/archive/`, target: "" },
-    { title: "留言", href: `${BASE_URL}page/guestbook`, target: "" },
-    { title: "搜索", href: `${BASE_URL}page/search`, target: "" },
+    { title: "留言", href: `${BASE_URL}page/guestbook/`, target: "" },
+    { title: "关于", href: `${BASE_URL}page/about/`, target: "" },
 ]
 
 // 网站横幅背景图片（明亮主题）
